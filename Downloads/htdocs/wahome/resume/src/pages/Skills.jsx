@@ -56,7 +56,7 @@ export default function Skills() {
         <div className="marquee-container">
           <div className="marquee-content flex space-x-8">
             {skills.map((skill, index) => (
-              <div key={index} className="text-xl bg-gpoppy text-bgcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap flex items-center space-x-2">
+              <div key={index} className="text-xl bg-transparent text-bgcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap flex items-center space-x-2">
                 {skill.icon}
                 <span>{skill.name}</span>
               </div>
