@@ -31,6 +31,20 @@ export default function Skills() {
   return (
     <div className="flex w-full flex-col bg-bgcolor min-h-screen items-center justify-center px-2 py-6 md:px-8">
       <h2 className="text-center text-2xl md:text-3xl text-uscgold m-4">Skills & Experience</h2>
+      
+      {/* Skills Marquee */}
+      <div className="mt-8 w-full overflow-hidden">
+        <div className="marquee-container">
+          <div className="marquee-content flex space-x-8">
+            {skills.map((skill, index) => (
+              <div key={index} className="text-xl bg-transparent text-bgcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap justify-center flex items-center space-x-2">
+                {skill.icon || skill.altIcon}
+                <span>{skill.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
       <div className="relative w-full max-w-4xl">
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 border-r-2 border-uscgold rounded-sm h-full"></div>
         {work.map((work, index) => (
@@ -50,19 +64,7 @@ export default function Skills() {
         ))}
       </div>
 
-      {/* Skills Marquee */}
-      <div className="mt-8 w-full overflow-hidden">
-        <div className="marquee-container">
-          <div className="marquee-content flex space-x-8">
-            {skills.map((skill, index) => (
-              <div key={index} className="text-xl bg-transparent text-bgcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap flex items-center space-x-2">
-                {skill.icon || skill.altIcon}
-                <span>{skill.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 }
