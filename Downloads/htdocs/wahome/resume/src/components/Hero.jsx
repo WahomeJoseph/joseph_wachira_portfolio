@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -14,28 +13,13 @@ function Hero() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-bgcolor text-txtcolor">
-      {/* <nav id="navbar" className="w-full p-6 bg-transparent bg-opacity-90 shadow-customglow z-10 fixed top-0 border-b-2 border-b-gpoppy rounded-b-sm">
-        <ul className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 p-4 md:p-6">
-          <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="/about">About Me</Link>
-          </li>
-          <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="/skills">Skills</Link>
-          </li>
-          <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav> */}
-
-      <div className="flex flex-col items-center justify-center w-full h-full p-4">
+    <div
+      className="flex flex-col items-center justify-center w-full min-h-screen bg-bgcolor text-txtcolor bg-cover bg-center"
+      style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+      }}
+    >
+      <div className="flex flex-col items-center justify-center w-full h-full p-4 bg-black bg-opacity-50">
         <p className="text-center text-xl md:text-2xl font-semibold text-txtcolor p-4">
           <span>Hello, I&apos;m</span> <br />
           <span className="text-2xl md:text-3xl text-gpoppy">Joseph Wachira</span> <br />
