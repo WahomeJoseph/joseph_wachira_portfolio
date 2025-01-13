@@ -19,8 +19,8 @@ export default function Contact() {
           <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-uscgold">
             <FaEnvelope className='text-xl'/>
             <span>Email</span>
-            <span className="text-center" mailto='mailto:josephwachira589@gmail.com'>josephwachira589@gmail.com</span>
-            <span className="text-center" mailto='mailto:wachirawahome81@gmail.com'>wachirawahome81@gmail.com</span>
+            <a href="mailto:josephwachira589@gmail.com"><span className="text-center">josephwachira589@gmail.com</span></a>
+            <a href="mailto:wachirawahome81@gmail.com"><span className="text-center">wachirawahome81@gmail.com</span></a>
           </div>
           <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-uscgold">
             <FaPhone className='text-xl'/>
