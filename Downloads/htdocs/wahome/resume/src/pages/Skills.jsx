@@ -4,7 +4,7 @@ import { FaBriefcase } from 'react-icons/fa';
 
 export default function Skills() {
   const work = [
-    {position: 'Software Engineering Intern', organization: 'Power Learn Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills including HTML5, CSS3. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL, Node JS HTML CSS. This experience honed my skills in coding, teamwork, communication, entrepreneurship and innovative problem-solving.'},
+    {position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills including HTML5, CSS3. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication,entrepreneurship and innovative problem-solving.'},
     {position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
     {position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: ''},
   ];
@@ -20,7 +20,7 @@ export default function Skills() {
               <div className='bg-transparent p-4 border-2 border-uscgold rounded-md shadow-customglow w-full md:w-3/4'>
                 <div className='flex items-center mb-2'>
                   <FaBriefcase className='text-uscgold text-xl'/>
-                  <span className='ml-2 text-xl font-semibold text-uscgold'>{work.position}</span>
+                  <span className='ml-2 text-xl font-semibold text-gpoppy'>{work.position}</span>
                 </div>
                 <div className='text-gpoppy text-center'>{work.organization}</div>
                 <div className='text-gpoppy text-center'>{work.duration}</div>

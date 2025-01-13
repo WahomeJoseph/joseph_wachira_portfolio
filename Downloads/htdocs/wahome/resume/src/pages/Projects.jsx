@@ -17,7 +17,7 @@ export default function Projects() {
           </span>
           <img src="" alt="" className="w-full h-auto" />
           <p className="text-center">Built a comprehensive dental clinic management system using the MERN (MongoDB, Express.js, React, Node.js). The system streamlines appointment scheduling, patient records management, billing and payment, and staff coordination. It includes a responsive interface for both administrators and patients, ensuring efficient clinic operations and an improved user experience.</p>
-          <a href="https://github.com/WahomeJoseph/MY-DENTAL_CLINIC.git"><button className="w-full md:w-44 h-10 bg-gold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy transition duration-300">
+          <a href="https://github.com/WahomeJoseph/MY-DENTAL_CLINIC.git"><button className="w-full md:w-44 h-10 bg-gold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy md:p-4 transition duration-300">
             View More
           </button>
           </a>
@@ -29,7 +29,7 @@ export default function Projects() {
           <p className="text-center">
           Developed a modern booking application using React.js and Vite. The platform enables users to browse services, check availability, and make reservations with ease. It features a fast-loading, responsive design optimized for seamless performance across various devices, ensuring a smooth and user-friendly booking experience.
           </p>
-          <a href="https://github.com/WahomeJoseph/booking-assets.git"><button className="w-full md:w-44 h-10 bg-gold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy transition duration-300">
+          <a href="https://github.com/WahomeJoseph/booking-assets.git"><button className="w-full md:w-44 h-10 bg-gold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy md:p-4 transition duration-300">
             View More
           </button>
           </a>
@@ -41,7 +41,7 @@ export default function Projects() {
           <p className="text-center">
           Lead a team of five to develop a farm management system using HTML, CSS, PHP, and MySQL. The system streamlines farm activity tracking, inventory management, and financial records. It also allows visitors to book farm tours and purchase farm products through a user-friendly interface. A secure database ensures seamless management of data, enhancing operational efficiency and user experience.
           </p>
-          <a href=""><button className="w-full md:w-44 h-10 bg-gold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy transition duration-300">
+          <a href=""><button className="w-full md:w-44 h-10 bg-gold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy md:p-4 transition duration-300">
             View More
           </button>
           </a>
@@ -54,7 +54,7 @@ export default function Projects() {
           Developed a robust e-commerce system using the MERN stack (MongoDB, Express.js, React, Node.js). The platform features secure user authentication, a dynamic product catalog, a shopping cart, and seamless payment integration. It offers a responsive, user-friendly interface optimized for both desktop and mobile devices, ensuring a smooth shopping experience.
           </p>
           <a href="https://github.com/WahomeJoseph/trade.git">
-          <button className="w-full md:w-44 h-10 bg-gold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy transition duration-300">
+          <button className="w-full md:w-44 h-10 bg-gold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy md:p-4 transition duration-300">
             View More
           </button>
           </a>
