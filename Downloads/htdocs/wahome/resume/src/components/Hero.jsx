@@ -16,7 +16,7 @@ function Hero() {
     <div
       className="flex flex-col items-center justify-center w-full min-h-screen bg-bgcolor text-txtcolor bg-cover bg-center"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=2607&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+        backgroundImage: "url('https://plus.unsplash.com/premium_photo-1686240479285-1b57fa5d11bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
       }}
     >
       <div className="flex flex-col items-center justify-center w-full h-full p-4 bg-black bg-opacity-50">
