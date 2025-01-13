@@ -10,7 +10,7 @@ function Hero() {
 
   const handleShow = () => {
     setShowMore(!showMore);
-    navigate("/about");
+    navigate("/about", '/skills', '/projects');
   };
 
   return (
