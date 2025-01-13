@@ -8,10 +8,7 @@ export default function Skills() {
     {position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
   ];
 
-  const skills = [
-    'JavaScript', 'React', 'Node.js', 'PHP', 'CSS', 'HTML', 'Express', 
-    'MongoDB', 'MySQL', 'MariaDB', 'Git & GitHub', 'Postman', 'APIs', 'Azure AI'
-  ];
+  const skills = [ { name: 'JavaScript', icon: <SiJavascript className="text-yellow-500 text-3xl" /> }, { name: 'React', icon: <FaReact className="text-blue-500 text-3xl" /> }, { name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-3xl" /> }, { name: 'PHP', icon: <FaPhp className="text-purple-600 text-3xl" /> }, { name: 'CSS', icon: <FaCss3Alt className="text-blue-600 text-3xl" /> }, { name: 'HTML', icon: <FaHtml5 className="text-orange-600 text-3xl" /> }, { name: 'Express', icon: <SiExpress className="text-gray-600 text-3xl" /> }, { name: 'MongoDB', icon: <SiMongodb className="text-green-700 text-3xl" /> }, { name: 'MySQL', icon: <SiMysql className="text-blue-500 text-3xl" /> }, { name: 'MariaDB', icon: <SiMariadb className="text-blue-600 text-3xl" /> }, { name: 'Git & GitHub', icon: <FaGitAlt className="text-red-600 text-3xl" />, altIcon: <FaGithub className="text-black text-3xl" /> }, { name: 'Postman', icon: <SiPostman className="text-orange-600 text-3xl" /> }, { name: 'APIs', icon: <FaDatabase className="text-gray-700 text-3xl" /> }, { name: 'Azure AI', icon: <SiAzuredevops className="text-blue-700 text-3xl" /> } ];
 
   return (
     <div className="flex w-full flex-col bg-bgcolor min-h-screen items-center justify-center px-2 py-6 md:px-8">
@@ -42,14 +39,7 @@ export default function Skills() {
         <div className="marquee-container">
           <div className="marquee-content flex space-x-8">
             {skills.map((skill, index) => (
-              <div key={index} className="text-xl bg-txtcolor text-bgcolor px-4 py-2 rounded-md shadow-md whitespace-nowrap">
-                {skill}
-              </div>
-            ))}
-          </div>
-          <div className="marquee-content flex space-x-8 mt-4">
-            {skills.map((skill, index) => (
-              <div key={index} className="text-xl bg-txtcolor text-bgcolor px-4 py-2 rounded-md shadow-md whitespace-nowrap">
+              <div key={index} className="text-xl bg-gpoppy text-bgcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap">
                 {skill}
               </div>
             ))}
