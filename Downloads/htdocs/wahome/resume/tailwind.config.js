@@ -16,6 +16,9 @@ export default {
         uscgold: '#ffcc00',
         customglow: '0 0 10px 2px rgba(255,204, 0',
       },
+      fontFamily: {
+         sans: ['Roboto', 'sans-serif'],
+         },
     },
     keyframes: {
       glow: {
