@@ -2,12 +2,13 @@ import React from 'react';
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPhp, FaGitAlt, FaGithub, FaDatabase, FaBriefcase } from 'react-icons/fa'; 
 import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress, SiAzuredevops } from 'react-icons/si';
 import { IoLogoJavascript } from "react-icons/io";
+import { VscAzure } from "react-icons/vsc";
 
 export default function Skills() {
   const work = [
-    {position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills including HTML5, CSS3. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication,entrepreneurship and innovative problem-solving.'},
-    {position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
-    {position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
+    { position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills including HTML5, CSS3. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication,entrepreneurship and innovative problem-solving.'},
+    { position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
+    { position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
   ];
 // obj
   const skills = [ 
@@ -24,7 +25,7 @@ export default function Skills() {
     { name: 'Git & GitHub', icon: <FaGitAlt className="text-red-600 text-3xl" />, altIcon: <FaGithub className="text-black text-3xl" /> }, 
     { name: 'Postman', icon: <SiPostman className="text-orange-600 text-3xl" /> }, 
     { name: 'APIs', icon: <FaDatabase className="text-gray-700 text-3xl" /> }, 
-    { name: 'Azure AI', icon: <SiAzuredevops className="text-blue-700 text-3xl" /> } 
+    { name: 'Azure AI', icon: <VscAzure className="text-blue-700 text-3xl" /> } 
   ];
 
   return (
@@ -44,9 +45,6 @@ export default function Skills() {
                 <div className='text-gpoppy text-center'>{work.duration}</div>
                 <div className='text-txtcolor text-justify'>{work.description}</div>
               </div>
-            </div>
-            <div className='w-full md:w-1/2 flex justify-center items-center'>
-              <div className='w-4 h-4 bg-uscgold rounded-full'></div>
             </div>
           </div>
         ))}
