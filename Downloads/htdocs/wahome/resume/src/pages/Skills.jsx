@@ -6,7 +6,7 @@ import { VscAzure } from "react-icons/vsc";
 
 export default function Skills() {
   const work = [
-    { id:1, position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills including HTML5, CSS3. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication,entrepreneurship and innovative problem-solving.'},
+    { id:1, position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication and innovative problem-solving.'},
     { id:2, position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
     { id:3, position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
   ];
@@ -31,7 +31,7 @@ export default function Skills() {
   return (
     <div className="flex w-full flex-col bg-bgcolor min-h-screen items-center justify-center px-2 py-6 md:px-8">
       <h2 className="text-center text-2xl md:text-3xl text-uscgold m-4">Skills & Experience</h2>
-      
+
       {/* Skills Marquee */}
       <div className="mt-8 w-full overflow-hidden">
         <div className="marquee-container">
@@ -63,8 +63,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-
-      
     </div>
   );
 }
