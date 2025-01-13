@@ -10,7 +10,7 @@ export default function Skills() {
     { id:2, position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
     { id:3, position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
   ];
-// obj
+
   const skills = [ 
     { name: 'JavaScript', icon: <IoLogoJavascript className="text-yellow-500 text-3xl" /> }, 
     { name: 'React JS', icon: <FaReact className="text-blue-500 text-3xl" /> }, 
@@ -33,7 +33,7 @@ export default function Skills() {
       <h2 className="text-center text-2xl md:text-3xl text-uscgold m-4">Skills & Experience</h2>
 
       <div className="relative w-full max-w-4xl">
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 border-r-2 border-uscgold rounded-sm h-full"></div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 border-r-2 border-uscgold rounded-sm h-full hidden md:block"></div>
         {work.map((work, index) => (
           <div key={work.id} className={`mb-8 flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center w-full text-justify`}>
             <div className='w-full md:w-1/2 flex justify-center'>
@@ -51,8 +51,8 @@ export default function Skills() {
         ))}
       </div>
 
-            {/* Skills Marquee */}
-            <div className="mt-8 w-full overflow-hidden">
+      {/* Skills Marquee */}
+      <div className="mt-8 w-full overflow-hidden">
         <div className="marquee-container">
           <div className="marquee-content flex space-x-8">
             {skills.map((skill, index) => (
