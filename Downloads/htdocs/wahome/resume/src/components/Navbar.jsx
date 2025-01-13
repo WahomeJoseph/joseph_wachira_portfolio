@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-bgcolor border-b-2 border-b-uscgold px-6 text-txtcolor">
+    <nav className="bg-bgcolor border-b-2 border-b-txtcolor px-6 text-txtcolor">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-3">
           <Link to="/" className="text-2xl font-semibold">
@@ -28,9 +28,9 @@ function Navbar() {
           <FaBars className="w-5 h-5 hover:text-uscgold" />
         </button>
         <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 outline-none border-b-2 rounded-b-lg bg-bgcolor border-gpoppy md:flex-row md:space-x-8">
+          <ul className="font-medium flex flex-col p-8 md:p-0 mt-6 outline-none border-b-2 rounded-b-lg bg-bgcolor border-gpoppy md:flex-row md:space-x-8">
             <li>
-              <Link to="/" className="block py-2 bg-transparent px-3 text-txtcolor bg-gpoppy md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
+              <Link to="/" className="block py-2 bg-transparent px-3 text-txtcolor md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
             </li>
             <li>
               <Link to="/about" className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">About Me</Link>

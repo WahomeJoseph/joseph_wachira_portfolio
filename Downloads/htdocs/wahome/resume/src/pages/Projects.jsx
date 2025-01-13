@@ -4,7 +4,7 @@ import { FaCode } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col w-full container min-h-screen bg-bgcolor justify-between items-center p-4 md:p-6">
+    <div className="flex flex-col w-full min-h-screen bg-bgcolor justify-between items-center p-4 md:p-6">
       <h2 className="text-xl md:text-2xl text-uscgold font-semibold text-center">
         My Works
       </h2>
