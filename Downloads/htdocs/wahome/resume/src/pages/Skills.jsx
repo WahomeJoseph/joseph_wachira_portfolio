@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPhp, FaGitAlt, FaGithub, FaDatabase, FaBriefcase } from 'react-icons/fa'; 
-import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress, SiJavascript, SiAzuredevops } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPhp, FaGitAlt, FaGithub, FaDatabase, FaBriefcase } from 'react-icons/fa'; 
+import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress, SiAzuredevops } from 'react-icons/si';
+import { IoLogoJavascript } from "react-icons/io";
 
 export default function Skills() {
   const work = [
@@ -10,7 +11,7 @@ export default function Skills() {
   ];
 
   const skills = [ 
-    { name: 'JavaScript', icon: <SiJavascript className="text-yellow-500 text-3xl" /> }, 
+    { name: 'JavaScript', icon: <IoLogoJavascript className="text-yellow-500 text-3xl" /> }, 
     { name: 'React JS', icon: <FaReact className="text-blue-500 text-3xl" /> }, 
     { name: 'Node JS', icon: <FaNodeJs className="text-green-600 text-3xl" /> }, 
     { name: 'PHP', icon: <FaPhp className="text-purple-600 text-3xl" /> },
