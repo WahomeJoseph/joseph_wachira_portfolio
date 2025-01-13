@@ -18,19 +18,19 @@ function Hero() {
       <nav id="navbar" className="w-full p-6 bg-transparent bg-opacity-90 shadow-customglow z-10 fixed top-0 border-b-2 border-b-gpoppy rounded-b-sm">
         <ul className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 p-4 md:p-6">
           <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="#">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="#about">About Me</Link>
+            <Link to="/about">About Me</Link>
           </li>
           <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="#skills">Skills</Link>
+            <Link to="/skills">Skills</Link>
           </li>
           <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="#projects">Projects</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
-            <Link to="#contact">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
