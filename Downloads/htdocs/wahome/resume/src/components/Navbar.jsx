@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 function Navbar() {
 
   return (
-    <nav className="flex flex-row bg-bgcolor items-center justify-center min-h-screen text-txtcolor border-b-2 border-b-uscgold">
+    <nav className="flex flex-row bg-bgcolor items-center justify-center min-h-screen text-txt border-b-2 border-b-uscgold">
 
-        <div className='w-full p-6 bg-transparent bg-opacity-90 shadow-customglow z-10 block border-b-2 border-b-gpoppy rounded-b-sm md:block md:w-auto'>
+        <div className='w-full md:block md:w-auto'>
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse">
             <li>
               <Link to="/" className="block py-2 px-3 text-txtcolor bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Home</Link>
