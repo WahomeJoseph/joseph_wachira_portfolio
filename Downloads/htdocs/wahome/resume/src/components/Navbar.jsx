@@ -28,21 +28,21 @@ function Navbar() {
           <FaBars className="w-5 h-5" />
         </button>
         <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-bgcolor md:flex-row md:space-x-8">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-b-2 rounded-b-lg bg-bgcolor md:flex-row md:space-x-8">
             <li>
-              <Link to="/" className="block py-2 px-3 text-txtcolor bg-gpoppy rounded md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
+              <Link to="/" className="block py-2 bg-transparent px-3 text-txtcolor bg-gpoppy md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
             </li>
             <li>
-              <Link to="/about" className="block py-2 px-3 text-txtcolor rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">About Me</Link>
+              <Link to="/about" className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">About Me</Link>
             </li>
             <li>
-              <Link to="/skills" className="block py-2 px-3 text-txtcolor rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Skills</Link>
+              <Link to="/skills" className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Skills</Link>
             </li>
             <li>
-              <Link to="/projects" className="block py-2 px-3 text-txtcolor rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Projects</Link>
+              <Link to="/projects" className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Projects</Link>
             </li>
             <li>
-              <Link to="/contact" className="block py-2 px-3 text-txtcolor rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Contact</Link>
+              <Link to="/contact" className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Contact</Link>
             </li>
           </ul>
         </div>
