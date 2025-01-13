@@ -1,30 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa';
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
-    <nav className="flex flex-row items-center h=justify-center bg-bgcolor border-b-2 border-b-uscgold dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <button 
-          onClick={toggleNavbar}
-          type="button" 
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
-          aria-controls="navbar-default" 
-          aria-expanded={isOpen}
-        >
-          <span className="sr-only">Open main menu</span>
-          <FaBars className="w-5 h-5" />
-        </button>
+    <nav className="flex flex-row bg-bgcolor items-center justify-center min-h-screen text-txtcolor border-b-2 border-b-uscgold">
 
-        <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
+        <div className='w-full p-6 bg-transparent bg-opacity-90 shadow-customglow z-10 fixed top-0 border-b-2 border-b-gpoppy rounded-b-sm md:block md:w-auto'>
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse">
             <li>
               <Link to="/" className="block py-2 px-3 text-txtcolor bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Home</Link>
@@ -43,7 +26,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-      </div>
+
     </nav>
   );
 }
