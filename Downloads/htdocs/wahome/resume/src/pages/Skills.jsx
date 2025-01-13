@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import { FaBriefcase } from 'react-icons/fa';
 
@@ -7,6 +6,11 @@ export default function Skills() {
     {position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills including HTML5, CSS3. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication,entrepreneurship and innovative problem-solving.'},
     {position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
     {position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
+  ];
+
+  const skills = [
+    'JavaScript', 'React', 'Node.js', 'PHP', 'CSS', 'HTML', 'Express', 
+    'MongoDB', 'MySQL', 'MariaDB', 'Git & GitHub', 'Postman', 'APIs', 'Azure AI'
   ];
 
   return (
@@ -32,6 +36,25 @@ export default function Skills() {
             </div>
           </div>
         ))}
+      </div>
+      {/* Skills Marquee */}
+      <div className="mt-8 w-full overflow-hidden">
+        <div className="marquee-container">
+          <div className="marquee-content flex space-x-8">
+            {skills.map((skill, index) => (
+              <div key={index} className="text-xl bg-txtcolor text-bgcolor px-4 py-2 rounded-md shadow-md whitespace-nowrap">
+                {skill}
+              </div>
+            ))}
+          </div>
+          <div className="marquee-content flex space-x-8 mt-4">
+            {skills.map((skill, index) => (
+              <div key={index} className="text-xl bg-txtcolor text-bgcolor px-4 py-2 rounded-md shadow-md whitespace-nowrap">
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
