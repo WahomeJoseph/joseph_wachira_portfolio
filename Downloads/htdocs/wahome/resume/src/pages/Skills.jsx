@@ -9,7 +9,7 @@ export default function Skills() {
     {position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
     {position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
   ];
-
+// obj
   const skills = [ 
     { name: 'JavaScript', icon: <IoLogoJavascript className="text-yellow-500 text-3xl" /> }, 
     { name: 'React JS', icon: <FaReact className="text-blue-500 text-3xl" /> }, 
