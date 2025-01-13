@@ -11,8 +11,8 @@ export default function Skills() {
 
   const skills = [ 
     { name: 'JavaScript', icon: <SiJavascript className="text-yellow-500 text-3xl" /> }, 
-    { name: 'React', icon: <FaReact className="text-blue-500 text-3xl" /> }, 
-    { name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-3xl" /> }, 
+    { name: 'React JS', icon: <FaReact className="text-blue-500 text-3xl" /> }, 
+    { name: 'Node JS', icon: <FaNodeJs className="text-green-600 text-3xl" /> }, 
     { name: 'PHP', icon: <FaPhp className="text-purple-600 text-3xl" /> },
     { name: 'CSS', icon: <FaCss3Alt className="text-blue-600 text-3xl" /> }, 
     { name: 'HTML', icon: <FaHtml5 className="text-orange-600 text-3xl" /> }, 
@@ -55,8 +55,17 @@ export default function Skills() {
         <div className="marquee-container">
           <div className="marquee-content flex space-x-8">
             {skills.map((skill, index) => (
-              <div key={index} className="text-xl bg-gpoppy text-bgcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap">
-                {skill}
+              <div key={index} className="text-xl bg-gpoppy text-bgcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap flex items-center space-x-2">
+                {skill.icon}
+                <span>{skill.name}</span>
+              </div>
+            ))}
+          </div>
+          <div className="marquee-content flex space-x-8 mt-4">
+            {skills.map((skill, index) => (
+              <div key={index} className="text-xl bg-gpoppy text-bgcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap flex items-center space-x-2">
+                {skill.icon}
+                <span>{skill.name}</span>
               </div>
             ))}
           </div>
