@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaBriefcase } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPhp, FaGitAlt, FaGithub, FaDatabase, FaBriefcase } from 'react-icons/fa'; 
+import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress, SiJavascript, SiAzuredevops } from 'react-icons/si';
 
 export default function Skills() {
   const work = [
@@ -8,7 +9,8 @@ export default function Skills() {
     {position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
   ];
 
-  const skills = [ { name: 'JavaScript', icon: <SiJavascript className="text-yellow-500 text-3xl" /> }, 
+  const skills = [ 
+    { name: 'JavaScript', icon: <SiJavascript className="text-yellow-500 text-3xl" /> }, 
     { name: 'React', icon: <FaReact className="text-blue-500 text-3xl" /> }, 
     { name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-3xl" /> }, 
     { name: 'PHP', icon: <FaPhp className="text-purple-600 text-3xl" /> },
