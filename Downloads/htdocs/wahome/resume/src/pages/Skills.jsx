@@ -21,7 +21,8 @@ export default function Skills() {
     { name: 'Git & GitHub', icon: <FaGitAlt className="text-red-600 text-3xl" />, altIcon: <FaGithub className="text-black text-3xl" /> }, 
     { name: 'Postman', icon: <SiPostman className="text-orange-600 text-3xl" /> }, 
     { name: 'APIs', icon: <FaDatabase className="text-gray-700 text-3xl" /> }, 
-    { name: 'Azure AI', icon: <SiAzuredevops className="text-blue-700 text-3xl" /> } ];
+    { name: 'Azure AI', icon: <SiAzuredevops className="text-blue-700 text-3xl" /> } 
+  ];
 
   return (
     <div className="flex w-full flex-col bg-bgcolor min-h-screen items-center justify-center px-2 py-6 md:px-8">
