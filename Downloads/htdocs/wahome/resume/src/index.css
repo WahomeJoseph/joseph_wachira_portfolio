@@ -4,11 +4,32 @@
 
 .marquee-container {
   display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container {
+  display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-.marquee-content {
+/* .marquee-content {
   display: flex;
   animation: marquee 20s linear infinite;
 }
@@ -20,7 +41,7 @@
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

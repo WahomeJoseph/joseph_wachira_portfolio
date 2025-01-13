@@ -23,7 +23,8 @@ function Hero() {
         <p className="text-center text-xl md:text-2xl font-semibold text-txtcolor p-4">
           <span>Hello, I&apos;m</span> <br />
           <span className="text-2xl md:text-3xl text-gpoppy">Joseph Wachira</span> <br />
-          <span className="text-xl md:text-2xl text-txtcolor">a Software Developer</span>
+          <span className="text-xl md:text-2xl text-txtcolor">a web Developer</span> <br />
+          <span className="text-xl md:text-2xl text-txtcolor">with +2 years of experience.</span>
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 m-4 md:m-8">

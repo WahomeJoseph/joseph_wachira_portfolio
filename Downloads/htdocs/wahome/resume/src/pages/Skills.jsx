@@ -6,9 +6,9 @@ import { VscAzure } from "react-icons/vsc";
 
 export default function Skills() {
   const work = [
-    { position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills including HTML5, CSS3. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication,entrepreneurship and innovative problem-solving.'},
-    { position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
-    { position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
+    { id:1, position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills including HTML5, CSS3. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication,entrepreneurship and innovative problem-solving.'},
+    { id:2, position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
+    { id:3, position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
   ];
 // obj
   const skills = [ 
@@ -34,7 +34,7 @@ export default function Skills() {
       <div className="relative w-full max-w-4xl">
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 border-r-2 border-uscgold rounded-sm h-full"></div>
         {work.map((work, index) => (
-          <div key={index} className={`mb-8 flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center w-full text-justify`}>
+          <div key={work.id} className={`mb-8 flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center w-full text-justify`}>
             <div className='w-full md:w-1/2 flex justify-center'>
               <div className='bg-transparent p-4 border-2 border-uscgold rounded-md shadow-customglow w-full md:w-3/4'>
                 <div className='flex items-center mb-2'>
@@ -49,13 +49,14 @@ export default function Skills() {
           </div>
         ))}
       </div>
+
       {/* Skills Marquee */}
       <div className="mt-8 w-full overflow-hidden">
         <div className="marquee-container">
           <div className="marquee-content flex space-x-8">
             {skills.map((skill, index) => (
               <div key={index} className="text-xl bg-transparent text-bgcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap flex items-center space-x-2">
-                {skill.icon}
+                {skill.icon || skill.altIcon}
                 <span>{skill.name}</span>
               </div>
             ))}
