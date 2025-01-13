@@ -15,7 +15,7 @@ function Hero() {
 
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen bg-bgcolor text-txtcolor">
-      <nav id="navbar" className="w-full p-6 bg-transparent bg-opacity-90 shadow-customglow z-10 fixed top-0 border-b-2 border-b-gpoppy rounded-b-sm">
+      {/* <nav id="navbar" className="w-full p-6 bg-transparent bg-opacity-90 shadow-customglow z-10 fixed top-0 border-b-2 border-b-gpoppy rounded-b-sm">
         <ul className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 p-4 md:p-6">
           <li className="text-xl md:text-2xl hover:text-underline-gpoppy">
             <Link to="/">Home</Link>
@@ -33,7 +33,7 @@ function Hero() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
       <div className="flex flex-col items-center justify-center w-full h-full p-4">
         <p className="text-center text-xl md:text-2xl font-semibold text-txtcolor p-4">
