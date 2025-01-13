@@ -10,11 +10,11 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-bgcolor border-b-2 border-b-uscgold text-txtcolor">
+    <nav className="bg-bgcolor border-b-2 border-b-uscgold px-6 text-txtcolor">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-3">
           <Link to="/" className="text-2xl font-semibold">
-            My Portfolio
+            JW
           </Link>
         </div>
         <button 
@@ -28,7 +28,7 @@ function Navbar() {
           <FaBars className="w-5 h-5 hover:text-uscgold" />
         </button>
         <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 outline-none border-b-2 border-r-2 border-r-lg rounded-b-lg bg-bgcolor md:flex-row md:space-x-8">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 outline-none border-b-2 rounded-b-lg bg-bgcolor md:border-r-2 md:border-r-lg border-gpoppy md:flex-row md:space-x-8">
             <li>
               <Link to="/" className="block py-2 bg-transparent px-3 text-txtcolor bg-gpoppy md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
             </li>
