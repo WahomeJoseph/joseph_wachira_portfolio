@@ -38,7 +38,7 @@ function Hero() {
           </motion.button>
           </a>
           <Link to="/contact">
-            <motion.button animate={{ x: 100, scale: 1 }} initial={{scale:0}} transition={{type: 'spring', bounce: 2, type: 'tween', duration: 1}} className="w-44 h-12 text-lg md:text-xl font-semibold px-4 py-2 rounded-md shadow-md hover:bg-hgold hover:shadow-lg transition duration-300 bg-gbrown text-bgcolor">
+            <motion.button transition={{type: 'spring', bounce: 2, type: 'tween', duration: 1}} className="w-44 h-12 text-lg md:text-xl font-semibold px-4 py-2 rounded-md shadow-md hover:bg-hgold hover:shadow-lg transition duration-300 bg-gbrown text-bgcolor">
               Hire Me
             </motion.button>
           </Link>
