@@ -7,6 +7,7 @@ import {motion} from 'framer-motion';
 
 function Hero() {
   const [showMore, setShowMore] = useState(false);
+  const [rotate, setRotate] = useState(false);
   const navigate = useNavigate();
 
   const handleShow = () => {
