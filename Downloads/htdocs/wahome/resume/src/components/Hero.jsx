@@ -43,7 +43,7 @@ function Hero() {
             </motion.button>
           </Link>
 
-          {/* <motion.button animate={{ y:move ? 200 : -200 }} onClick={() => {setMove(!move)}} className="bg-green-700 w-40 h-12 text-white" >Hover Me</motion.button> */}
+          <motion.button animate={{ y:move ? 200 : -200 }} onClick={() => {setMove(!move)}} className="bg-green-700 w-40 h-12 text-white" >Hover Me</motion.button>
         </div>
 
         {showMore && (
@@ -61,8 +61,8 @@ function Hero() {
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
             <FaGithub  />
-          </a>
-          <motion.a transition={{type: 'tween', duration: 4}}
+          </a>  
+          <motion.a transition={{type: 'tween', duration: 4}} whileHover={{scale: 1.2}}
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300">
             <FaLinkedinIn  />
