@@ -64,7 +64,7 @@ function Hero() {
           </a>  
           <motion.a transition={{type: 'tween', duration: 4}} whileHover={{scale: 1.2}}
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
-            className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300">
+            className="text-xl md:text-2xl text-white">
             <FaLinkedinIn  />
           </motion.a>
           <motion.a
