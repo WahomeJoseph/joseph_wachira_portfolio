@@ -33,12 +33,12 @@ function Hero() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 m-4 md:m-8">
           <a  href="https://docs.google.com/document/d/1GJP4jr36238ZO7xL97-NnOv1XgFISJxwNEU7h-Cy24k/edit?usp=drive_link">
-          <motion.button animate={{ x: 100, scale: 1 }} initial={{scale:0}} hover whileHover={{scale: 1.2}} transition={{delay: 1}} className="w-44 h-12 text-lg md:text-xl font-semibold px-4 py-2 rounded-md shadow-md hover:bg-hgold hover:shadow-lg transition duration-300 bg-gbrown text-bgcolor">
+          <motion.button animate={{ x: 100, scale: 1 }} initial={{scale:0}} hover whileHover={{scale: 0.5}} transition={{delay: 1}} className="w-44 h-12 text-lg md:text-xl font-semibold px-4 py-2 rounded-md shadow-md hover:bg-hgold hover:shadow-lg transition duration-300 bg-gbrown text-bgcolor">
             Resume
           </motion.button>
           </a>
           <Link to="/contact">
-            <motion.button animate={{ x: 100, scale: 1 }} initial={{scale:0}} hover whileHover={{scale: 1.2}} transition={{deley: 1}} className="w-44 h-12 text-lg md:text-xl font-semibold px-4 py-2 rounded-md shadow-md hover:bg-hgold hover:shadow-lg transition duration-300 bg-gbrown text-bgcolor">
+            <motion.button animate={{ x: 100, scale: 1 }} initial={{scale:0}} hover whileHover={{scale: 0.5}} transition={{deley: 1}} className="w-44 h-12 text-lg md:text-xl font-semibold px-4 py-2 rounded-md shadow-md hover:bg-hgold hover:shadow-lg transition duration-300 bg-gbrown text-bgcolor">
               Hire Me
             </motion.button>
           </Link>
