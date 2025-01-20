@@ -62,11 +62,10 @@ function Hero() {
           >
             <FaGithub  />
           </a>
-          <motion.a 
+          <motion.a transition={{type: 'tween', duration: 4}}
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
-            className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
-          >
-            <motion.FaLinkedinIn transition={{type: 'tween', duration: 4}} />
+            className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300">
+            <FaLinkedinIn  />
           </motion.a>
           <motion.a
             href="https://mail.google.com/mail/"
