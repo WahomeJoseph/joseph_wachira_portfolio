@@ -62,9 +62,9 @@ function Hero() {
           >
             <FaGithub  />
           </a>  
-          <motion.a transition={{type: 'tween', duration: 2}} hover whileHover={{scale: 1.2}}
+          <motion.a transition={{type: 'tween', duration: 2}} hover whileHover={{scale: 1.5}}
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
-            className="text-xl md:text-2xl text-white">
+            className="text-xl md:text-2xl text-white hover:text-uscgold">
             <FaLinkedinIn  />
           </motion.a>
           <motion.a
