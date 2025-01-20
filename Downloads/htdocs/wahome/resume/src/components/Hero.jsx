@@ -56,35 +56,38 @@ function Hero() {
         </button>
 
         <ul className="flex flex-row flex-wrap items-center justify-center space-x-4 md:space-x-6 mt-6">
-          <a transition={{type: 'spring', bounce: 2}}
+          <motion.a transition={{type: 'tween', duration: 2}} hover whileHover={{scale: 1.5}}
             href="https://github.com/WahomeJoseph"
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
             <FaGithub  />
-          </a>  
+          </motion.a>  
           <motion.a transition={{type: 'tween', duration: 2}} hover whileHover={{scale: 1.5}}
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
             className="text-xl md:text-2xl text-white hover:text-uscgold">
             <FaLinkedinIn  />
           </motion.a>
-          <motion.a
+
+          <motion.a transition={{type: 'tween', duration: 2}} hover whileHover={{scale: 1.5}}
             href="https://mail.google.com/mail/"
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
             <FaEnvelope />
           </motion.a>
-          <a
+
+          <motion.a transition={{type: 'tween', duration: 2}} hover whileHover={{scale: 1.5}}
             href="https://www.instagram.com/sayjo.e?igshid=YzljYTk1ODg3Zg=="
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
             <FaInstagram />
-          </a>
-          <a
+          </motion.a>
+
+          <motion.a transition={{type: 'tween', duration: 2}} hover whileHover={{scale: 1.5}}
             href="https://x.com/WachiraJoseph17?t=KGERM4FElIAFfhTfLpCMyw&s=09"
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
             <FaXTwitter />
-          </a>
+          </motion.a>
         </ul>
       </div>
     </div>
