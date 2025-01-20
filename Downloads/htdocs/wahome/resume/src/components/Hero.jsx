@@ -56,17 +56,17 @@ function Hero() {
         </button>
 
         <ul className="flex flex-row flex-wrap items-center justify-center space-x-4 md:space-x-6 mt-6">
-          <motion.a transition={{type: 'spring', bounce: 2}}
+          <a transition={{type: 'spring', bounce: 2}}
             href="https://github.com/WahomeJoseph"
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
             <FaGithub  />
-          </motion.a>
-          <motion.a transition={{type: 'tween', duration: 4}}
+          </a>
+          <motion.a 
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
-            <FaLinkedinIn />
+            <motion.FaLinkedinIn transition={{type: 'tween', duration: 4}} />
           </motion.a>
           <motion.a
             href="https://mail.google.com/mail/"
