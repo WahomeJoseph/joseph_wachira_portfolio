@@ -8,6 +8,7 @@ import {motion} from 'framer-motion';
 function Hero() {
   const [showMore, setShowMore] = useState(false);
   const [rotate, setRotate] = useState(false);
+  const [move, setMove] = useState(false);
   const navigate = useNavigate();
 
   const handleShow = () => {
@@ -41,6 +42,8 @@ function Hero() {
               Hire Me
             </motion.button>
           </Link>
+
+          <motion.button animate={{x:move ? 200 : -200}} onClick={() => {setMove(!move)}} >Hover Me</motion.button>
         </div>
 
         {showMore && (
@@ -65,12 +68,12 @@ function Hero() {
           >
             <FaLinkedinIn />
           </a>
-          <a
+          <motion.a
             href="https://mail.google.com/mail/"
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
             <FaEnvelope />
-          </a>
+          </motion.a>
           <a
             href="https://www.instagram.com/sayjo.e?igshid=YzljYTk1ODg3Zg=="
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
