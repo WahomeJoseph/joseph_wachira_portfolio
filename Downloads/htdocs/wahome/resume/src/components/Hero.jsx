@@ -43,7 +43,7 @@ function Hero() {
             </motion.button>
           </Link>
 
-          <motion.button animate={{x:move ? 200 : -200}} onClick={() => {setMove(!move)}} >Hover Me</motion.button>
+          <motion.button animate={{x:move ? 200 : -200}} onClick={() => {setMove(!move)}} className="bg-green-700 w-40 h-12 text-white" >Hover Me</motion.button>
         </div>
 
         {showMore && (
