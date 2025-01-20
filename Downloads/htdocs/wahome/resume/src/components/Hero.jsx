@@ -50,10 +50,10 @@ function Hero() {
           <p className="text-uscgold text-lg md:text-xl text-center">Read More</p>
         )}
 
-        <button onClick={handleShow} className="flex flex-col items-center mt-4 md:mt-8">
+        <motion.button transition={{type: 'spring', bounce: 5}} onClick={handleShow} className="flex flex-col items-center mt-4 md:mt-8">
           <FaAnglesDown className="text-xl md:text-2xl text-uscgold hover:text-gpoppy transition duration-300" />
           <span className="text-uscgold text-lg md:text-xl mt-2">{showMore ? "Show Less" : "Show More"}</span>
-        </button>
+        </motion.button>
 
         <ul className="flex flex-row flex-wrap items-center justify-center gap-6 space-x-6 md:space-x-4 mt-6">
           <motion.a transition={{type: 'tween', duration: 0.8, type: 'spring', bounce: 5}} hover whileHover={{scale: 1.5}}
@@ -61,25 +61,25 @@ function Hero() {
             className="text-xl md:text-2xl text-white hover:text-uscgold">
             <FaGithub  />
           </motion.a>  
-          <motion.a transition={{type: 'tween', duration: 0.8}} hover whileHover={{scale: 1.5}}
+          <motion.a transition={{type: 'tween', duration: 0.8, type: 'spring', bounce: 5}} hover whileHover={{scale: 1.5}}
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
             className="text-xl md:text-2xl text-white hover:text-uscgold">
             <FaLinkedinIn  />
           </motion.a>
-          <motion.a transition={{type: 'tween', duration: 0.8}} whileHover={{scale: 1.5}}
+          <motion.a transition={{type: 'tween', duration: 0.8, type: 'spring', bounce: 5}} whileHover={{scale: 1.5}}
             href="https://mail.google.com/mail/"
             className="text-xl md:text-2xl text-white hover:text-uscgold">
             <FaEnvelope />
           </motion.a>
 
-          <motion.a transition={{type: 'tween', duration: 0.8}} hover whileHover={{scale: 1.5}}
+          <motion.a transition={{type: 'tween', duration: 0.8, type: 'spring', bounce: 5}} hover whileHover={{scale: 1.5}}
             href="https://www.instagram.com/sayjo.e?igshid=YzljYTk1ODg3Zg=="
             className="text-xl md:text-2xl text-white hover:text-uscgold"
           >
             <FaInstagram />
           </motion.a>
 
-          <motion.a transition={{type: 'tween', duration: 0.8}} hover whileHover={{scale: 1.5}}
+          <motion.a transition={{type: 'tween', duration: 0.8, type: 'spring', bounce: 5}} hover whileHover={{scale: 1.5}}
             href="https://x.com/WachiraJoseph17?t=KGERM4FElIAFfhTfLpCMyw&s=09"
             className="text-xl md:text-2xl text-white hover:text-uscgold"
           >
