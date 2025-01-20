@@ -55,7 +55,7 @@ function Hero() {
           <span className="text-uscgold text-lg md:text-xl mt-2">{showMore ? "Show Less" : "Show More"}</span>
         </button>
 
-        <ul className="flex flex-row flex-wrap items-center justify-center space-x-4 md:space-x-6 mt-6">
+        <ul className="flex flex-row flex-wrap items-center justify-center space-x-6 md:space-x-4 mt-6">
           <motion.a transition={{type: 'tween', duration: 0.8}} hover whileHover={{scale: 1.5}}
             href="https://github.com/WahomeJoseph"
             className="text-xl md:text-2xl text-white hover:text-uscgold"
