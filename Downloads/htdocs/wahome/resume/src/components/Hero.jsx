@@ -57,7 +57,7 @@ function Hero() {
             href="https://github.com/WahomeJoseph"
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
-            <motion.FaGithub animate={{rotate: rotate ? 360 : 0}} whileHover={() => {setRotate(!rotate)}} />
+            <motion.FaGithub animate={{rotate: rotate ? 360 : 0}} onClick={() => {setRotate(!rotate)}} />
           </a>
           <a
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
