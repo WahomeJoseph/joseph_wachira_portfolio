@@ -56,7 +56,7 @@ function Hero() {
         </button>
 
         <ul className="flex flex-row flex-wrap items-center justify-center gap-6 space-x-6 md:space-x-4 mt-6">
-          <motion.a transition={{type: 'tween', duration: 0.8}} hover whileHover={{scale: 1.5}}
+          <motion.a transition={{type: 'tween', duration: 0.8, type: 'inertia', velocity: 5}} hover whileHover={{scale: 1.5}}
             href="https://github.com/WahomeJoseph"
             className="text-xl md:text-2xl text-white hover:text-uscgold">
             <FaGithub  />
