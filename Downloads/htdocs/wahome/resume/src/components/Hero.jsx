@@ -43,7 +43,7 @@ function Hero() {
             </motion.button>
           </Link>
 
-          <motion.button animate={{ y:move ? 200 : -200 }} transition={{type: 'tween', duration: 1.2}} hover whileHover={{scale: 2}} drag whileDrag={{scale: 2}} onClick={() => {setMove(!move)}} className="bg-green-700 w-40 h-12 text-white" >Hover Me</motion.button>
+          <motion.button animate={{ rotate: [0,200,0], y:move ? 200 : -200 }} transition={{duration: 2, repeat: Infinity, type: 'tween', duration: 1.2}} hover whileHover={{scale: 2}} drag whileDrag={{scale: 2}} onClick={() => {setMove(!move)}} className="bg-green-700 w-40 h-12 text-white" >Hover Me</motion.button>
         </div>
 
         {showMore && (
