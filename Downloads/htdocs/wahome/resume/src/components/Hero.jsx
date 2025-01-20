@@ -53,11 +53,11 @@ function Hero() {
         </button>
 
         <ul className="flex flex-row flex-wrap items-center justify-center space-x-4 md:space-x-6 mt-6">
-          <a
+          <a animate={{rotate: rotate ? 360 : 0}} onClick={() => {setRotate(!rotate)}}
             href="https://github.com/WahomeJoseph"
             className="text-xl md:text-2xl text-white hover:text-uscgold transition duration-300"
           >
-            <motion.FaGithub animate={{rotate: rotate ? 360 : 0}} onClick={() => {setRotate(!rotate)}} />
+            <FaGithub  />
           </a>
           <a
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
