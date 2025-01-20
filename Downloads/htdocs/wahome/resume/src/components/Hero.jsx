@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
 
+
 function Hero() {
   const [showMore, setShowMore] = useState(false);
   const navigate = useNavigate();
