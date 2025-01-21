@@ -10,7 +10,7 @@ export default function Contact() {
     initial={{ width: 0 }}
     animate={{ width: '100%' }}
     exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
-      <h2 className="text-center items-center text-2xl md:text-3xl text-uscgold mt-4">Contact Me</h2>
+      <h2 className="text-center items-center text-2xl md:text-3xl text-uscgold mt-4 shadow-inner shadow-gpoppy">Contact Me</h2>
 
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">
 
