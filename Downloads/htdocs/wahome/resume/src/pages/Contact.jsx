@@ -6,28 +6,28 @@ import { motion } from 'framer-motion'
 
 export default function Contact() {
   return (
-    <motion.div className="flex flex-col bg-bgcolor w-full min-h-screen p-8 md:px-12 md:py-4"
+    <motion.div className="flex flex-col bg-bgcolor w-full min-h-screen py-8 px-6 md:px-12 md:py-4"
     initial={{ width: 0 }}
     animate={{ width: '100%' }}
     exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
-      <h2 className="text-center items-center text-2xl md:text-3xl text-uscgold">Contact Me</h2>
+      <h2 className="text-center items-center text-2xl md:text-3xl text-uscgold mt-4">Contact Me</h2>
 
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">
         <div className="flex flex-col justify-center space-y-4 shadow-md mx-auto px-6 py-4 md:py-2">
           <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-txtcolor">
-            <FaLocationDot className='text-xl'/>
+            <FaLocationDot className='text-xl text-uscgold'/>
             <span>Location</span>
             <span className="text-center">Nairobi, Kenya</span>
             <span className="text-center">Ready to relocate</span>
           </div>
           <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-txtcolor">
-            <FaEnvelope className='text-xl'/>
+            <FaEnvelope className='text-xl text-uscgold'/>
             <span>Email</span>
             <a href="mailto:josephwachira589@gmail.com"><span className="text-center">josephwachira589@gmail.com</span></a>
             <a href="mailto:wachirawahome81@gmail.com"><span className="text-center">wachirawahome81@gmail.com</span></a>
           </div>
           <div className="flex flex-col items-center space-y-2 rounded-xl shadow-white p-4 m-4 bg-transparent text-txtcolor">
-            <FaPhone className='text-xl'/>
+            <FaPhone className='text-xl text-uscgold'/>
             <span>Phone</span>
             <span className="text-center">(254)0795969757</span>
           </div>
