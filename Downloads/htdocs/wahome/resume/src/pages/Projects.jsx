@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { FaCode } from "react-icons/fa";
-import motion from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function Projects() {
   return (

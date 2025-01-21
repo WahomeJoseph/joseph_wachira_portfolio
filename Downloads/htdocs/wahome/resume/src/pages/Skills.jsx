@@ -3,7 +3,7 @@ import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPhp, FaGitAlt, FaGithub, FaDat
 import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress, SiAzuredevops } from 'react-icons/si';
 import { IoLogoJavascript } from "react-icons/io";
 import { VscAzure } from "react-icons/vsc";
-import motion from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function Skills() {
   const work = [

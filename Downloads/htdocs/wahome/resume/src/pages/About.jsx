@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCode } from 'react-icons/fa';
-import motion from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function About() {
   return (

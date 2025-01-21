@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Hero() {
   const [showMore, setShowMore] = useState(false);
