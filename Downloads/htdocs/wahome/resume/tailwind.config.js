@@ -7,7 +7,7 @@ export default {
         glow: 'glow 1.5s infinite',
       },
       colors: {
-        bgcolor: '#08003a',
+        bgcolor: '#1A1110',
         txtcolor: '#cccccc',
         gold: '#ffd700',
         hgold: '#fcc200',
