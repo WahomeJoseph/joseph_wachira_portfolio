@@ -14,19 +14,19 @@ export default function Contact() {
 
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">
         <div className="flex flex-col justify-center space-y-4 shadow-md mx-auto px-6 py-4 md:py-2">
-          <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-uscgold">
+          <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-txtcolor">
             <FaLocationDot className='text-xl'/>
             <span>Location</span>
             <span className="text-center">Nairobi, Nyeri Kenya</span>
             <span className="text-center">Remote, ready to relocate</span>
           </div>
-          <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-uscgold">
+          <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-txtcolor">
             <FaEnvelope className='text-xl'/>
             <span>Email</span>
             <a href="mailto:josephwachira589@gmail.com"><span className="text-center">josephwachira589@gmail.com</span></a>
             <a href="mailto:wachirawahome81@gmail.com"><span className="text-center">wachirawahome81@gmail.com</span></a>
           </div>
-          <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-uscgold">
+          <div className="flex flex-col items-center space-y-2 rounded-xl shadow-white p-4 m-4 bg-transparent text-txtxcolor">
             <FaPhone className='text-xl'/>
             <span>Phone</span>
             <span className="text-center">(254)0795969757</span>
