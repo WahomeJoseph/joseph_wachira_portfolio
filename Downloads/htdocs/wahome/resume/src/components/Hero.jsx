@@ -41,8 +41,6 @@ function Hero() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 m-4 md:m-8">
           <a href="https://docs.google.com/document/d/1GJP4jr36238ZO7xL97-NnOv1XgFISJxwNEU7h-Cy24k/edit?usp=drive_link">
             <motion.button
-              animate={{ x: 100, scale: 1 }}
-              initial={{ scale: 0 }}
               hover
               whileHover={{ scale: 1.15 }}
               transition={{ type: "tween", duration: 1 }}
@@ -53,8 +51,6 @@ function Hero() {
           </a>
           <Link to="/contact">
             <motion.button
-              animate={{ x: 100, scale: 1 }}
-              initial={{ scale: 0 }}
               hover
               whileHover={{ scale: 1.15 }}
               transition={{ type: "tween", duration: 1 }}
