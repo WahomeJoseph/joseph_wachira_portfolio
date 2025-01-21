@@ -16,19 +16,19 @@ export default function Contact() {
 
         {/* contact cards */}
         <div className="flex flex-col justify-between gap-4 mx-auto p-10 md:py-2">
-          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-sm shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
+          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-md shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
             <FaLocationDot className='text-xl text-uscgold'/>
             <span>Location</span>
             <span className="text-center">Nairobi, Kenya</span>
             <span className="text-center">Ready to relocate</span>
           </div>
-          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-sm shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
+          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-md shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
             <FaEnvelope className='text-xl text-uscgold'/>
             <span>Email</span>
             <a href="mailto:josephwachira589@gmail.com"><span className="text-center">josephwachira589@gmail.com</span></a>
             <a href="mailto:wachirawahome81@gmail.com"><span className="text-center">wachirawahome81@gmail.com</span></a>
           </div>
-          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-sm shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
+          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-md shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
             <FaPhone className='text-xl text-uscgold'/>
             <span>Phone</span>
             <span className="text-center">(254)0795969757</span>
@@ -36,7 +36,7 @@ export default function Contact() {
         </div>
 
         {/* contact form */}
-        <form className="flex flex-col bg-bgcard py-4 px-6 space-y-6 shadow-md text-uscgold w-full md:w-1/2 mx-auto mt-6 md:mt-0">
+        <form className="flex flex-col bg-bgcard py-4 px-6 space-y-6 shadow-md shadow-gpoppy rounded-xl text-uscgold w-full md:w-1/2 mx-auto mt-6 md:mt-0">
           <input
             type="text"
             autoComplete="off"
