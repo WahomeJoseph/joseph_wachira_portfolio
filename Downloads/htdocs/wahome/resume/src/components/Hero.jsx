@@ -85,8 +85,6 @@ function Hero() {
             transition={{
               type: "tween",
               duration: 0.8,
-              type: "spring",
-              bounce: 5,
             }}
             hover
             whileHover={{ scale: 1.5 }}
@@ -99,8 +97,6 @@ function Hero() {
             transition={{
               type: "tween",
               duration: 0.8,
-              type: "spring",
-              bounce: 5,
             }}
             hover
             whileHover={{ scale: 1.5 }}
@@ -113,8 +109,6 @@ function Hero() {
             transition={{
               type: "tween",
               duration: 0.8,
-              type: "spring",
-              bounce: 5,
             }}
             whileHover={{ scale: 1.5 }}
             href="https://mail.google.com/mail/"
@@ -127,8 +121,6 @@ function Hero() {
             transition={{
               type: "tween",
               duration: 0.8,
-              type: "spring",
-              bounce: 5,
             }}
             hover
             whileHover={{ scale: 1.5 }}
@@ -142,8 +134,6 @@ function Hero() {
             transition={{
               type: "tween",
               duration: 0.8,
-              type: "spring",
-              bounce: 5,
             }}
             hover
             whileHover={{ scale: 1.5 }}
