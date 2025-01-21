@@ -35,40 +35,39 @@ export default function Contact() {
         </div>
 
         {/* contact form */}
-        <motion.form className="flex flex-col items-center bg-bgcard py-4 px-6 space-y-6 shadow-md shadow-gpoppy rounded-xl text-uscgold w-full md:w-1/2 mx-auto mt-6 md:mt-0">
+        <motion.form className="flex flex-col justify-center bg-bgcard py-4 px-6 space-y-6 shadow-md shadow-gpoppy rounded-xl text-uscgold w-full md:w-1/2 mx-auto mt-6 md:mt-0">
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Full Name"
-            className="bg-#fffff px-4 p-2 rounded-md shadow-sm border-2 border-none bg-transparent focus:border-txtcolor focus:ring-0"
+            className="px-4 p-2 rounded-md shadow-sm border-2 border-none bg-transparent focus:border-txtcolor"
           />
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Email Address"
-            className="bg-#fffff px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-uscgold focus:ring-0"
+            className="px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-txtcolor"
           />
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Phone Number"
-            className="bg-#fffff px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-uscgold focus:ring-0"
-          />
+            className="px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-txtcolor focus:ring-0"/>
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Subject"
-            className="bg-#fffff px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-uscgold focus:ring-0"
-          />
+            className="px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-txtcolor focus:ring-0"/>
           <textarea
             name="message"
             id="message"
-            className="bg-#fffff px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-uscgold focus:ring-0"
-            placeholder="Message..."></textarea>
+            className="px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-txtcolor focus:ring-0"
+            placeholder="Message...">
+          </textarea>
           <button className="w-64 items-center h-12 bg-gold text-bgcolor text-xl rounded-md hover:bg-gpoppy transition duration-300">Submit</button>
         </motion.form>
       </div>
