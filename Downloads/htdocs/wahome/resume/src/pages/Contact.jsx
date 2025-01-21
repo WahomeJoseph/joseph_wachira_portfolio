@@ -16,13 +16,13 @@ export default function Contact() {
 
         {/* contact cards */}
         <div className="flex flex-col justify-between gap-4 mx-auto p-10 md:py-2">
-          <div className="flex flex-col bg-bgcolor items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-txtcolor">
+          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl shadow-lg p-4 m-4 text-txtcolor shadow-md-uscgold hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
             <FaLocationDot className='text-xl text-uscgold'/>
             <span>Location</span>
             <span className="text-center">Nairobi, Kenya</span>
             <span className="text-center">Ready to relocate</span>
           </div>
-          <div className="flex flex-col bg-bgcolor items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-txtcolor">
+          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl shadow-lg p-4 m-4 text-txtcolor shadow-md-uscgold hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
             <FaEnvelope className='text-xl text-uscgold'/>
             <span>Email</span>
             <a href="mailto:josephwachira589@gmail.com"><span className="text-center">josephwachira589@gmail.com</span></a>
