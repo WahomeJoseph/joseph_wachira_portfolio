@@ -6,7 +6,7 @@ export default function About() {
   return (
     <motion.div className="bg-bgcolor flex-col w-full min-h-screen p-4 md:p-12 space-y-4"
     initial={{opacity: 0}}
-    animate={{opacity: 1}}
+    animate={{width: '100%'}}
     exit={{opacity: 0}}>
       <h2 className="text-xl md:text-2xl font-semibold text-uscgold text-center">About Me</h2>
 
