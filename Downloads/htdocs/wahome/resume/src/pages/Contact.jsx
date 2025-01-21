@@ -30,7 +30,8 @@ export default function Contact() {
           <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-md shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
             <FaPhone className='text-xl text-uscgold'/>
             <span>Phone</span>
-            <span className="text-center">(254)0795969757</span>
+            <span className="text-center">+254-0795969757</span>
+            <span className="text-center">+254-0795969757</span>
           </div>
         </div>
 
