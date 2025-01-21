@@ -61,7 +61,7 @@ export default function Contact() {
             autoComplete="off"
             autoSave="off"
             placeholder="Subject"
-            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppybg-transparent focus:border-none"/>
+            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:border-none"/>
           <textarea
             name="message"
             id="message"
