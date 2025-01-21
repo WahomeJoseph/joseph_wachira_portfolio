@@ -48,27 +48,27 @@ export default function Contact() {
             autoComplete="off"
             autoSave="off"
             placeholder="Email Address"
-            className="px-4 p-2 rounded-md shadow-xl border-txtcolor bg-transparent focus:border-none"
+            className="px-4 p-2 rounded-md shadow-md border-txtcolor bg-transparent focus:border-none"
           />
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Phone Number"
-            className="px-4 p-2 rounded-md shadow-xl border-txtcolor bg-transparent focus:border-none"/>
+            className="px-4 p-2 rounded-md shadow-md border-txtcolor bg-transparent focus:border-none"/>
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Subject"
-            className="px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-txtcolor focus:ring-0"/>
+            className="px-4 p-2 rounded-md shadow-md border-uscgold bg-transparent focus:border-none"/>
           <textarea
             name="message"
             id="message"
-            className="px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-txtcolor focus:ring-0"
+            className="px-4 p-2 rounded-md shadow-md border-txtcolor bg-transparent focus:border-txtcolor"
             placeholder="Message...">
           </textarea>
-          <button className="w-64 items-center h-12 bg-gold text-bgcolor text-xl rounded-md hover:bg-gpoppy transition duration-300">Submit</button>
+          <button className="w-64 items-center h-12 bg-bgcolor text-txtcolor text-xl rounded-md hover:bg-bgcard transition duration-200">Submit</button>
         </motion.form>
       </div>
     </motion.div>
