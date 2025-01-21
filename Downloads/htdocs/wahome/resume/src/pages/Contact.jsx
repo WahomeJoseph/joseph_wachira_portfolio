@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function Contact() {
   return (
-    <motion.div className="flex flex-col bg-bgcolor w-full min-h-screen py-8 px-6 md:px-12 md:py-4"
+    <motion.div className="flex flex-col bg-bgcolor w-full min-h-screen py-12 px-6 md:px-12 md:py-4"
     initial={{ width: 0 }}
     animate={{ width: '100%' }}
     exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
@@ -14,7 +14,7 @@ export default function Contact() {
 
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">
         {/* contact cards */}
-        <div className="flex w-full flex-col justify-between gap-2 mx-auto p-10 md:py-2">
+        <div className="flex flex-col justify-between gap-2 mx-auto p-10 md:py-2">
           <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-md shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
             <FaLocationDot className='text-xl text-uscgold'/>
             <span>Location</span>
