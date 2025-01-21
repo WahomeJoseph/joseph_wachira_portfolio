@@ -2,11 +2,13 @@ import React from 'react'
 import { AnimatePresence } from 'framer-motion';
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import Hero from "./components/Hero";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
-import Contact from "./pages/Contact";
+import Hero from './Hero.jsx';
+import About from '../pages/About.jsx';
+import Projects from '../pages/Projects.jsx';
+import Skills from '../pages/Skills.jsx';
+import Contact from '../pages/Contact.jsx';
+
+i
 
 export default function AnimateRoutes(){
     const location = useLocation()
