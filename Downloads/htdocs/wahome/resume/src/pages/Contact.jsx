@@ -13,7 +13,7 @@ export default function Contact() {
       <h2 className="text-center items-center text-2xl md:text-3xl text-uscgold mt-4">Contact Me</h2>
 
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">
-        <div className="flex flex-col justify-center space-y-4 shadow-md mx-auto px-6 py-4 md:py-2">
+        <div className="flex flex-col justify-center space-y-4 shadow-md mx-auto p-10 md:py-2">
           <div className="flex flex-col bg-bgcolor items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-txtcolor">
             <FaLocationDot className='text-xl text-uscgold'/>
             <span>Location</span>
@@ -26,7 +26,7 @@ export default function Contact() {
             <a href="mailto:josephwachira589@gmail.com"><span className="text-center">josephwachira589@gmail.com</span></a>
             <a href="mailto:wachirawahome81@gmail.com"><span className="text-center">wachirawahome81@gmail.com</span></a>
           </div>
-          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl shadow--white p-4 m-4 bg-transparent text-txt color shadow-xl hover:shadow-xl hover:shadow-[uscgold] transition-shadow duration-200">
+          <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl shadow--white p-4 m-4 bg-transparent text-txt color shadow-xl hover:shadow-xl hover:shadow-uscgold transition-shadow duration-200">
             <FaPhone className='text-xl text-uscgold'/>
             <span>Phone</span>
             <span className="text-center">(254)0795969757</span>
