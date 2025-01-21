@@ -10,10 +10,9 @@ export default function Contact() {
     initial={{ width: 0 }}
     animate={{ width: '100%' }}
     exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
-      <h2 className="text-center items-center text-2xl md:text-3xl text-uscgold mt-4 shadow-inner shadow-gpoppy">Contact Me</h2>
+      <h2 className="text-center items-center text-2xl md:text-3xl text-uscgold mt-4">Contact Me</h2>
 
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">
-
         {/* contact cards */}
         <div className="flex flex-col justify-between gap-4 mx-auto p-10 md:py-2">
           <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-md shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
