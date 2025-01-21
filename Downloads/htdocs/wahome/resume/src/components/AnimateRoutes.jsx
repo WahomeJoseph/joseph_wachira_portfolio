@@ -1,5 +1,5 @@
 import React from 'react'
-
+import motion from 'framer-motion'
 import Hero from "./components/Hero";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
