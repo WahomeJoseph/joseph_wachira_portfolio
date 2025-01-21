@@ -7,9 +7,9 @@ import motion from 'framer-motion'
 export default function Contact() {
   return (
     <motion.div className="flex flex-col bg-bgcolor w-full min-h-screen p-4 md:px-12 md:py-4"
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity: 0}}>
+    initial={{ width: 0 }}
+    animate={{ width: '100%' }}
+    exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
       <h2 className="text-center items-center text-2xl md:text-3xl text-uscgold">Contact Me</h2>
 
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">

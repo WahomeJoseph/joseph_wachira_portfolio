@@ -31,9 +31,9 @@ export default function Skills() {
 
   return (
     <motion.div className="flex w-full flex-col bg-bgcolor min-h-screen items-center justify-center px-2 py-6 md:px-8"
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity: 0}}>
+    initial={{ width: 0 }}
+    animate={{ width: '100%' }}
+    exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
       <h2 className="text-center text-2xl md:text-3xl text-uscgold m-4">Skills & Experience</h2>
 
       <div className="relative w-full max-w-4xl">

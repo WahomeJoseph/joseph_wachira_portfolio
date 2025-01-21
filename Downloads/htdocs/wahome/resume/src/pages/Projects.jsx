@@ -6,9 +6,9 @@ import motion from 'framer-motion'
 export default function Projects() {
   return (
     <motion.div className="flex flex-col w-full min-h-screen bg-bgcolor justify-between items-center p-4 md:p-6"
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity: 0}}>
+    initial={{ width: 0 }}
+    animate={{ width: '100%' }}
+    exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
       <h2 className="text-xl md:text-2xl text-uscgold font-semibold text-center">
         My Works
       </h2>
