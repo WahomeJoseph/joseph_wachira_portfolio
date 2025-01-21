@@ -4,7 +4,7 @@
     "private":true,
     "version":"0.0.0",
     "scripts":{
-        "dev":"vite",
+        "dev":"node your-script.js",
         "build":"vite build",
         "lint":"eslint .",
         "preview":"vite preview"},
