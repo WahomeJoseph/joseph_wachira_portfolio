@@ -35,7 +35,7 @@ export default function Contact() {
         </div>
 
         {/* contact form */}
-        <motion.form className="flex flex-col justify-center bg-bgcard py-4 px-6 space-y-6 shadow-md shadow-gpoppy rounded-xl text-uscgold w-full md:w-1/2 mx-auto mt-6 md:mt-0">
+        <motion.form className="flex flex-col w-full justify-center bg-bgcard py-4 px-6 space-y-6 shadow-md shadow-gpoppy rounded-xl text-uscgold md:w-1/2 mx-auto mt-6 md:mt-0">
           <input
             type="text"
             autoComplete="off"
