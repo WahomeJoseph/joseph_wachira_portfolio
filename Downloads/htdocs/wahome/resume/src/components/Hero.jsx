@@ -17,7 +17,7 @@ function Hero() {
 
   return (
     <motion.div
-      className="flex flex-col items-center justify-center w-full min-h-screen bg-bgcolor text-txtcolor bg-cover bg-center"
+      className="flex flex-col items-center justify-center w-full h-screen bg-bgcolor text-txtcolor bg-cover bg-center"
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       exit={{opacity: 0}}
