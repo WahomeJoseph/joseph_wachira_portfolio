@@ -1,10 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { FaCode } from "react-icons/fa";
+import motion from 'framer-motion'
 
 export default function Projects() {
   return (
-    <div className="flex flex-col w-full min-h-screen bg-bgcolor justify-between items-center p-4 md:p-6">
+    <motion.div className="flex flex-col w-full min-h-screen bg-bgcolor justify-between items-center p-4 md:p-6"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}>
       <h2 className="text-xl md:text-2xl text-uscgold font-semibold text-center">
         My Works
       </h2>
@@ -59,6 +63,6 @@ export default function Projects() {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

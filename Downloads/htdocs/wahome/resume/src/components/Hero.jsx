@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import {
-  FaEnvelope,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
 import { delay, motion } from "framer-motion";
 
@@ -21,13 +16,12 @@ function Hero() {
   };
 
   return (
-    <div
+    <motion.div
       className="flex flex-col items-center justify-center w-full min-h-screen bg-bgcolor text-txtcolor bg-cover bg-center"
-      style={{
-        backgroundImage:
-          "url('https://plus.unsplash.com/premium_photo-1686240479285-1b57fa5d11bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-      }}
-    >
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+      style={{backgroundImage:"url('https://plus.unsplash.com/premium_photo-1686240479285-1b57fa5d11bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
       <div className="flex flex-col items-center justify-center w-full h-full p-4 bg-black bg-opacity-50">
         <p className="text-center text-xl md:text-2xl font-semibold text-txtcolor p-4">
           <span>Hello, I&apos;m</span> <br />
@@ -164,7 +158,7 @@ function Hero() {
           </motion.a>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

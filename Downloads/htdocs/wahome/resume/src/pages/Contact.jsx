@@ -2,10 +2,14 @@
 import React from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import motion from 'framer-motion'
 
 export default function Contact() {
   return (
-    <div className="flex flex-col bg-bgcolor w-full min-h-screen p-4 md:px-12 md:py-4">
+    <motion.div className="flex flex-col bg-bgcolor w-full min-h-screen p-4 md:px-12 md:py-4"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}>
       <h2 className="text-center items-center text-2xl md:text-3xl text-uscgold">Contact Me</h2>
 
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">
@@ -68,6 +72,6 @@ export default function Contact() {
           <button className="w-full h-12 bg-gold text-bgcolor text-xl rounded-md hover:bg-gpoppy transition duration-300">Submit</button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }

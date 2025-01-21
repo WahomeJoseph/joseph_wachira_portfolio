@@ -3,6 +3,7 @@ import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPhp, FaGitAlt, FaGithub, FaDat
 import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress, SiAzuredevops } from 'react-icons/si';
 import { IoLogoJavascript } from "react-icons/io";
 import { VscAzure } from "react-icons/vsc";
+import motion from 'framer-motion'
 
 export default function Skills() {
   const work = [
@@ -29,7 +30,10 @@ export default function Skills() {
   ];
 
   return (
-    <div className="flex w-full flex-col bg-bgcolor min-h-screen items-center justify-center px-2 py-6 md:px-8">
+    <motion.div className="flex w-full flex-col bg-bgcolor min-h-screen items-center justify-center px-2 py-6 md:px-8"
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}>
       <h2 className="text-center text-2xl md:text-3xl text-uscgold m-4">Skills & Experience</h2>
 
       <div className="relative w-full max-w-4xl">
@@ -64,6 +68,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
