@@ -49,23 +49,23 @@ export default function Contact() {
             autoComplete="off"
             autoSave="off"
             placeholder="Email Address"
-            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none"/>
+            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy"/>
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Phone Number"
-            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none"/>
+            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy"/>
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Subject"
-            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none"/>
+            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy"/>
           <textarea
             name="message"
             id="message"
-            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none"
+            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy"
             placeholder="Message...">
           </textarea>
           <button className="w-64 justify-center h-12 bg-bgcolor text-txtcolor text-2xl font-bold rounded-lg hover:bg-gpoppy hover:text-bgcolor transition duration-200">Submit</button>
