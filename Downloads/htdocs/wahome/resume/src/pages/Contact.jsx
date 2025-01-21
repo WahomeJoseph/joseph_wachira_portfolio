@@ -14,7 +14,7 @@ export default function Contact() {
 
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">
         {/* contact cards */}
-        <div className="flex flex-col justify-between gap-2 mx-auto p-10 md:py-2">
+        <div className="flex flex-col justify-between gap-2 mx-auto p-6 md:py-2">
           <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-md shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
             <FaLocationDot className='text-xl text-uscgold'/>
             <span>Location</span>
@@ -42,31 +42,30 @@ export default function Contact() {
             autoComplete="off"
             autoSave="off"
             placeholder="Full Name"
-            className="px-4 p-2 rounded-md shadow-xl border-2 border-gpoppy bg-transparent focus:border-txtcolor"
+            className="px-4 p-2 rounded-md shadow-xl border-2 border-gpoppy bg-transparent focus:outline-txtcolor"
           />
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Email Address"
-            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:border-none"
-          />
+            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none"/>
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Phone Number"
-            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:border-none"/>
+            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none"/>
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Subject"
-            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:border-none"/>
+            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none"/>
           <textarea
             name="message"
             id="message"
-            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:border-txtcolor"
+            className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none"
             placeholder="Message...">
           </textarea>
           <button className="w-64 justify-center h-12 bg-bgcolor text-txtcolor text-2xl font-bold rounded-lg hover:bg-gpoppy hover:text-bgcolor transition duration-200">Submit</button>
