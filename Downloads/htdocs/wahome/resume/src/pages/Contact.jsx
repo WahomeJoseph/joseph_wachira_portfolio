@@ -41,21 +41,21 @@ export default function Contact() {
             autoComplete="off"
             autoSave="off"
             placeholder="Full Name"
-            className="px-4 p-2 rounded-md shadow-sm border-2 border-none bg-transparent focus:border-txtcolor"
+            className="px-4 p-2 rounded-md shadow-xl border-txtcolor bg-transparent focus:border-txtcolor"
           />
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Email Address"
-            className="px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-txtcolor"
+            className="px-4 p-2 rounded-md shadow-xl border-txtcolor bg-transparent focus:border-none"
           />
           <input
             type="text"
             autoComplete="off"
             autoSave="off"
             placeholder="Phone Number"
-            className="px-4 p-2 rounded-md shadow-sm border-2 border-uscgold bg-transparent focus:border-txtcolor focus:ring-0"/>
+            className="px-4 p-2 rounded-md shadow-xl border-txtcolor bg-transparent focus:border-none"/>
           <input
             type="text"
             autoComplete="off"
