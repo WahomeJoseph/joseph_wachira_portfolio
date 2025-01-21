@@ -5,9 +5,9 @@ import motion from 'framer-motion'
 export default function About() {
   return (
     <motion.div className="bg-bgcolor flex-col w-full min-h-screen p-4 md:p-12 space-y-4"
-    initial={{opacity: 0}}
-    animate={{width: '100%'}}
-    exit={{opacity: 0}}>
+    initial={{ width: 0 }}
+    animate={{ width: '100%' }}
+    exit={{ x: window.innerWidth }}>
       <h2 className="text-xl md:text-2xl font-semibold text-uscgold text-center">About Me</h2>
 
       <div className="flex flex-col md:flex-row w-full px-4 md:px-8 gap-4 items-center justify-center">
