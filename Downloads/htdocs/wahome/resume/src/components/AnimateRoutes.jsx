@@ -1,6 +1,6 @@
 import React from 'react'
 import { AnimatePresence } from 'framer-motion';
-import {BrowserRouter as  Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Hero from './Hero.jsx';
 import About from '../pages/About.jsx';
