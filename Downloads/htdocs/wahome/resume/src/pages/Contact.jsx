@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function Contact() {
   return (
-    <motion.div className="flex flex-col bg-bgcolor w-full min-h-screen p-4 md:px-12 md:py-4"
+    <motion.div className="flex flex-col bg-bgcolor w-full min-h-screen p-8 md:px-12 md:py-4"
     initial={{ width: 0 }}
     animate={{ width: '100%' }}
     exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
@@ -17,8 +17,8 @@ export default function Contact() {
           <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-txtcolor">
             <FaLocationDot className='text-xl'/>
             <span>Location</span>
-            <span className="text-center">Nairobi, Nyeri Kenya</span>
-            <span className="text-center">Remote, ready to relocate</span>
+            <span className="text-center">Nairobi, Kenya</span>
+            <span className="text-center">Ready to relocate</span>
           </div>
           <div className="flex flex-col items-center space-y-2 rounded-xl shadow-lg p-4 m-4 bg-transparent text-txtcolor">
             <FaEnvelope className='text-xl'/>
@@ -26,7 +26,7 @@ export default function Contact() {
             <a href="mailto:josephwachira589@gmail.com"><span className="text-center">josephwachira589@gmail.com</span></a>
             <a href="mailto:wachirawahome81@gmail.com"><span className="text-center">wachirawahome81@gmail.com</span></a>
           </div>
-          <div className="flex flex-col items-center space-y-2 rounded-xl shadow-white p-4 m-4 bg-transparent text-txtxcolor">
+          <div className="flex flex-col items-center space-y-2 rounded-xl shadow-white p-4 m-4 bg-transparent text-txtcolor">
             <FaPhone className='text-xl'/>
             <span>Phone</span>
             <span className="text-center">(254)0795969757</span>
@@ -34,7 +34,7 @@ export default function Contact() {
         </div>
 
         {/* contact form */}
-        <form className="flex flex-col py-4 space-y-6 shadow-md text-uscgold w-full md:w-1/2 mx-auto mt-6 md:mt-0">
+        <form className="flex flex-col py-4 px-6 space-y-6 shadow-md text-uscgold w-full md:w-1/2 mx-auto mt-6 md:mt-0">
           <input
             type="text"
             autoComplete="off"
