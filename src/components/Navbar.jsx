@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-bgcolor border-b-2 border-b-txtcolor px-6 text-txtcolor">
+    <nav className="bg-bgcolor outline-none px-6 text-txtcolor">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-3">
           <Link to="/" className="text-2xl font-semibold">

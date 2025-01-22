@@ -16,7 +16,7 @@ export default function Contact() {
         {/* contact cards */}
         <div className="flex flex-col justify-between gap-2 mx-auto p-6 md:py-2">
           <div className="flex flex-col bg-bgcard items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-md shadow-gpoppy hover:shadow-lg hover:shadow-uscgold transition-shadow duration-200">
-            <FaLocationDot className='text-xl text-uscgold bg-red-700'/>
+            <FaLocationDot className='text-xl text-uscgold'/>
             <span>Location</span>
             <span className="text-center">Nairobi, Kenya</span>
             <span className="text-center">Ready to relocate</span>
