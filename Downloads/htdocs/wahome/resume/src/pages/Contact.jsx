@@ -42,8 +42,7 @@ export default function Contact() {
             autoComplete="off"
             autoSave="off"
             placeholder="Full Name"
-            className="px-4 p-2 rounded-md shadow-xl border-2 border-gpoppy bg-transparent focus:outline-txtcolor"
-          />
+            className="px-4 p-2 rounded-md shadow-xl border-2 border-gpoppy bg-transparent focus:outline-txtcolor"/>
           <input
             type="text"
             autoComplete="off"
