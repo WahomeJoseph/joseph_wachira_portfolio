@@ -14,18 +14,24 @@ export default function About() {
         <img src="./MAU_0026.JPG" alt="" className="w-48 h-48 md:w-96 md:h-96 rounded-full"/>
 
         <div className="flex flex-col px-4 md:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 m-2 w-full items-center justify-between">
+          <div className="grid grid-cols-3 md:grid-cols-2 gap-4 p-4 m-2 w-full items-center justify-between">
             <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-lg border-b-2 border-b-uscgold rounded-b-md">
               <FaCode className="text-xl text-uscgold" />
-              <span className="text-[#cccccc] text-center">Web Development & Design</span>
+              <span className="text-txtcolor text-center">Web Development & Design</span>
             </div>
             <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-lg border-b-2 border-b-uscgold rounded-b-md">
               <FaCode className="text-xl text-uscgold" />
-              <span className="text-[#cccccc] text-center">Backend Development</span>
+              <span className="text-txtcolor text-center">Backend Development</span>
             </div>
-            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-xl border-b-2 border-b-uscgold rounded-b-md">
+            {/* <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-xl border-b-2 border-b-uscgold rounded-b-md">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Technical User Support</span>
+              <span>Provide user support for</span>
+            </div> */}
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-xl border-b-2 border-b-uscgold rounded-b-md">
+              <FaCode className="text-xl text-uscgold" />
+              <span className="text-txtcolor text-center">Quality Assuarance</span>
+              <span>Cypress, Jest, Manual Testing.Currently learning</span>
             </div>
           </div>
 
