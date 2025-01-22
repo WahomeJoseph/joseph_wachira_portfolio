@@ -15,33 +15,32 @@ export default function About() {
 
         <div className="flex flex-col px-4 md:px-10">
           <div className="grid grid-cols-3 md:grid-cols-2 gap-4 p-4 m-2 w-full items-center justify-between">
-            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-lg border-b-2 border-b-uscgold rounded-b-md">
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Web Development & Design</span>
+              <span className='text-center font-bold text-xl text-txtgpoppy'>HTML5, CSS3, React Js, TailWind CSS, SCSS</span>
             </div>
-            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-lg border-b-2 border-b-uscgold rounded-b-md">
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Backend Development</span>
+              <span className='text-center font-bold text-xl text-txtgpoppy'>Node Js, Express Js, PHP, MYSQL, Mongo DB</span>
             </div>
-            {/* <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-xl border-b-2 border-b-uscgold rounded-b-md">
-              <FaCode className="text-xl text-uscgold" />
-              <span className="text-txtcolor text-center">Technical User Support</span>
-              <span>Provide user support for</span>
-            </div> */}
-            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-xl border-b-2 border-b-uscgold rounded-b-md">
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Quality Assuarance</span>
-              <span>Cypress, Jest, Manual Testing.Currently learning</span>
+              <span className='text-center font-bold text-xl text-txtgpoppy'>Cypress, Jest, Manual Testing.Currently learning</span>
             </div>
           </div>
 
-          <div className="items-center">
+          <div className="items-center p-6 font-semibold">
             <p className="text-justify text-txtcolor">
-              I am a Full Stack Web Developer with a background in Computer Science and a passion for creating web applications. I have experience in building web applications using JavaScript, React, Node.js, and Express. I am a fast learner and a team player with excellent communication skills. I am excited to bring my skills to a team that values collaboration and creativity.
-            </p> 
-            <br />
+              Full Stack Web Developer with a background in Computer Science. Skilled in JavaScript, React, Node.js, and Express. Fast learner and team player with strong communication skills. Excited to join a team that values collaboration and creativity.
+            </p> <br />
             <p className="text-justify text-txtcolor">
-              I am a Full Stack Web Developer with a background in Computer Science and a passion for creating web applications. I have experience in building web applications using JavaScript, React, Node.js, and Express. I am a fast learner and a team player with excellent communication skills. I am excited to bring my skills to a team that values collaboration and creativity.
+              Have my hands on Quality Assurance and Software Testing. To gain experience in manual and automated testing, bug tracking, and test case design. I am detail-oriented, a problem solver, and a team player. Excited to ensure product quality and enhance user satisfaction.
+            </p> <br />
+            <p className="text-justify text-txtcolor">
+              Have skills in Technical User Support. Experienced in troubleshooting, resolving issues, and providing exceptional customer service. Proficient in various software and hardware solutions. Excited to enhance user satisfaction and ensure seamless technical operations.
             </p>
           </div>
         </div>
