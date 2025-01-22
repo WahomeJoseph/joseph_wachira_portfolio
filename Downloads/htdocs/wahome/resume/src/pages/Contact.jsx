@@ -67,7 +67,7 @@ export default function Contact() {
             className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy"
             placeholder="Message...">
           </textarea>
-          <button className="w-64 justify-center h-12 bg-bgcolor text-txtcolor text-2xl font-bold rounded-lg shadow-sm shadow-green-500 hover:bg-gpoppy hover:text-bgcolor transition duration-200">Submit</button>
+          <button className="w-64 justify-center h-12 bg-pink-600 text-txtcolor text-2xl font-bold rounded-lg shadow-sm shadow-green-500 hover:bg-gpoppy hover:text-bgcolor transition duration-200">Submit</button>
         </motion.form>
       </div>
     </motion.div>
