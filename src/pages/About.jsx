@@ -15,15 +15,15 @@ export default function About() {
 
         <div className="flex flex-col px-4 md:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 m-2 w-full items-center justify-between">
-            <div className="flex flex-col items-center justify-center space-x-2 p-4 m-4 shadow-lg border-b-2 border-b-uscgold rounded-b-md">
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-lg border-b-2 border-b-uscgold rounded-b-md">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-[#cccccc] text-center">Web Development & Design</span>
             </div>
-            <div className="flex flex-col items-center justify-center space-x-2 p-4 m-4 shadow-lg border-b-2 border-b-uscgold rounded-b-md">
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-lg border-b-2 border-b-uscgold rounded-b-md">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-[#cccccc] text-center">Backend Development</span>
             </div>
-            <div className="flex flex-col items-center justify-center space-x-2 p-4 m-4 shadow-xl border-b-2 border-b-uscgold rounded-b-md">
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4 shadow-xl border-b-2 border-b-uscgold rounded-b-md">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Technical User Support</span>
             </div>
