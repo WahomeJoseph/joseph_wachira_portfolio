@@ -45,6 +45,10 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <div>
+        <h2>Education</h2>
+      </div>
     </motion.div>
   );
 }
