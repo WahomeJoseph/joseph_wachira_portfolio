@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPhp, FaGitAlt, FaGithub, FaDatabase, FaBriefcase } from 'react-icons/fa'; 
-import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress, SiAzuredevops } from 'react-icons/si';
+import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress } from 'react-icons/si';
 import { IoLogoJavascript } from "react-icons/io";
 import { VscAzure } from "react-icons/vsc";
 import { motion } from 'framer-motion'

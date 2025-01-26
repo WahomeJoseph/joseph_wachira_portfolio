@@ -14,8 +14,8 @@ function Navbar() {
     <nav className="bg-bgcolor outline-none px-6 text-txtcolor">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-3">
-          <Link to="/" className="text-2xl font-semibold">
-            JW
+          <Link to="/" className="text-2xl italic font-semibold">
+            jw
           </Link>
         </div>
         <button 
