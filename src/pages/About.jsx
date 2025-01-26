@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { FaCode } from 'react-icons/fa';
 import { motion } from 'framer-motion'
@@ -11,29 +12,34 @@ export default function About() {
       <h2 className="text-xl md:text-2xl font-semibold text-uscgold text-center">About Me</h2>
 
       <div className="flex flex-col md:flex-row w-full px-4 md:px-8 gap-4 items-center justify-center">
-        <img src="./MAU_0026.JPG" alt="" className="w-48 h-48 md:w-96 md:h-96 rounded-full"/>
+        <motion.img src="./MAU_0026.JPG" alt="" hover whileHover={{ scale: 1.12 }} className="w-64 h-64 rounded-tr-xl rounded-bl-xl object-cover float-right md:w-1/3 md:h-auto"/>
 
         <div className="flex flex-col px-4 md:px-10">
-          <div className="grid grid-cols-3 md:grid-cols-2 gap-4 p-4 m-2 w-full items-center justify-between">
-            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4">
+          <div className="grid grid-cols-3 md:grid-cols-2 gap-4 p-4 m-2 items-center justify-between">
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Web Development & Design</span>
-              <span className='text-center font-bold text-xl text-txtgpoppy'>HTML5, CSS3, React Js, TailWind CSS, SCSS</span>
+              <span className='text-center font-semi-bold text-xl text-txtspan'>HTML5 &nbsp; CSS3 &nbsp; React Js &nbsp; TailWind CSS &nbsp; SCSS</span>
             </div>
-            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4">
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Backend Development</span>
-              <span className='text-center font-bold text-xl text-txtgpoppy'>Node Js, Express Js, PHP, MYSQL, Mongo DB</span>
+              <span className='text-center font-semi-bold text-xl text-txtspan'>Node Js &nbsp; Express Js &nbsp; PHP &nbsp; MYSQL &nbsp; Mongo DB</span>
             </div>
-            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-x-2 p-4 m-4">
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Quality Assuarance</span>
-              <span className='text-center font-bold text-xl text-txtgpoppy'>Cypress, Jest, Manual Testing.Currently learning</span>
+              <span className='text-center font-semi-bold text-xl text-txtspan'>Cypress &nbsp; Jest &nbsp; Docker &nbsp;Jira &nbsp; Manual Testing</span>
+            </div>
+            <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
+              <FaCode className="text-xl text-uscgold" />
+              <span className="text-txtcolor text-center">Technical User Support</span>
+              <span className='text-center font-semibold text-xl text-txtspan'>Provide user support to ensure proper hardware and software working.</span>
             </div>
           </div>
 
           <div className="items-center p-6 font-semibold">
-            <p className="text-justify text-txtcolor">
+            <p className="text-justify text-txtcolor list-disc list-inside">
               Full Stack Web Developer with a background in Computer Science. Skilled in JavaScript, React, Node.js, and Express. Fast learner and team player with strong communication skills. Excited to join a team that values collaboration and creativity.
             </p> <br />
             <p className="text-justify text-txtcolor">

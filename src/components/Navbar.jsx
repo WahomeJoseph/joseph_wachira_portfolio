@@ -27,8 +27,8 @@ function Navbar() {
           <span className="sr-only">Open main menu</span>
           <FaBars className="w-5 h-5 hover:text-uscgold" />
         </button>
-        <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-          <ul className="font-medium flex flex-col p-8 md:p-0 mt-6 border-2 border- md:flex-row md:space-x-8">
+        <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
+          <ul className="font-medium flex flex-col p-8 md:p-0 mt-6 md:flex-row md:space-x-12">
             <li>
               <Link to="/" className="block py-2 bg-transparent px-3 text-txtcolor md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
             </li>

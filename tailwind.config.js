@@ -10,6 +10,7 @@ export default {
         bgcolor: '#0C090A',
         bgcard: '#1b1416',
         txtcolor: '#cccccc',
+        txtspan: '#f7f4f3',
         gold: '#ffd700',
         hgold: '#fcc200',
         gpoppy: '#da9100',

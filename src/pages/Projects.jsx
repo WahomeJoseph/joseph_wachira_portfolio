@@ -14,6 +14,18 @@ export default function Projects() {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center w-full bg-transparent gap-6 p-4 md:p-8">
+        <div className="flex flex-col items-center bg-bgcolor space-y-2 rounded-md shadow-lg border-b-2 border-b-uscgold px-6 py-4 bg-transparent text-txtcolor">
+          <FaCode className="text-xl md:text-2xl text-center text-uscgold" />
+          <span className="text-lg md:text-xl font-semibold text-center">
+            Dental Clinic Management System
+          </span>
+          <img src="" alt="" className="w-full h-auto" />
+          <p className="text-center">Built a comprehensive dental clinic management system using the MERN (MongoDB, Express.js, React, Node.js). The system streamlines appointment scheduling, patient records management, billing and payment, and staff coordination. It includes a responsive interface for both administrators and patients, ensuring efficient clinic operations and an improved user experience.</p>
+          <a href="https://github.com/WahomeJoseph/MY-DENTAL_CLINIC.git"><button className="w-full py-6 md:w-44 h-10 bg-uscgold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy">
+            View More
+          </button>
+          </a>
+        </div>
         <div className="flex flex-col items-center space-y-2 rounded-md shadow-lg border-b-2 border-b-uscgold px-6 py-4 bg-transparent text-txtcolor">
           <FaCode className="text-xl md:text-2xl text-center text-uscgold" />
           <span className="text-lg md:text-xl font-semibold text-center">
