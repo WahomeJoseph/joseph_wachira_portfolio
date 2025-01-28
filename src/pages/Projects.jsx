@@ -16,7 +16,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center w-full bg-transparent gap-10 p-4 md:p-8">
         {/* dental clinic */}
         <div className="flex flex-col items-center bg-bgcard space-y-2 rounded-md shadow-sm shadow-[#00df82] px-4 py-4 text-txtcolor">
-        <span className="text-lg text-[#00df82] md:text-xl font-semibold text-center">
+        <span className="text-lg text-red-500 md:text-xl font-semibold text-center">
             Dental Clinic Management System
           </span>
           <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-md object-fit bg-cover bg-center" />
