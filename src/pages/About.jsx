@@ -34,7 +34,7 @@ export default function About() {
             <div className="flex bg-bgcard shadow-md shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Technical User Support</span>
-              <span className='text-center font-semibold text-xl text-txtspan'>Provide user support to ensure proper hardware and software working.</span>
+              <span className='text-center font-semi-bold text-xl text-txtspan'>Provide user support ensuring proper hardware and software working.</span>
             </div>
           </div>
 

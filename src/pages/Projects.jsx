@@ -14,62 +14,58 @@ export default function Projects() {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center w-full bg-transparent gap-6 p-4 md:p-8">
-        <div className="flex flex-col items-center bg-bgcolor space-y-2 rounded-md shadow-lg border-b-2 border-b-uscgold px-6 py-4 bg-transparent text-txtcolor">
-          <FaCode className="text-xl md:text-2xl text-center text-uscgold" />
-          <span className="text-lg md:text-xl font-semibold text-center">
+        {/* dental clinic */}
+        <div className="flex flex-col items-center bg-bgcard space-y-2 rounded-md shadow-sm shadow-[#00df82] px-4 py-4 text-txtcolor">
+        <span className="text-lg text-[#00df82] md:text-xl font-semibold text-center">
             Dental Clinic Management System
           </span>
-          <img src="" alt="" className="w-full h-auto" />
-          <p className="text-center">Built a comprehensive dental clinic management system using the MERN (MongoDB, Express.js, React, Node.js). The system streamlines appointment scheduling, patient records management, billing and payment, and staff coordination. It includes a responsive interface for both administrators and patients, ensuring efficient clinic operations and an improved user experience.</p>
-          <a href="https://github.com/WahomeJoseph/MY-DENTAL_CLINIC.git"><button className="w-full py-6 md:w-44 h-10 bg-uscgold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy">
+          <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-md object-fit bg-cover bg-center" />
+          
+          <p className="text-center">Build a system to manage operations in a dental clinic, appointments, reminders, billing</p>
+          <span className="text-center">React Js, React Router, Tailwind CSS, React Charts, Node Js, Mongo DB</span>
+          <a href="https://github.com/WahomeJoseph/MY-DENTAL_CLINIC.git"><button className="w-full items-center border border-[#00df82] rounded-sm shadow-sm p-2 hover:[#00df82]">
             View More
           </button>
           </a>
         </div>
-        <div className="flex flex-col items-center space-y-2 rounded-md shadow-lg border-b-2 border-b-uscgold px-6 py-4 bg-transparent text-txtcolor">
-          <FaCode className="text-xl md:text-2xl text-center text-uscgold" />
-          <span className="text-lg md:text-xl font-semibold text-center">
-            Dental Clinic Management System
+        {/* movies */}
+        <div className="flex flex-col items-center bg-bgcard space-y-2 rounded-md shadow-sm shadow-[#00df82] px-4 py-4 text-txtcolor">
+        <span className="text-lg text-[#00df82] md:text-xl font-semibold text-center">
+            Movies Search App
           </span>
-          <img src="" alt="" className="w-full h-auto" />
-          <p className="text-center">Built a comprehensive dental clinic management system using the MERN (MongoDB, Express.js, React, Node.js). The system streamlines appointment scheduling, patient records management, billing and payment, and staff coordination. It includes a responsive interface for both administrators and patients, ensuring efficient clinic operations and an improved user experience.</p>
-          <a href="https://github.com/WahomeJoseph/MY-DENTAL_CLINIC.git"><button className="w-full py-6 md:w-44 h-10 bg-uscgold text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy md:p-4">
+          <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-md object-fit bg-cover bg-center" />
+          
+          <p className="text-center">An application where users can search for movies and save favourites</p>
+          <span className="text-center">React Js, React Router, Tailwind CSS, MovieDB Api</span>
+          <a href="https://movies-pi-pearl.vercel.app/"><button className="w-full items-center border border-[#00df82] rounded-sm shadow-sm p-2 hover:[#00df82]">
             View More
           </button>
           </a>
         </div>
-        <div className="flex flex-col items-center space-y-2 rounded-md shadow-lg border-b-2 border-b-uscgold px-6 py-4 bg-transparent text-txtcolor">
-          <FaCode className="text-xl md:text-2xl text-center text-uscgold" />
-          <span className="text-lg md:text-xl font-semibold text-center">Booking System</span>
-          <img src="" alt="" className="w-full h-auto" />
-          <p className="text-center">
-          Developed a modern booking application using React.js and Vite. The platform enables users to browse services, check availability, and make reservations with ease. It features a fast-loading, responsive design optimized for seamless performance across various devices, ensuring a smooth and user-friendly booking experience.
-          </p>
-          <a href="https://github.com/WahomeJoseph/booking-assets.git"><button className="w-full py-6 md:w-44 h-10 bg-uscgold p-4 text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy md:p-4">
+        {/* booking */}
+        <div className="flex flex-col items-center bg-bgcard space-y-2 rounded-md shadow-sm shadow-[#00df82] px-4 py-4 text-txtcolor">
+        <span className="text-lg text-[#00df82] md:text-xl font-semibold text-center">
+            Book Accommodations App
+          </span>
+          <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-md object-fit bg-cover bg-center" />
+          
+          <p className="text-center">An application where users can book for vacancies in rooms, clone of booking.com</p>
+          <span className="text-center">React Js, React Router, Tailwind CSS, Calendar.js</span>
+          <a href="https://movies-pi-pearl.vercel.app/"><button className="w-full items-center border border-[#00df82] rounded-sm shadow-sm p-2 hover:[#00df82]">
             View More
           </button>
           </a>
         </div>
-        <div className="flex flex-col items-center space-y-2 rounded-md shadow-lg border-b-2 border-b-uscgold px-6 py-4 bg-transparent text-txtcolor">
-          <FaCode className="text-xl md:text-2xl text-center text-uscgold" />
-          <span className="text-lg md:text-xl font-semibold text-center">Farm Management System</span>
-          <img src="" alt="" className="w-full h-auto" />
-          <p className="text-center">
-          Lead a team of five to develop a farm management system using HTML, CSS, PHP, and MySQL. The system streamlines farm activity tracking, inventory management, and financial records. It also allows visitors to book farm tours and purchase farm products through a user-friendly interface. A secure database ensures seamless management of data, enhancing operational efficiency and user experience.
-          </p>
-          <a href=""><button className="w-full py-6 md:w-44 h-10 bg-uscgold p-4 text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy md:p-4">
-            View More
-          </button>
-          </a>
-        </div>
-        <div className="flex flex-col items-center space-y-2 rounded-md shadow-lg border-b-2 border-b-uscgold px-6 py-4 bg-transparent text-txtcolor">
-          <FaCode className="text-xl md:text-2xl text-center text-uscgold" />
-          <span className="text-lg md:text-xl font-semibold text-center">E-commerce System</span>
-          <img src="" alt="" className="w-full h-auto" />
-          <p className="text-center">
-          Developed a robust e-commerce system using the MERN stack (MongoDB, Express.js, React, Node.js). The platform features secure user authentication, a dynamic product catalog, a shopping cart, and seamless payment integration. It offers a responsive, user-friendly interface optimized for both desktop and mobile devices, ensuring a smooth shopping experience.
-          </p>
-          <a href="https://github.com/WahomeJoseph/trade.git"><button className="w-full py-6 md:w-44 h-10 bg-uscgold p-4 text-bgcolor text-lg md:text-xl rounded-md hover:bg-gpoppy md:p-4">
+        {/* ecommerce */}
+        <div className="flex flex-col items-center bg-bgcard space-y-2 rounded-md shadow-sm shadow-[#00df82] px-4 py-4 text-txtcolor">
+        <span className="text-lg text-[#00df82] md:text-xl font-semibold text-center">
+            Electironics e-shop
+          </span>
+          <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-md object-fit bg-cover bg-center" />
+          
+          <p className="text-center">Full stack application where users can purchase for electronic accessories with payment method options</p>
+          <span className="text-center">React Js, React Router, Tailwind CSS, Node Js, Mongo DB, Payment APIs</span>
+          <a href="https://github.com/WahomeJoseph/trade.git/"><button className="w-full items-center border border-[#00df82] rounded-sm shadow-sm p-2 hover:[#00df82]">
             View More
           </button>
           </a>
