@@ -13,7 +13,7 @@ export default function Projects() {
         My Works
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center w-full bg-transparent gap-6 p-4 md:p-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center w-full bg-transparent gap-10 p-4 md:p-8">
         {/* dental clinic */}
         <div className="flex flex-col items-center bg-bgcard space-y-2 rounded-md shadow-sm shadow-[#00df82] px-4 py-4 text-txtcolor">
         <span className="text-lg text-[#00df82] md:text-xl font-semibold text-center">
