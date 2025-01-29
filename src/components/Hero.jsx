@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
+import { SiAlx } from "react-icons/si";
 import { motion } from "framer-motion";
 
 function Hero() {
@@ -142,6 +143,19 @@ function Hero() {
             className="text-xl md:text-2xl text-white hover:text-uscgold"
           >
             <FaXTwitter />
+          </motion.a>
+
+          <motion.a
+            transition={{
+              type: "tween",
+              duration: 0.8,
+            }}
+            hover
+            whileHover={{ scale: 1.5 }}
+            href="https://ehub.alxafrica.com/profile/9478f7ba-427f-430b-9e77-5d952f10f284"
+            className="text-xl md:text-2xl text-white hover:text-uscgold"
+          >
+            <SiAlx />
           </motion.a>
         </ul>
       </div>
