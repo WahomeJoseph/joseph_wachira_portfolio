@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-bgcolor outline-none px-6 text-txtcolor">
+    <nav className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] outline-none px-6 text-txtcolor">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-3">
           <Link to="/" className="text-2xl italic font-semibold">
