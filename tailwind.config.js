@@ -18,14 +18,18 @@ export default {
         uscgold: '#ffcc00',
       },
       fontFamily: {
-         sans: ['Roboto', 'sans-serif'],
-         },
+        sans: ['Roboto', 'sans-serif'],
+      },
     },
     keyframes: {
-      glow: {
-        '0%, 100%': {boxShadow: '0 0 15px 4px rgba(255,215,0,0.8)'},
-        '50%': {boxShadow: '0 0 20px 8px rgba(255,215,0,1)'},
-      },
+      'border-spin': {
+          '100%': {
+            transform: 'rotate(-360deg)',
+          },
+        },
+        animation: {
+          'border-spin': 'border-spin 7s linear infinite',
+        },
     },
   },
   plugins: [],

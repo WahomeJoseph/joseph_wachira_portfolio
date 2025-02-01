@@ -35,8 +35,8 @@ export default function Projects() {
             Movies Search App
           </span>
           <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-          <p className="text-center">An application where users can search for movies and save favourites.</p>
-          <span className="text-center">React Js, React Router, Tailwind CSS, MovieDB Api</span>
+          <p className="text-center font-sans">An application where users can search for movies and save favourites.</p>
+          <span className="text-center font-sans">React Js, React Router, Tailwind CSS, MovieDB Api</span>
           <a href="https://movies-pi-pearl.vercel.app/">
             <button className="w-full border border-[#00df82] rounded-sm shadow-sm p-2 hover:bg-[#00df82]">
               View More
@@ -49,8 +49,8 @@ export default function Projects() {
             Book Accommodations App
           </span>
           <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-          <p className="text-center">An application where users can book for vacancies in rooms, clone of booking.com.</p>
-          <span className="text-center">React Js, React Router, Tailwind CSS, Calendar.js</span>
+          <p className="text-center font-sans">An application where users can book for vacancies in rooms, clone of booking.com.</p>
+          <span className="text-center font-sans">React Js, React Router, Tailwind CSS, Calendar.js</span>
           <a href="https://movies-pi-pearl.vercel.app/">
             <button className="w-full border border-[#00df82] rounded-sm shadow-sm p-2 hover:bg-[#00df82]">
               View More
@@ -63,8 +63,8 @@ export default function Projects() {
             Electronics e-shop
           </span>
           <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-          <p className="text-center">Application where users can purchase electronic accessories with payment method options.</p>
-          <span className="text-center">React Js, React Router, Tailwind CSS, Node Js, Mongo DB, Payment APIs</span>
+          <p className="text-center font-sans">Application where users can purchase electronic accessories with payment method options.</p>
+          <span className="text-center font-sans">React Js, React Router, Tailwind CSS, Node Js, Mongo DB, Payment APIs</span>
           <a href="https://github.com/WahomeJoseph/trade.git/">
             <button className="w-full border border-[#00df82] rounded-sm shadow-sm p-2 hover:bg-[#00df82]">
               View More
