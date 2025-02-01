@@ -127,19 +127,6 @@ function Hero() {
             }}
             hover
             whileHover={{ scale: 1.5 }}
-            href="https://www.instagram.com/sayjo.e?igshid=YzljYTk1ODg3Zg=="
-            className="text-xl md:text-2xl text-white hover:text-uscgold"
-          >
-            <FaInstagram />
-          </motion.a>
-
-          <motion.a
-            transition={{
-              type: "tween",
-              duration: 0.8,
-            }}
-            hover
-            whileHover={{ scale: 1.5 }}
             href="https://x.com/WachiraJoseph17?t=KGERM4FElIAFfhTfLpCMyw&s=09"
             className="text-xl md:text-2xl text-white hover:text-uscgold"
           >
