@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
@@ -9,8 +9,21 @@ import { motion } from "framer-motion";
 function Hero() {
   const [showMore, setShowMore] = useState(false);
   const navigate = useNavigate();
+  const messages = useMemo(() => ['React JS Development', 'Next JS Development', 'Node JS Development', 'Tailwind CSS', 'Shadcn & Material UI'], []);
+  const [message, setMessage] = useState(messages[0])
+  const [messageIndex, setMessageIndex] = useState(0)
   const [projects, setProjects] = useState(0);
   const [experience, setExperience] = useState(0);
+  
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setMessageIndex(prevIndex => (prevIndex + 1) % messages.length)
+      setMessage(messages[messageIndex])
+    }, 4000)
+
+    return () =>  clearTimeout(timer)
+  }, [messageIndex, messages])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,29 +41,27 @@ function Hero() {
 
   return (
     <motion.div
-      className="flex flex-col px-12 md:flex-row items-center justify-center w-full h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] text-txtcolor bg-cover bg-center"
+      className="flex flex-col px-12  md:flex-row items-center justify-center w-full h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] text-txtcolor bg-cover bg-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }} >
-      <div className="flex flex-col items-center text-center md:items-start justify-center w-full md:w-1/2 p-4">
+      <div className="flex flex-col items-center space-y-10 text-center md:items-start justify-center w-full md:w-1/2 p-6">
         <p className="text-center md:text-left text-xl md:text-2xl font-semi-bold text-txtcolor p-4">
-          <span>Hello, I&apos;m </span>
-          <span className="text-2xl md:text-3xl font-sans text-gpoppy">
-            Joseph Wachira
+          <span>Hello, <br /> I&apos;m &nbsp;</span>
+          <span className="text-4xl md:text-4xl font-sans text-gpoppy">
+            Joseph&nbsp;Wachira
           </span>{" "}
-          <span className="text-xl md:text-2xl text-txtcolor">
-            with + 2 years of experience in
+          <span className="text-xl md:text-2xl text-txtcolor">&nbsp;
+            with&nbsp; +2 &nbsp;years&nbsp;of&nbsp;experience&nbsp;in {''} 
           </span>
-          <br />
-          <span className="text-xl md:text-2xl font-sans text-txtcolor">
-          Web Development, React JS Development
+          <span className="text-xl md:text-2xl font-sans text-gpoppy">
+          {message}
           </span>{" "}
           <br />
-          
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 m-4 md:m-8">
-          <a href="https://docs.google.com/document/d/1GJP4jr36238ZO7xL97-NnOv1XgFISJxwNEU7h-Cy24k/edit?usp=drive_link">
+          <a href="https://docs.google.com/document/d/1rursKgMsUPkF0H77KJoMRdbUY6sdk8KrTn_Vli2eCtg/edit?usp=sharing">
             <motion.button
               whileHover={{ scale: 1.15 }}
               transition={{ type: "tween", duration: 1 }}
@@ -69,14 +80,14 @@ function Hero() {
         </div>
 
         <div className="flex flex-col items-center md:items-start">
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
             <span className="text-xl md:text-2xl text-txtcolor">Projects: {projects}</span>
             <span className="text-xl md:text-2xl text-txtcolor">Years of Experience: {experience}</span>
-          </div>
+          </div> */}
           <motion.button
             transition={{ type: "spring", bounce: 5 }}
             onClick={handleShow}
-            className="flex flex-col items-center mt-2 md:mt-4" /* Reduced margin-top */ >
+            className="flex flex-col justify-center pl-28 items-center mt-2 md:mt-4" /* Reduced margin-top */ >
             <FaAnglesDown className="text-xl md:text-2xl text-uscgold hover:text-gpoppy transition duration-300" />
             <span className="text-uscgold text-lg md:text-xl mt-2">
               {showMore ? "Show Less" : "Show More"}
@@ -91,7 +102,7 @@ function Hero() {
           alt="Animated"
           whileHover={{ scale: 1.12 }}
           className="w-80 h-80 sm:w-80 sm:h-80 md:w-96 md:h-96 border-b-4 border-gpoppy rounded-full object-cover"/>
-        <ul className="flex flex-row flex-wrap items-center justify-center gap-6 space-x-6 md:space-x-4 mt-4" /* Reduced margin-top */>
+        <ul className="flex flex-row flex-wrap items-center justify-center gap-6 space-x-6 md:space-x-4 mt-10" /* Reduced margin-top */>
           <motion.a
             transition={{ type: "tween", duration: 0.8 }}
             whileHover={{ scale: 1.5 }}

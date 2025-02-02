@@ -23,22 +23,22 @@ export default function About() {
 
         <div className="flex flex-col px-4 sm:px-2 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 m-2 items-center justify-between">
-            <div className="flex sm:text-sm sm:p-2 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] shadow-sm rounded-sm shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
+            <div className="flex sm:text-sm sm:p-2 bg-transparent shadow-sm rounded-sm shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor sm:text-sm text-center">Web Development & Design</span>
               <span className="text-center font-semi-bold text-xl text-txtspan">HTML5 &nbsp; CSS3 &nbsp; React Js &nbsp; TailWind CSS &nbsp; SCSS &nbsp; Next JS &nbsp; Material UI</span>
             </div>
-            <div className="flex bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] shadow-sm rounded-sm shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
+            <div className="flex bg-transparent shadow-sm rounded-sm shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Backend Development</span>
               <span className="text-center font-semi-bold text-xl text-txtspan">Node Js &nbsp; Express Js &nbsp; PHP &nbsp; MYSQL &nbsp; Mongo DB &nbsp; Restful API</span>
             </div>
-            <div className="flex bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] shadow-sm rounded-sm shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
+            <div className="flex bg-transparent shadow-sm rounded-sm shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Quality Assurance</span>
               <span className="text-center font-semi-bold text-xl text-txtspan">Cypress &nbsp; Jest &nbsp; Docker &nbsp;Jira &nbsp; Manual Testing &nbsp; APIs Testing &nbsp; code review</span>
             </div>
-            <div className="flex bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] shadow-sm rounded-sm shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
+            <div className="flex bg-transparent shadow-sm rounded-sm shadow-gpoppy flex-col items-center justify-center space-y-2 p-4 m-4">
               <FaCode className="text-xl text-uscgold" />
               <span className="text-txtcolor text-center">Technical User Support</span>
               <span className="text-center font-semi-bold text-xl text-txtspan">Provide user support ensuring proper hardware and software working.</span>

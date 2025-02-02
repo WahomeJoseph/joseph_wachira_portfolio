@@ -31,18 +31,18 @@ export default function Skills() {
   ];
 
   return (
-    <motion.div className="flex w-full flex-col bg-bgcolor min-h-screen items-center justify-center px-2 py-6 md:px-8"
+    <motion.div className="flex w-full flex-col bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] min-h-screen items-center justify-center px-2 py-6 md:px-8"
     initial={{ width: 0 }}
     animate={{ width: '100%' }}
     exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
-      <h2 className="text-center text-2xl md:text-3xl text-uscgold m-4">Skills & Experience</h2>
+      <h2 className="text-center text-2xl md:text-3xl text-gpoppy m-4">Skills & Experience</h2>
 
-      <div className="relative w-full max-w-4xl">
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 border-r-2 border-uscgold rounded-sm h-full hidden md:block"></div>
+      <div className="relative w-full bg-transparent max-w-4xl">
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 border-r-2 border-gpoppy rounded-sm h-full hidden md:block"></div>
         {work.map((work, index) => (
           <div key={work.id} className={`mb-8 flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center w-full text-justify`}>
             <div className='w-full md:w-1/2 flex justify-center'>
-              <div className='bg-transparent p-4 border-2 border-uscgold rounded-md shadow-customglow w-full md:w-3/4'>
+              <div className='bg-transparent p-4 shadow-sm shadow-gpoppy rounded-sm w-full md:w-3/4'>
                 <div className='flex items-center mb-2'>
                   <FaBriefcase className='text-uscgold text-xl'/>
                   <span className='ml-2 text-xl font-semibold text-gpoppy'>{work.position}</span>

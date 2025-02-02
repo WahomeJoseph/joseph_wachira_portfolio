@@ -30,19 +30,19 @@ function Navbar() {
         <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
           <ul className="font-medium flex flex-col p-8 md:p-0 mt-6 md:flex-row md:space-x-12">
             <li>
-              <Link to="/" className="block py-2 bg-transparent px-3 text-txtcolor md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
+              <Link to="/" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
             </li>
             <li>
-              <Link to="/about" className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">About Me</Link>
+              <Link to="/about" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">About Me</Link>
             </li>
             <li>
-              <Link to="/skills" className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Skills</Link>
+              <Link to="/skills" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Skills</Link>
             </li>
             <li>
-              <Link to="/projects" className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Projects</Link>
+              <Link to="/projects" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Projects</Link>
             </li>
             <li>
-              <Link to="/contact" className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Contact</Link>
+              <Link to="/contact" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gpoppy md:p-0">Contact</Link>
             </li>
           </ul>
         </div>
