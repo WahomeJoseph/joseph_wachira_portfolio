@@ -1,3 +1,6 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -19,7 +22,7 @@ export default {
         uscgold: '#ffcc00',
       },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
     keyframes: {
@@ -29,9 +32,11 @@ export default {
           },
         },
         animation: {
-          'border-spin': 'border-spin 7s linear infinite',
+          loading: "loading 1.2s ease-in-out infinite",
+          borderSpin: 'border-spin 7s linear infinite'
+
         },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-motion')]
 };

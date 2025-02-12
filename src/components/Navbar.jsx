@@ -14,7 +14,7 @@ function Navbar() {
     <nav className="fixed w-full outline-none px-6 mb-8 text-txtcolor">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mb-10 mx-auto p-4">
         <div className="flex items-center space-x-3">
-          <Link to="/" className="text-2xl italic font-semibold">
+          <Link to="/" className="text-2xl italic uppercase font-montserrat font-semibold">
             jw
           </Link>
         </div>
@@ -28,21 +28,21 @@ function Navbar() {
           <FaBars className="w-5 h-5 hover:text-gpoppy" />
         </button>
         <div className={`${isOpen ? 'block hidden' : ''} w-full md:block md:w-auto`}>
-          <ul className="font-medium flex flex-col p-8 md:p-0 mt-6 md:flex-row md:space-x-12">
+          <ul className="font-medium flex flex-col font-montserrat p-8 md:p-0 mt-6 md:flex-row md:space-x-12">
             <li>
               <Link to="/" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
             </li>
             <li>
-              <Link to="/about" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent md:hover:shadow-gpoppy md:p-0">About Me</Link>
+              <Link to="/about" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:p-0">About Me</Link>
             </li>
             <li>
-              <Link to="/skills" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent md:hover:shadow-gpoppy md:p-0">Skills</Link>
+              <Link to="/skills" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:p-0">Skills</Link>
             </li>
             <li>
-              <Link to="/projects" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent md:hover:shadow-gpoppy md:p-0">Projects</Link>
+              <Link to="/projects" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:p-0">Projects</Link>
             </li>
             <li>
-              <Link to="/contact" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent md:hover:shadow-gpoppy md:p-0">Contact</Link>
+              <Link to="/contact" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:p-0">Contact</Link>
             </li>
           </ul>
         </div>

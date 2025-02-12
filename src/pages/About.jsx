@@ -7,12 +7,11 @@ export default function About() {
   
   return (
     <motion.div
-      className="flex-col w-full min-h-screen p-4 md:p-4 space-y-4"
+      className="flex-col w-full min-h-screen p-4 md:p-4 font-montserrat space-y-4"
       initial={{ width: 0 }}
       animate={{ width: '100%' }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
-    >
-      <h2 className="text-xl md:text-2xl font-semibold text-gpoppy text-center">About Me</h2>
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}>
+      <h2 className="text-4xl font-bold uppercase bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent mt-24 mb-14 text-center">About Me</h2>
 
       <div className="flex flex-col md:flex-row w-full px-4 md:px-8 gap-4 items-center justify-center">
         <motion.img

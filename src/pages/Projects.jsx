@@ -1,20 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 import { motion } from 'framer-motion';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
 
 export default function Projects() {
   return (
     <motion.div 
-      className="flex flex-col w-full min-h-screen justify-between font-sans-montserrat items-center p-4 md:p-6"
+      className="flex flex-col w-full min-h-screen justify-between font-montserrat items-center p-4 md:p-6"
       initial={{ width: 0 }}
       animate={{ width: '100%' }}
       exit={{ x: window.innerWidth, transition: { duration: 0.5 } }} >
-      <h2 className="text-4xl uppercase tracking-wide  mt-20 font-bold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
+      <h2 className="text-4xl uppercase tracking-wide mt-20 mb-10 font-bold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
         My Works
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 px-4 py-10 mt-10 items-center w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 px-4 py-10 items-center w-full">
         {/* Dental Clinic */}
         <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
           <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
@@ -87,7 +85,7 @@ export default function Projects() {
           </a>
         </div>
         <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
-          <span className="text-lg md:text-xl font-semibold text-center text-gpoppy">
+          <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
             Geo Finder
           </span>
           <img src="/CountriesScreen.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
