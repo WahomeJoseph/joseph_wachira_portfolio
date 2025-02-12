@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function Contact() {
   return (
-    <motion.div className="flex flex-col bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] w-full min-h-screen py-12 px-6 md:px-12 md:py-4"
+    <motion.div className="flex flex-col w-full min-h-screen py-12 px-6 md:px-12 md:py-4"
     initial={{ width: 0 }}
     animate={{ width: '100%' }}
     exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
@@ -15,19 +15,19 @@ export default function Contact() {
       <div className="flex flex-col md:flex-row md:space-x-8 mt-6">
         {/* contact cards */}
         <div className="flex flex-col justify-between gap-2 mx-auto p-6 md:py-2">
-          <div className="flex flex-col bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-sm shadow-gpoppy hover:shadow-md hover:shadow-gpoppy transition-shadow duration-200">
+          <div className="flex flex-col items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-sm shadow-gpoppy hover:shadow-md hover:shadow-gpoppy transition-shadow duration-200">
             <FaLocationDot className='text-xl text-gpoppy'/>
             <span>Location</span>
             <span className="text-center">Nairobi, Kenya</span>
             <span className="text-center">Ready to relocate</span>
           </div>
-          <div className="flex flex-col bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-sm shadow-gpoppy hover:shadow-md hover:shadow-gpoppy transition-shadow duration-200">
+          <div className="flex flex-col items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-sm shadow-gpoppy hover:shadow-md hover:shadow-gpoppy transition-shadow duration-200">
             <FaEnvelope className='text-xl text-gpoppy'/>
             <span>Email</span>
             <a href="mailto:josephwachira589@gmail.com"><span className="text-center text-sm sm:text-base break-words">josephwachira589@gmail.com</span></a>
             <a href="mailto:wachirawahome81@gmail.com"><span className="text-center text-sm sm:text-base break-words">wachirawahome81@gmail.com</span></a>
           </div>
-          <div className="flex flex-col bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-sm shadow-gpoppy hover:shadow-md hover:shadow-gpoppy transition-shadow duration-200">
+          <div className="flex flex-col items-center space-y-2 rounded-xl p-4 m-4 text-txtcolor shadow-sm shadow-gpoppy hover:shadow-md hover:shadow-gpoppy transition-shadow duration-200">
             <FaPhone className='text-xl text-gpoppy'/>
             <span>Phone</span>
             <span className="text-center">+254-0795969757</span>
@@ -36,7 +36,7 @@ export default function Contact() {
         </div>
 
         {/* contact form */}
-        <motion.form className="flex flex-col w-full justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] py-4 px-6 space-y-6 shadow-md shadow-gpoppy rounded-xl text-uscgold md:w-1/2 mx-auto mt-6 md:mt-0">
+        <motion.form className="flex flex-col w-full justify-center py-4 px-6 space-y-6 shadow-md shadow-gpoppy rounded-xl text-uscgold md:w-1/2 mx-auto mt-6 md:mt-0">
           <input
             type="text"
             autoComplete="off"
@@ -67,7 +67,7 @@ export default function Contact() {
             className="px-4 p-2 rounded-md shadow-md border-2 border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy"
             placeholder="Message...">
           </textarea>
-          <button className="w-64 justify-center h-12 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] text-txtcolor text-2xl font-bold rounded-lg shadow-sm shadow-gpoppy hover:bg-gpoppy hover:text-txtcolor p-2 transition duration-200">Submit</button>
+          <button className="w-64 justify-center h-12 text-txtcolor text-2xl font-bold rounded-lg shadow-sm shadow-gpoppy hover:bg-gpoppy hover:text-txtcolor p-2 transition duration-200">Submit</button>
         </motion.form>
       </div>
     </motion.div>

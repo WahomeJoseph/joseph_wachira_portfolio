@@ -12,8 +12,7 @@ function Hero() {
   const messages = useMemo(() => ['React JS Development', 'Next JS Development', 'Node JS Development', 'Tailwind CSS', 'Shadcn & Material UI'], []);
   const [message, setMessage] = useState(messages[0])
   const [messageIndex, setMessageIndex] = useState(0)
-  const [projects, setProjects] = useState(0);
-  const [experience, setExperience] = useState(0);
+  
   
 
   useEffect(() => {
@@ -25,15 +24,6 @@ function Hero() {
     return () =>  clearTimeout(timer)
   }, [messageIndex, messages])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setProjects(prev => (prev < 20 ? prev + 2 : prev));
-      setExperience(prev => (prev < 3 ? prev + 1 : prev));
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const handleShow = () => {
     setShowMore(!showMore);
     navigate("/about" , "/skills" , "/projects");
@@ -41,10 +31,12 @@ function Hero() {
 
   return (
     <motion.div
-      className="flex flex-col px-12  md:flex-row items-center justify-center w-full h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] text-txtcolor bg-cover bg-center"
+      className="flex flex-col px-12  md:flex-row items-center justify-center w-full h-screen text-txtcolor bg-cover bg-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }} >
+      exit={{ opacity: 0 }}
+     >
+        
       <div className="flex flex-col items-center space-y-10 text-center md:items-start justify-center w-full md:w-1/2 p-6">
         <p className="text-center md:text-left text-xl md:text-2xl font-semi-bold text-txtcolor p-4">
           <span>Hello, <br /> I&apos;m &nbsp;</span>
@@ -80,10 +72,6 @@ function Hero() {
         </div>
 
         <div className="flex flex-col items-center md:items-start">
-          {/* <div className="flex gap-4">
-            <span className="text-xl md:text-2xl text-txtcolor">Projects: {projects}</span>
-            <span className="text-xl md:text-2xl text-txtcolor">Years of Experience: {experience}</span>
-          </div> */}
           <motion.button
             transition={{ type: "spring", bounce: 5 }}
             onClick={handleShow}

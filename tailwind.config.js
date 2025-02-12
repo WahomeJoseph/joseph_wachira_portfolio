@@ -6,6 +6,7 @@ export default {
       animation: {
         glow: 'glow 1.5s infinite',
       },
+      // bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a]
       colors: {
         bgcolor: '#0C090A',
         bgcard: '#1b1416',
@@ -13,7 +14,7 @@ export default {
         txtspan: '#f7f4f3',
         gold: '#ffd700',
         hgold: '#fcc200',
-        gpoppy: '#da9100',
+        gpoppy: '#0000aa',
         gbrown: '#996515',
         uscgold: '#ffcc00',
       },

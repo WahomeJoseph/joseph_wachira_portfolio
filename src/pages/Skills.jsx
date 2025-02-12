@@ -31,7 +31,7 @@ export default function Skills() {
   ];
 
   return (
-    <motion.div className="flex w-full flex-col bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a] min-h-screen items-center justify-center px-2 py-6 md:px-8"
+    <motion.div className="flex w-full flex-col min-h-screen items-center justify-center px-2 py-6 md:px-8"
     initial={{ width: 0 }}
     animate={{ width: '100%' }}
     exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
