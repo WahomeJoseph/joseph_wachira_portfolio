@@ -8,8 +8,10 @@ export default {
     extend: {
       animation: {
         glow: 'glow 1.5s infinite',
+        fadeIn: 'fadeIn 1s ease-in-out',
+        fadeOut: 'fadeOut 1s ease-in-out',
+        borderSpin: 'border-spin linear infinite',
       },
-      // bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0f172a] via-[#1e1a78] to-[#0f172a]
       colors: {
         bgcolor: '#0C090A',
         bgcard: '#1b1416',
@@ -24,19 +26,22 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
-    },
-    keyframes: {
-      'border-spin': {
+      keyframes: {
+        'border-spin': {
           '100%': {
             transform: 'rotate(-360deg)',
           },
         },
-        animation: {
-          loading: "loading 1.2s ease-in-out infinite",
-          borderSpin: 'border-spin 7s linear infinite'
-
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
         },
+        fadeOut: {
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
+      },
     },
   },
-  plugins: [require('tailwindcss-motion')]
+  plugins: [require('tailwindcss-motion')],
 };

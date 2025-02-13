@@ -40,7 +40,7 @@ function Hero() {
           <span className="text-[3.5rem] font-montserrat text-gpoppy">
             Joseph&nbsp;Wachira
           </span><br />
-          <span className="text-xl md:text-2xl tracking-wide text-txtcolor">&nbsp;
+          <span className="text-xl md:text-2xl tracking-wide text-txtcolor motion-preset-typewriter-[24]">&nbsp;
             with&nbsp; +2 &nbsp;years&nbsp;of&nbsp;experience&nbsp;in {''}
           </span> <br />
           <span className="text-xl tracking-wide md:text-2xl font-sans text-gpoppy">
