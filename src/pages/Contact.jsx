@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { motion } from 'framer-motion'
+import { SiAlx } from "react-icons/si";
 import { Animate } from "../components/Animate";
 
 export default function Contact() {
@@ -76,10 +77,47 @@ export default function Contact() {
         </motion.form>
       </div>
 
-      <div className="border-t border-[#000fff] m-10">
-
+      <div className="sticky flex flex-row justify-between border-t border-[#000fff] p-10 mt-10 mx-6">
+        <span className="text-center text-txtspan hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">WahomeJoseph &copy; 2025</span>
+        <ul className="flex flex-row flex-wrap items-center justify-center gap-6 space-x-6 md:space-x-4">
+          <motion.a
+            animate={{ rotate: 360 }}
+            transition={{ type: "tween", duration: 0.4 }}
+            whileHover={{ scale: 1.5 }}
+            href="https://github.com/WahomeJoseph"
+            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            <FaGithub />
+          </motion.a>
+          <motion.a
+            transition={{ type: "tween", duration: 0.8 }}
+            whileHover={{ scale: 1.5 }}
+            href="https://www.linkedin.com/in/joseph-wachira-202a7023"
+            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            <FaLinkedinIn />
+          </motion.a>
+          <motion.a
+            transition={{ type: "tween", duration: 0.8 }}
+            whileHover={{ scale: 1.5 }}
+            href="https://mail.google.com/mail/"
+            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            <FaEnvelope />
+          </motion.a>
+          <motion.a
+            transition={{ type: "tween", duration: 0.8 }}
+            whileHover={{ scale: 1.5 }}
+            href="https://x.com/WachiraJoseph17?t=KGERM4FElIAFfhTfLpCMyw&s=09"
+            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            <FaTwitter />
+          </motion.a>
+          <motion.a
+            transition={{ type: "tween", duration: 0.8 }}
+            whileHover={{ scale: 1.5 }}
+            href="https://ehub.alxafrica.com/profile/9478f7ba-427f-430b-9e77-5d952f10f284"
+            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            <SiAlx />
+          </motion.a>
+        </ul>
       </div>
-
     </motion.div>
   );
 }

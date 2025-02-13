@@ -30,7 +30,7 @@ function Navbar() {
         <div className={`${isOpen ? 'block hidden' : ''} w-full md:block md:w-auto`}>
           <ul className="font-medium flex flex-col font-montserrat p-8 md:p-0 mt-6 md:flex-row md:space-x-12">
             <li>
-              <Link to="/" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor md:bg-transparent md:text-gpoppy md:p-0">Home</Link>
+              <Link to="/" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:text-gpoppy md:p-0">Home</Link>
             </li>
             <li>
               <Link to="/about" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:p-0">About Me</Link>
