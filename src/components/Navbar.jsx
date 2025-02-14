@@ -11,23 +11,20 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed w-full outline-none px-6 mb-8 text-txtcolor">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mb-10 mx-auto p-4">
-        <div className="flex items-center space-x-3">
-          <Link to="/" className="text-2xl italic uppercase font-montserrat font-semibold">
-            jw
-          </Link>
-        </div>
-        <button 
+    <div className="fixed w-full outline-none px-6 sm:bg-gpoppy sm:fixed z-10 text-txtcolor">
+      <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mb-10 mx-auto mt-2">
+        <Link to="/" className="flex text-2xl tracking-wide uppercase font-montserrat font-semi-bold">
+          jw
+        </Link>
+        <button
           onClick={toggleNavbar}
-          type="button" 
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-txtcolor rounded-lg md:hidden hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-gpoppy" 
-          aria-controls="navbar-default" 
+          type="button"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-txtcolor rounded-lg md:hidden hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-gpoppy"
+          aria-controls="navbar-default"
           aria-expanded={isOpen}>
-          <span className="sr-only">Open main menu</span>
-          <FaBars className="w-5 h-5 hover:text-gpoppy" />
+          <FaBars className="w-5 h-5 hover:text-txtspan" />
         </button>
-        <div className={`${isOpen ? 'block hidden' : ''} w-full md:block md:w-auto`}>
+        <div className={`${isOpen ? 'block hidden' : 'sticky shadow-xl'} w-full md:block md:w-auto`}>
           <ul className="font-medium flex flex-col font-montserrat p-8 md:p-0 mt-6 md:flex-row md:space-x-12">
             <li>
               <Link to="/" smooth="true" duration={500} className="block py-2 bg-transparent px-3 text-txtcolor hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:text-gpoppy md:p-0">Home</Link>
@@ -46,8 +43,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
 

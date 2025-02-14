@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { FaDownload, FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
 import { SiAlx } from "react-icons/si";
 import { motion } from "framer-motion";
@@ -29,12 +29,12 @@ function Hero() {
 
   return (
     <motion.div
-      className="flex flex-col px-12  md:flex-row items-center font-montserrat justify-center w-full h-screen text-txtcolor bg-cover bg-center"
+      className="flex flex-col px-12 md:flex-row items-center font-montserrat justify-center w-full h-screen text-txtcolor bg-cover bg-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}>
 
-      <div className="flex flex-col items-center space-y-10 text-center md:items-start justify-center w-full md:w-1/2 p-6">
+      <div className="flex flex-col items-center space-y-10 text-center md:items-start justify-center w-full mt-12 md:w-1/2 p-6">
         <p className="text-center md:text-left text-xl md:text-2xl font-semi-bold text-txtcolor p-4 motion-scale-in-[0.5] motion-rotate-in-[-0.2deg] motion-blur-in-[10px] motion-delay-[1s]/rotate motion-delay-[1s]/blur">
           <span className="text-[4rem] font-sans text-gpoppy">I&apos;m &nbsp;</span>
           <span className="text-[3.5rem] font-montserrat text-gpoppy">
