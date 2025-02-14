@@ -13,9 +13,9 @@ export default function Contact() {
 
       <div className="flex flex-col md:flex-row">
         {/* contact cards */}
-        <div className="flex flex-col justify-between gap-2 mx-auto p-6 md:py-2">
+        <div className="flex flex-col gap-2 mx-2 sm:w-full p-6 md:py-2">
           <Animate>
-            <div className="flex flex-col items-center space-y-2 border border-gpoppy shadow-sm shadow-gpoppy rounded-md p-4 m-4 text-txtcolor">
+            <div className="flex flex-col items-center space-y-2 border border-gpoppy shadow-sm shadow-gpoppy rounded-md p-4 m-4 sm:mx-4 text-txtcolor">
               <FaLocationDot className='text-2xl text-gpoppy' />
               <span>Location</span>
               <span className="text-center animate-glow">Nairobi, Kenya</span>
@@ -41,7 +41,7 @@ export default function Contact() {
         </div>
 
         {/* contact form */}
-        <motion.form className="flex flex-col w-full justify-center py-4 px-6 space-y-6 shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] rounded-md text-txtspan md:w-1/2 mx-auto mt-6 md:mt-0">
+        <motion.form className="flex flex-col justify-center py-4 px-6 space-y-6 shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] rounded-md text-txtspan md:w-full sm:w-full mx-auto mt-6 md:mt-0">
           <input
             type="text"
             autoComplete="off"

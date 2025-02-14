@@ -29,12 +29,12 @@ function Hero() {
 
   return (
     <motion.div
-      className="flex flex-col px-12 md:flex-row items-center font-montserrat justify-center w-full h-screen text-txtcolor bg-cover bg-center"
+      className="flex flex-col px-12 md:flex-row items-center font-montserrat md:mb-0 justify-center w-full h-screen text-txtcolor bg-cover bg-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}>
 
-      <div className="flex flex-col items-center space-y-10 text-center md:items-start justify-center w-full mt-12 md:w-1/2 p-6">
+      <div className="flex flex-col items-center space-y-10 md:mt-0 sm:mt-[20rem] text-center md:items-start justify-center w-full md:w-1/2 p-6">
         <p className="text-center md:text-left text-xl md:text-2xl font-semi-bold text-txtcolor p-4 motion-scale-in-[0.5] motion-rotate-in-[-0.2deg] motion-blur-in-[10px] motion-delay-[1s]/rotate motion-delay-[1s]/blur">
           <span className="text-[4rem] font-sans text-gpoppy">I&apos;m &nbsp;</span>
           <span className="text-[3.5rem] font-montserrat text-gpoppy">
@@ -49,7 +49,7 @@ function Hero() {
           <br />
         </p>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 m-4 md:m-8">
+        <div className="flex flex-col md:flex-row sm:flex sm:flex-row sm:gap-10 items-center justify-between gap-4 md:gap-6 m-4 md:m-8">
           <a href="https://docs.google.com/document/d/1rursKgMsUPkF0H77KJoMRdbUY6sdk8KrTn_Vli2eCtg/edit?usp=sharing">
             <motion.button
               whileHover={{ scale: 1.15 }}
@@ -81,7 +81,7 @@ function Hero() {
       </div>
 
       {/* image part */}
-      <div className="flex flex-col items-center justify-center w-full md:w-1/2 p-4">
+      <div className="flex flex-col items-center md:mb-0 justify-center w-full md:w-1/2 p-4">
         <motion.img
           src='/public/MAU_0026.JPG'
           alt="Animated"

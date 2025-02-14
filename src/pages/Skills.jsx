@@ -1,74 +1,15 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPhp, FaGitAlt, FaGithub, FaDatabase, FaBriefcase } from 'react-icons/fa'; 
-import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress } from 'react-icons/si';
-import { IoLogoJavascript } from "react-icons/io";
-import { VscAzure } from "react-icons/vsc";
-import { motion } from 'framer-motion'
+import { Animate } from "../components/Animate"
+import SkillsCard from "../components/SkillsCard"
 
-export default function Skills() {
-  const work = [
-    { id:1, position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication and innovative problem-solving.'},
-    { id:2, position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.'},
-    { id:3, position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.'},
-  ];
-
-  const skills = [ 
-    { name: 'JavaScript', icon: <IoLogoJavascript className="text-yellow-500 text-3xl" /> }, 
-    { name: 'React JS', icon: <FaReact className="text-blue-500 text-3xl" /> }, 
-    { name: 'Node JS', icon: <FaNodeJs className="text-green-600 text-3xl" /> }, 
-    { name: 'PHP', icon: <FaPhp className="text-purple-600 text-3xl" /> },
-    { name: 'CSS', icon: <FaCss3Alt className="text-blue-600 text-3xl" /> }, 
-    { name: 'HTML', icon: <FaHtml5 className="text-orange-600 text-3xl" /> }, 
-    { name: 'Express', icon: <SiExpress className="text-gray-600 text-3xl" /> }, 
-    { name: 'MongoDB', icon: <SiMongodb className="text-green-700 text-3xl" /> },
-    { name: 'MySQL', icon: <SiMysql className="text-blue-500 text-3xl" /> }, 
-    { name: 'MariaDB', icon: <SiMariadb className="text-blue-600 text-3xl" /> }, 
-    { name: 'Git & GitHub', icon: <FaGitAlt className="text-red-600 text-3xl" />, altIcon: <FaGithub className="text-black text-3xl" /> }, 
-    { name: 'Postman', icon: <SiPostman className="text-orange-600 text-3xl" /> }, 
-    { name: 'APIs', icon: <FaDatabase className="text-gray-700 text-3xl" /> }, 
-    { name: 'Azure AI', icon: <VscAzure className="text-blue-700 text-3xl" /> } 
-  ];
+const Skills = () => {
 
   return (
-    <motion.div className="flex w-full flex-col min-h-screen items-center justify-center px-2 py-6 md:px-8"
-    initial={{ width: 0 }}
-    animate={{ width: '100%' }}
-    exit={{ x: window.innerWidth, transition: { duration: 0.2} }}>
-      <h2 className="text-center text-2xl md:text-3xl text-gpoppy m-4">Skills & Experience</h2>
 
-      <div className="relative w-full bg-transparent max-w-4xl">
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 border-r-2 border-gpoppy rounded-sm h-full hidden md:block"></div>
-        {work.map((work, index) => (
-          <div key={work.id} className={`mb-8 flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center w-full text-justify`}>
-            <div className='w-full md:w-1/2 flex justify-center'>
-              <div className='bg-transparent p-4 shadow-sm shadow-gpoppy rounded-sm w-full md:w-3/4'>
-                <div className='flex items-center mb-2'>
-                  <FaBriefcase className='text-uscgold text-xl'/>
-                  <span className='ml-2 text-xl font-semibold text-gpoppy'>{work.position}</span>
-                </div>
-                <div className='text-gpoppy text-center'>{work.organization}</div>
-                <div className='text-gpoppy text-center'>{work.duration}</div>
-                <div className='text-txtcolor text-justify'>{work.description}</div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Skills Marquee */}
-      <div className="mt-8 w-full overflow-hidden">
-        <div className="marquee-container">
-          <div className="marquee-content flex space-x-8">
-            {skills.map((skill, index) => (
-              <div key={index} className="text-2xl bg-transparent text-txtcolor px-4 py-2 rounded-md shadow-xl whitespace-nowrap justify-center flex items-center space-x-2">
-                {skill.icon || skill.altIcon}
-                <span>{skill.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
+    <div className="flex flex-col w-full min-h-screen font-montserrat py-10 px-4">
+      <h2 className="text-4xl font-bold uppercase bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent mt-24 mb-14 text-center">Skills and Experience</h2>
+      <Animate><SkillsCard /> </Animate>
+    </div>
+  )
 }
+
+export default Skills
