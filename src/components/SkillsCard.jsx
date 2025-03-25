@@ -1,17 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPhp, FaGitAlt, FaGithub, FaDatabase, FaBriefcase } from 'react-icons/fa';
-import { SiMongodb, SiMysql, SiMariadb, SiPostman, SiExpress } from 'react-icons/si';
+import { SiMongodb, SiMysql, SiPostman, SiExpress } from 'react-icons/si';
 import { IoLogoJavascript } from "react-icons/io";
 import { VscAzure } from "react-icons/vsc";
 
 export default function SkillsCard() {
   const work = [
-    { id: 1, position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication and innovative problem-solving.' },
+    { id: 1, position: 'Software Engineering Trainee', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication and innovative problem-solving.' },
     { id: 2, position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.' },
-    { id: 3, position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.' },
-    { id: 3, position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.' },
-    { id: 3, position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.' },
+    { id: 3, position: 'Quality Analyst', organization: 'Qace Academy', duration: 'Jan 2025 - Feb 2025', description: 'Conducted thorough testing of web applications, identifying and documenting bugs. Collaborated with developers to ensure high-quality software delivery. Enhanced skills in manual and automated testing, and gained experience with tools like Selenium and JIRA.' },
+    { id: 4, position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.' },
   ];
 
   const skills = [
@@ -25,7 +24,6 @@ export default function SkillsCard() {
     { name: 'Express', icon: <SiExpress className="text-gray-600 text-3xl" /> },
     { name: 'MongoDB', icon: <SiMongodb className="text-green-700 text-3xl" /> },
     { name: 'MySQL', icon: <SiMysql className="text-blue-500 text-3xl" /> },
-    { name: 'MariaDB', icon: <SiMariadb className="text-blue-600 text-3xl" /> },
     { name: 'Git & GitHub', icon: <FaGitAlt className="text-red-600 bg-[#f1f1f1] text-3xl" />, altIcon: <FaGithub className="text-black text-3xl" /> },
     { name: 'Postman', icon: <SiPostman className="text-orange-600 text-3xl" /> },
     { name: 'APIs', icon: <FaDatabase className="text-gray-700 text-3xl" /> },

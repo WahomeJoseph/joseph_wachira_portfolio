@@ -41,7 +41,7 @@ function Hero() {
             Joseph&nbsp;Wachira
           </span><br />
           <span className="text-xl md:text-2xl tracking-wide text-txtcolor motion-preset-typewriter-[24]">&nbsp;
-            with&nbsp; +2 &nbsp;years&nbsp;of&nbsp;experience&nbsp;in {''}
+            with&nbsp;of&nbsp;experience&nbsp;in {''}
           </span> <br />
           <span className="text-xl tracking-wide md:text-2xl font-sans text-gpoppy">
             {message}

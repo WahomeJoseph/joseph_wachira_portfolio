@@ -12,7 +12,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-14 px-4 py-10 items-center w-full">
         {/* Dental Clinic */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               Dental Clinic Management System
             </span>
@@ -28,13 +28,13 @@ export default function Projects() {
         </Animate>
         {/* JW Recipes */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               JW Recipes
             </span>
             <img src="/nextfood.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
             <p className="text-center">Build a simple app for users to search for a recipe, it allows users to also share their recipes with the community</p>
-            <span className="text-center">Next Js,Tailwind CSS, SQLite3</span>
+            <span className="text-center">Next Js,Tailwind CSS, betterSQLite3</span>
             <a href="https://food-ashen-six.vercel.app/">
               <button className="w-full border border-gpoppy rounded-sm shadow-sm p-2 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
                 Check it Out
@@ -44,12 +44,11 @@ export default function Projects() {
         </Animate>
         {/* Movies */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               Movies Search App
             </span>
-            <img src="/MoviesScreen.png
-          " alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
+            <img src="/MoviesScreen.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
             <p className="text-center font-sans">An application where users can search for movies and save favourites.</p>
             <span className="text-center font-sans">React Js, React Router, Tailwind CSS, MovieDB Api</span>
             <a href="https://movies-pi-pearl.vercel.app/">
@@ -61,14 +60,14 @@ export default function Projects() {
         </Animate>
         {/* Booking */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
-              Book Accommodations App
+              Sofa Selling App
             </span>
-            <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-            <p className="text-center font-sans">An application where users can book for vacancies in rooms, clone of booking.com.</p>
-            <span className="text-center font-sans">React Js, React Router, Tailwind CSS, Calendar.js</span>
-            <a href="https://movies-pi-pearl.vercel.app/">
+            <img src="/sofalux.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
+            <p className="text-center font-sans">An application where users can purchase sofas for their office and homes. Users can also request for sofa revamp</p>
+            <span className="text-center font-sans">Next Js, Tailwind CSS, betterSQLite3, Node js, API</span>
+            <a href="https://sofa-six.vercel.app/">
               <button className="w-full border border-gpoppy rounded-sm shadow-sm p-2 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
                 Check it Out
               </button>
@@ -77,11 +76,11 @@ export default function Projects() {
         </Animate>
         {/* Ecommerce */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               E-Shop
             </span>
-            <img src="/EcommScreen.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
+            <img src="/e-shop.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
             <p className="text-center font-sans">Application where users can purchase electronic accessories with payment method options.</p>
             <span className="text-center font-sans">React Js, React Router, Tailwind CSS, Node Js, Mongo DB, Payment APIs</span>
             <a href="https://github.com/WahomeJoseph/trade.git/">
@@ -93,7 +92,7 @@ export default function Projects() {
         </Animate>
         {/* geofinder app */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               Geo Finder
             </span>
