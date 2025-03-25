@@ -83,7 +83,7 @@ function Hero() {
       {/* image part */}
       <div className="flex flex-col items-center md:mb-0 justify-center w-full md:w-1/2 p-4">
         <motion.img
-          src='/public/MAU_0026.JPG'
+          src='DSC_6976.jpg'
           alt="Animated"
           transition={{ duration: 1 }}
           whileHover={{ scale: 1.12 }}

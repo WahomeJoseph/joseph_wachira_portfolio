@@ -12,16 +12,16 @@ export default function About() {
 
       <div className="flex flex-col md:flex-row w-full px-4 md:px-8 gap-4 items-center justify-center">
         <motion.img
-          src="./MAU_0026.JPG"
-          alt=""
+          src="././DSC_6976.jpg"
+          alt="jw"
           whileHover={{ scale: 1.12 }}
-          className="w-64 h-64 rounded-tr-xl rounded-bl-xl sm:sr-only object-cover float-right md:w-1/3 md:h-auto" />
+          className="w-64 h-64 rounded-tr-xl rounded-bl-xl object-cover float-right md:w-1/3 md:h-auto" />
 
         <div className="flex flex-col px-4 sm:px-2 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 z-1 opacity-100 items-center">
             <div className="flex sm:text-sm sm:p-2 md:p-3 border border-[#000fff] shadow-md rounded-md h-full shadow-gpoppy flex-col items-center justify-center hover:scale-105 transition-all ease-in-out duration-200 space-y-2 m-4">
               <FaCode className="text-2xl" />
-              <span className="text-txtcolor text-xl text-center">Web Development & Design</span>
+              <span className="text-txtcolor text-xl text-center">Frontend Development & Design</span>
               <span className="text-center font-semi-bold text-sm text-txtspan">HTML5 &nbsp; CSS3 &nbsp; React Js &nbsp; TailWind CSS &nbsp; SCSS &nbsp; Next JS &nbsp; Material UI</span>
             </div>
             <div className="flex sm:text-sm sm:p-2 md:p-3 border border-[#000fff] sm:p-2 shadow-md rounded-md h-full shadow-gpoppy flex-col items-center justify-center  hover:scale-105 transition-all ease-in-out duration-200 space-y-2 m-4">
