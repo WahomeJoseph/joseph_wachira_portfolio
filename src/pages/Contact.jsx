@@ -9,7 +9,8 @@ import { Animate } from "../components/Animate";
 export default function Contact() {
   return (
     <motion.div className="flex flex-col w-full min-h-screen font-montserrat py-10 px-4">
-      <h2 className="text-4xl uppercase tracking-wide mt-20 mb-10 font-bold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">Contact Me</h2>
+      <h2 className="text-3xl text-[#ddd6cb] uppercase tracking-wide mt-20 mb-10 font-bold text-center">Contact Me</h2>
+      <span className='text-base font-semi-bold text-[#ddd6cb] mb-4 text-center'>𝓡𝓮𝓪𝓬𝓱 𝓞𝓾𝓽</span>
 
       <div className="flex flex-col md:flex-row">
         {/* contact cards */}
@@ -41,7 +42,7 @@ export default function Contact() {
         </div>
 
         {/* contact form */}
-        <motion.form className="flex flex-col justify-center py-4 px-6 space-y-6 shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] rounded-md text-txtspan md:w-full sm:w-full mx-6 mt-6 md:mt-0">
+        <motion.form className="flex flex-col justify-center py-4 px-6 space-y-6 shadow-[0px_0px_10px_0px_rgba(20,_30,_203,_0.88)] rounded-md text-txtspan md:w-full sm:w-full mx-6 mt-6 md:mt-0">
           <input
             type="text"
             autoComplete="off"

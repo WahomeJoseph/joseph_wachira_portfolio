@@ -7,10 +7,10 @@ import { VscAzure } from "react-icons/vsc";
 
 export default function SkillsCard() {
   const work = [
-    { id: 1, position: 'Software Engineering Trainee', organization: 'Power Learn Project Africa', duration: 'Aug 2024 - Dec 2024', description: 'During this period, I gained several skills. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication and innovative problem-solving.' },
-    { id: 2, position: 'Frontend Developer', organization: 'Dedan Kimathi', duration: 'Oct 2021 - Dec 2024', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.' },
-    { id: 3, position: 'Quality Analyst', organization: 'Qace Academy', duration: 'Jan 2025 - Feb 2025', description: 'Conducted thorough testing of web applications, identifying and documenting bugs. Collaborated with developers to ensure high-quality software delivery. Enhanced skills in manual and automated testing, and gained experience with tools like Selenium and JIRA.' },
-    { id: 4, position: 'Technical User Support', organization: 'University Of Nairobi', duration: 'Aug 2024 - Dec 2024', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.' },
+    { id: 1, position: 'Software Engineering Intern', organization: 'Power Learn Project Africa', duration: '4 months', description: 'During this period, I gained several skills. For my project I successfully developed a telemedicine application aimed at improving healthcare accessibility, utilizing MYSQL,NodeJS,HTML,CSS. This experience honed my skills in coding,teamwork,communication and innovative problem-solving.' },
+    { id: 2, position: 'Frontend Developer', organization: 'Self Taught DeKUT', duration: '3 months', description: 'Worked on various personal web development projects, enhancing UI/UX with modern design principles. Gained proficiency in React, JavaScript, and HTML CSS.' },
+    { id: 3, position: 'Quality Analyst Trainee', organization: 'Qace Academy', duration: '2 months', description: 'Conducted thorough testing of web applications, identifying and documenting bugs. Collaborated with developers to ensure high-quality software delivery. Enhanced skills in manual and automated testing, and gained experience with tools like Selenium and JIRA.' },
+    { id: 4, position: 'Technical User Support', organization: 'UON IT Dept', duration: '3 months', description: 'Provided technical user support at the University of Nairobi, assisting staff and students with IT-related issues. Gained hands-on experience in troubleshooting hardware and software problems, network configuration, and system maintenance.' },
   ];
 
   const skills = [
@@ -31,20 +31,26 @@ export default function SkillsCard() {
   ];
 
   return (
-    <div className="flex w-full flex-col min-h-screen items-center justify-center px-2 py-6 md:px-8">
+    <div className="flex w-full flex-col min-h-screen items-center justify-center px-20 py-4">
       <section className="sticky w-full bg-transparent p-6">
-        {/* <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 border-r-2 border-gpoppy rounded-sm h-full hidden md:block"></div> */}
         {work.map((work, index) => (
-          <div key={work.id} className={`mb-8 flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center w-full text-justify`}>
-            <div className='w-full md:w-1/2 flex justify-center'>
-              <div className='bg-transparent p-4 border border-gpoppy rounded-sm w-full md:w-3/4'>
-                <div className='flex items-center mb-2'>
-                  {/* <FaBriefcase className='text-uscgold text-xl' /> */}
-                  <span className='text-xl text-[#f1f1f1] text-center font-bold'>{work.position}</span>
+          <div key={work.id} className={`mb-8 -my-6 flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center w-full text-justify`}>
+            <div className="relative pl-8 sm:pl-32 py-6 group">
+              <div className="font-caveat font-medium text-2xl text-blue-700 mb-1 sm:mb-0">
+                {work.position}
+              </div>
+              
+              <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                <time
+                  className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-bold uppercase w-20 h-10 mb-2 sm:mb-0 text-gray-950 bg-[#ddd6cb] rounded-full">
+                  {work.duration}
+                </time>
+                <div className="text-xl font-bold text-[#ddd6cb]">
+                  {work.organization}
                 </div>
-                <div className='text-gpoppy text-center'>{work.organization}</div>
-                <div className='text-gpoppy text-center'>{work.duration}</div>
-                <div className='text-txtcolor text-justify'>{work.description}</div>
+              </div>
+              <div className="text-gray-500">
+                {work.description}
               </div>
             </div>
           </div>

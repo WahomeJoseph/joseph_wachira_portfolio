@@ -6,11 +6,30 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      keyframes: {
+        typing: {
+          "0%": {
+            width: "0%",
+          },
+          "100%": {
+            width: "100%"
+          }  
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent"
+          },
+          "100%": {
+            borderColor: "white"
+          }  
+        }
+      },
       animation: {
         glow: 'glow 1.5s infinite',
         fadeIn: 'fadeIn 1s ease-in-out',
         fadeOut: 'fadeOut 1s ease-in-out',
         borderSpin: 'border-spin linear infinite',
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
       },
       colors: {
         bgcolor: '#0C090A',
@@ -23,24 +42,7 @@ export default {
         gbrown: '#996515',
         uscgold: '#ffcc00',
       },
-      fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-      },
-      keyframes: {
-        'border-spin': {
-          '100%': {
-            transform: 'rotate(-360deg)',
-          },
-        },
-        fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
-        },
-        fadeOut: {
-          '0%': { opacity: 1 },
-          '100%': { opacity: 0 },
-        },
-      },
+      
     },
   },
   plugins: [require('tailwindcss-motion')],

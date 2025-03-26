@@ -6,13 +6,12 @@ import { Animate } from "../components/Animate";
 export default function Projects() {
   return (
     <div className="flex flex-col w-full min-h-screen justify-between font-montserrat items-center p-4 md:p-6">
-      <h2 className="text-4xl uppercase tracking-wide mt-20 mb-10 font-bold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
-        My Works
-      </h2>
+      <h2 className="text-3xl uppercase tracking-wide mt-20 mb-2 text-[#ddd6cb] font-bold text-center">My Works</h2>
+      <span className='text-base font-semi-bold text-[#ddd6cb] text-center'>𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼 𝓘 𝓱𝓪𝓿𝓮 𝓭𝓸𝓷𝓮</span>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-14 px-4 py-10 items-center w-full">
         {/* Dental Clinic */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent border border-gray-600 space-y-2 rounded-md px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               Dental Clinic Management System
             </span>
@@ -28,7 +27,7 @@ export default function Projects() {
         </Animate>
         {/* JW Recipes */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               JW Recipes
             </span>
@@ -44,7 +43,7 @@ export default function Projects() {
         </Animate>
         {/* Movies */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               Movies Search App
             </span>
@@ -60,7 +59,7 @@ export default function Projects() {
         </Animate>
         {/* Booking */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               Sofa Selling App
             </span>
@@ -76,7 +75,7 @@ export default function Projects() {
         </Animate>
         {/* Ecommerce */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               E-Shop
             </span>
@@ -92,7 +91,7 @@ export default function Projects() {
         </Animate>
         {/* geofinder app */}
         <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md shadow-[0px_0px_51px_0px_rgba(20,_30,_203,_0.88)] px-4 py-4 text-txtcolor mx-2">
+          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
             <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
               Geo Finder
             </span>

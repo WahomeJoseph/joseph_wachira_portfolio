@@ -35,7 +35,7 @@ function Navbar() {
       <nav className={`w-full flex flex-wrap items-center p-2 justify-between mb-10
       ${scrolled ? 'w-full backdrop-blur-md' : 'bg-transparent'}`}>
         <Link to='/' className='flex text-2xl tracking-wide uppercase ml-10 font-montserrat font-semi-bold'>
-          jw
+        𝓙𝓦
         </Link>
         <button
           onClick={toggleNavbar}
@@ -49,19 +49,19 @@ function Navbar() {
         <div className={`${openMenu ? 'fixed inset-0 w-1/2 pl-2 bg-red-400 rounded-sm sm:mt-[2rem] md:mt-0 bg-opacity-50 z-100' : 'hidden'} md:block md:w-auto`}>
           <ul className='flex flex-col font-montserrat p-8 pr-10 mt-6 md:flex-row md:space-x-12'>
             <li>
-              <Link to='/' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:text-gpoppy md:p-0'>Home</Link>
+              <Link to='/' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor  md:p-0'>𝓗𝓸𝓶𝓮</Link>
             </li>
             <li>
-              <Link to='/about' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:p-0'>About Me</Link>
+              <Link to='/about' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent  md:p-0'>𝓐𝓫𝓸𝓾𝓽𝓮 𝓜𝓮</Link>
             </li>
             <li>
-              <Link to='/skills' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:p-0'>Skills</Link>
+              <Link to='/skills' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent  md:p-0'>𝓢𝓴𝓲𝓵𝓵𝓼</Link>
             </li>
             <li>
-              <Link to='/projects' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:p-0'>Projects</Link>
+              <Link to='/projects' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent  md:p-0'>𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼</Link>
             </li>
             <li>
-              <Link to='/contact' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)] md:p-0'>Contact</Link>
+              <Link to='/contact' onClick={closeNavbar} smooth='true' duration={500} className='block py-2 bg-transparent px-3 text-txtcolor shadow-md p-2 md:hover:bg-transparent sm:hover:bg-transparent  md:p-0'>𝓒𝓸𝓷𝓽𝓪𝓬𝓽𝓼</Link>
             </li>
           </ul>
         </div>

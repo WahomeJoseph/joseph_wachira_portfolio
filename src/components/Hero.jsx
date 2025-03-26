@@ -1,15 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useMemo } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FaAnglesDown, FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { SiAlx } from "react-icons/si";
 import { motion } from "framer-motion";
 
 function Hero() {
-  const [showMore, setShowMore] = useState(false);
-  const navigate = useNavigate();
-  const messages = useMemo(() => ['React JS Development', 'Next JS Development', 'Node JS Development', 'Tailwind CSS', 'Shadcn & Material UI'], []);
+  const messages = useMemo(() => ['React JS Development', 'Cypress Testing', 'Next JS Development', 'Node JS Development', 'Quality Assurance', 'Tailwind CSS', 'Shadcn & Material UI'], []);
   const [message, setMessage] = useState(messages[0])
   const [messageIndex, setMessageIndex] = useState(0)
 
@@ -22,11 +20,6 @@ function Hero() {
     return () => clearTimeout(timer)
   }, [messageIndex, messages])
 
-  const handleShow = () => {
-    setShowMore(!showMore);
-    navigate("/about");
-  };
-
   return (
     <motion.div
       className="flex flex-col px-12 md:flex-row items-center font-montserrat md:mb-0 justify-center w-full h-screen text-txtcolor bg-cover bg-center"
@@ -36,14 +29,13 @@ function Hero() {
 
       <div className="flex flex-col items-center space-y-10 md:mt-0 sm:mt-[20rem] text-center md:items-start justify-center w-full md:w-1/2 p-6">
         <p className="text-center md:text-left text-xl md:text-2xl font-semi-bold text-txtcolor p-4 motion-scale-in-[0.5] motion-rotate-in-[-0.2deg] motion-blur-in-[10px] motion-delay-[1s]/rotate motion-delay-[1s]/blur">
-          <span className="text-[4rem] font-sans text-gpoppy">I&apos;m &nbsp;</span>
-          <span className="text-[3.5rem] font-montserrat text-gpoppy">
-            Joseph&nbsp;Wachira
-          </span><br />
-          <span className="text-xl md:text-2xl tracking-wide text-txtcolor motion-preset-typewriter-[24]">&nbsp;
-            with&nbsp;of&nbsp;experience&nbsp;in {''}
+          <span className="text-[3rem] font-sans text-gpoppy">
+          𝓘&apos;𝓶  𝓙𝓸𝓼𝓮𝓹𝓱 𝓦𝓪𝓬𝓱𝓲𝓻𝓪
+          </span>
+          <span className="text-xl md:text-2xl tracking-wide text-[#ddd6cb]">&nbsp;
+            with&nbsp;experience&nbsp;in {''}
           </span> <br />
-          <span className="text-xl tracking-wide md:text-2xl font-sans text-gpoppy">
+          <span className="text-2xl tracking-wide md:text-2xl whitespace-nowrap motion-reduce:animate-none text-gpoppy animate-typing">
             {message}
           </span>{" "}
           <br />
@@ -54,29 +46,18 @@ function Hero() {
             <motion.button
               whileHover={{ scale: 1.15 }}
               transition={{ type: "tween", duration: 1 }}
-              className="w-44 h-12 text-lg md:text-xl font-semibold border border-[#000fff] text-white rounded-md shadow-md transition-all duration-300 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-              Resume
+              className="w-44 h-12 text-lg md:text-xl font-semibold border border-[#000fff] text-[#ddd6cb] rounded-md shadow-md transition-all duration-300">
+              𝓡𝓮𝓼𝓾𝓶𝓮
             </motion.button>
           </a>
           <Link to="/contact">
             <motion.button
               whileHover={{ scale: 1.15 }}
               transition={{ type: "tween", duration: 1 }}
-              className="w-44 h-12 text-lg md:text-xl font-semibold border border-[#000fff] text-white rounded-md shadow-md transition-all duration-300 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-              Hire Me
+              className="w-44 h-12 text-lg md:text-xl font-semibold border border-[#000fff] text-[#ddd6cb] rounded-md shadow-md transition-all duration-300">
+              𝓗𝓲𝓻𝓮 𝓜𝓮
             </motion.button>
           </Link>
-        </div>
-
-        <div className="flex flex-col bg-transparent justify-center">
-          <motion.div
-            onClick={handleShow}
-            className="flex flex-col justify-center pl-28 items-center mt-2" >
-            <FaAnglesDown className="text-2xl text-txtspan transition-all duration-300" />
-            <span className="text-txtspan text-lg md:text-xl mt-2">
-              {showMore ? "Show Less" : "Show More"}
-            </span>
-          </motion.div>
         </div>
       </div>
 
@@ -95,35 +76,35 @@ function Hero() {
             transition={{ type: "tween", duration: 0.4 }}
             whileHover={{ scale: 1.5 }}
             href="https://github.com/WahomeJoseph"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            className="text-xl md:text-2xl text-white ">
             <FaGithub />
           </motion.a>
           <motion.a
             transition={{ type: "tween", duration: 0.8 }}
             whileHover={{ scale: 1.5 }}
             href="https://www.linkedin.com/in/joseph-wachira-202a7023"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            className="text-xl md:text-2xl text-white ">
             <FaLinkedinIn />
           </motion.a>
           <motion.a
             transition={{ type: "tween", duration: 0.8 }}
             whileHover={{ scale: 1.5 }}
             href="https://mail.google.com/mail/"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            className="text-xl md:text-2xl text-white ">
             <FaEnvelope />
           </motion.a>
           <motion.a
             transition={{ type: "tween", duration: 0.8 }}
             whileHover={{ scale: 1.5 }}
             href="https://x.com/WachiraJoseph17?t=KGERM4FElIAFfhTfLpCMyw&s=09"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            className="text-xl md:text-2xl text-white ">
             <FaXTwitter />
           </motion.a>
           <motion.a
             transition={{ type: "tween", duration: 0.8 }}
             whileHover={{ scale: 1.5 }}
             href="https://ehub.alxafrica.com/profile/9478f7ba-427f-430b-9e77-5d952f10f284"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
+            className="text-xl md:text-2xl text-white ">
             <SiAlx />
           </motion.a>
         </ul>

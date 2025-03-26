@@ -27,6 +27,7 @@ export default function AnimateRoutes(){
               <Projects />
             </section>
             <section id="skills">
+              {/* <Skill/> */}
               <Skills />
             </section>
             <section id="contact">
