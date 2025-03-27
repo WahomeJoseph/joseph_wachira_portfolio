@@ -4,6 +4,7 @@ import {BrowserRouter as  Router } from "react-router-dom";
 import AnimateRoutes from "./components/AnimateRoutes";
 
 import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
         <Navbar />   
         <AnimateRoutes />
         </main>
+        {/* <Footer/> */}
     </Router>
   );
 }
