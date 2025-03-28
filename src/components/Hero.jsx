@@ -25,7 +25,8 @@ function Hero() {
       <div>
         <img src='DSC_6976.jpg'
           alt="mine"
-          className="w-60 h-60 mt-28 rounded-full object-cover motion-scale-in-[1.5] motion-translate-x-in-[-120%] motion-translate-y-in-[-60%] motion-opacity-in-[33%] motion-rotate-in-[-1080deg] motion-blur-in-[10px] motion-delay-[1.5s]/scale motion-duration-[1.2s]/opacity motion-duration-[1.2s]/rotate motion-duration-[0.15s]/blur motion-delay-[0.60s]/blur motion-ease-spring-bouncier" />
+          className="w-60 h-60 mt-28 rounded-full object-cover" />
+          {/* motion-scale-in-[1.5] motion-translate-x-in-[-120%] motion-translate-y-in-[-60%] motion-opacity-in-[33%] motion-rotate-in-[-1080deg] motion-blur-in-[10px] motion-delay-[1.5s]/scale motion-duration-[1.2s]/opacity motion-duration-[1.2s]/rotate motion-duration-[0.15s]/blur motion-delay-[0.60s]/blur motion-ease-spring-bouncier */}
       </div>
       <div className="flex flex-col items-center space-y-5 text-center justify-center w-full p-6">
         <p className="text-center text-[1.5rem] font-semi-bold text-txtcolor p-4 focus-in">

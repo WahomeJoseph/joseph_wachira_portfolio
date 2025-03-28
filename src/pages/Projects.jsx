@@ -1,110 +1,115 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
+// import React from "react";
 import { motion } from 'framer-motion';
-import { Animate } from "../components/Animate";
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Projects() {
+  const projects = [
+    {
+      title: "Dental Clinic Management System",
+      description: "Built a system to manage operations in a dental clinic including appointments, reminders, and billing.",
+      technologies: ["React", "Tailwind CSS", "Node.js", "APIs", "MongoDB", "JWT", "Twilio"],
+      image: "https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link: "https://github.com/WahomeJoseph/MY-DENTAL_CLINIC.git"
+    },
+    {
+      title: "JW Recipes",
+      description: "Recipe sharing app where users can search for recipes and share their own with the community.",
+      technologies: ["Next Js", "Tailwind CSS", "SQLite", "Node Js"],
+      image: "/nextfood.png",
+      link: "https://food-ashen-six.vercel.app/"
+    },
+    {
+      title: "Movies Search App",
+      description: "Application where users can search for movies and save their favorites.",
+      technologies: ["React Js", "MovieDB API", "Tailwind CSS"],
+      image: "/MoviesScreen.png",
+      link: "https://movies-pi-pearl.vercel.app/"
+    },
+    {
+      title: "Sofa App",
+      description: "E-commerce platform for purchasing sofas with option to request sofa revamping services.",
+      technologies: ["Next Js", "Daraja API", "SQLite", "Tailwind CSS", "Cypress", "NextAuth"],
+      image: "/sofalux.png",
+      link: "https://sofa-six.vercel.app/"
+    },
+    {
+      title: "E-Shop",
+      description: "Online store for electronic accessories with multiple payment options.",
+      technologies: ["React Js", "Node Js", "MongoDB", "Redux", "Tailwind CSS", "Stripe", "Daraja API"],
+      image: "/e-shop.png",
+      link: "https://github.com/WahomeJoseph/trade.git/"
+    },
+    {
+      title: "Geo Finder",
+      description: "Country search application with detailed demographic information and filtering capabilities.",
+      technologies: ["React Js", "Tailwind CSS", "Countries API"],
+      image: "/CountriesScreen.png",
+      link: "https://github.com/WahomeJoseph/trade.git/"
+    }
+  ];
+
   return (
-    <div className="flex flex-col w-full min-h-screen justify-between font-montserrat items-center p-4 md:p-6">
-      <h2 className="text-3xl uppercase tracking-wide mt-20 mb-2 text-[#ddd6cb] font-bold text-center">My Works</h2>
-      <span className='text-base font-semi-bold text-[#ddd6cb] text-center'>𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼 𝓘 𝓱𝓪𝓿𝓮 𝓭𝓸𝓷𝓮</span>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 px-4 py-10 items-center w-full">
-        {/* Dental Clinic */}
-        <Animate>
-          <div className="flex flex-col items-center bg-transparent border border-gray-600 space-y-2 rounded-md px-4 py-4 text-txtcolor mx-2">
-            <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
-              Dental Clinic Management System
-            </span>
-            <img src="https://plus.unsplash.com/premium_photo-1672922646500-f9b9ae231431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-            <p className="text-center">Build a system to manage operations in a dental clinic, appointments, reminders, billing.</p>
-            <span className="text-center">React Js, React Router, Tailwind CSS, React Charts, Node Js, Mongo DB</span>
-            <a href="https://github.com/WahomeJoseph/MY-DENTAL_CLINIC.git">
-              <button className="w-full border border-gpoppy rounded-sm shadow-sm p-2 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-                Check it Out
-              </button>
-            </a>
-          </div>
-        </Animate>
-        {/* JW Recipes */}
-        <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
-            <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
-              JW Recipes
-            </span>
-            <img src="/nextfood.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-            <p className="text-center">Build a simple app for users to search for a recipe, it allows users to also share their recipes with the community</p>
-            <span className="text-center">Next Js,Tailwind CSS, betterSQLite3</span>
-            <a href="https://food-ashen-six.vercel.app/">
-              <button className="w-full border border-gpoppy rounded-sm shadow-sm p-2 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-                Check it Out
-              </button>
-            </a>
-          </div>
-        </Animate>
-        {/* Movies */}
-        <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
-            <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
-              Movies Search App
-            </span>
-            <img src="/MoviesScreen.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-            <p className="text-center font-sans">An application where users can search for movies and save favourites.</p>
-            <span className="text-center font-sans">React Js, React Router, Tailwind CSS, MovieDB Api</span>
-            <a href="https://movies-pi-pearl.vercel.app/">
-              <button className="w-full border border-gpoppy rounded-sm shadow-sm p-2 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-                Check it Out
-              </button>
-            </a>
-          </div>
-        </Animate>
-        {/* Booking */}
-        <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
-            <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
-              Sofa Selling App
-            </span>
-            <img src="/sofalux.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-            <p className="text-center font-sans">An application where users can purchase sofas for their office and homes. Users can also request for sofa revamp</p>
-            <span className="text-center font-sans">Next Js, Tailwind CSS, betterSQLite3, Node js, API</span>
-            <a href="https://sofa-six.vercel.app/">
-              <button className="w-full border border-gpoppy rounded-sm shadow-sm p-2 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-                Check it Out
-              </button>
-            </a>
-          </div>
-        </Animate>
-        {/* Ecommerce */}
-        <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
-            <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
-              E-Shop
-            </span>
-            <img src="/e-shop.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-            <p className="text-center font-sans">Application where users can purchase electronic accessories with payment method options.</p>
-            <span className="text-center font-sans">React Js, React Router, Tailwind CSS, Node Js, Mongo DB, Payment APIs</span>
-            <a href="https://github.com/WahomeJoseph/trade.git/">
-              <button className="w-full border border-gpoppy rounded-sm shadow-sm p-2 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-                Check it Out
-              </button>
-            </a>
-          </div>
-        </Animate>
-        {/* geofinder app */}
-        <Animate>
-          <div className="flex flex-col items-center bg-transparent space-y-2 rounded-md border border-gray-600 px-4 py-4 text-txtcolor mx-2">
-            <span className="text-lg md:text-xl font-semibold text-center bg-gradient-to-tl from-slate-800 via-blue-700 to-zinc-400 bg-clip-text text-transparent">
-              Geo Finder
-            </span>
-            <img src="/CountriesScreen.png" alt="" className="w-full h-80 rounded-xl p-4 object-cover bg-center" />
-            <p className="text-center font-sans">Application to search for countries through filter techniques and see more details of the specific coutry including their population region etc.</p>
-            <span className="text-center font-sans">React Js, Tailwind CSS, Countries API</span>
-            <a href="https://github.com/WahomeJoseph/trade.git/">
-              <button className="w-full border border-gpoppy rounded-sm shadow-sm p-2 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-                Check it Out
-              </button>
-            </a>
-          </div>
-        </Animate>
+    <div className="w-full min-h-screen py-16 px-4 sm:px-8 max-w-7xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-center mb-12"
+      >
+        <h2 className="text-3xl md:text-4xl font-bold text-[#ddd6cb] mb-2 uppercase tracking-wider">
+          My Works
+        </h2>
+        <p className="text-lg text-[#ddd6cb]/80">
+          𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼 𝓘 𝓱𝓪𝓿𝓮 𝓭𝓸𝓷𝓮
+        </p>
+      </motion.div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className="group relative overflow-hidden rounded-xl border border-gray-800 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm hover:border-[#000fff]/20 transition-all duration-300">
+            <div className="h-48 overflow-hidden">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-[#ddd6cb] mb-2">
+                {project.title}
+              </h3>
+
+              <p className="text-[#ddd6cb]/40 mb-4">
+                {project.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="text-xs px-3 py-1 bg-[#000fff]/10 text-[#000fff] rounded-full">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-[#ddd6cb] bg-[#000fff]/20 hover:bg-[#000fff]/30 border border-[#000fff]/30 rounded-md transition-colors">
+                View Project
+                <FaExternalLinkAlt className="text-xs" />
+              </a>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );

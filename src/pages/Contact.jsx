@@ -1,124 +1,156 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
+// import React from "react";
 import { FaEnvelope, FaPhone, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 import { SiAlx } from "react-icons/si";
-import { Animate } from "../components/Animate";
 
 export default function Contact() {
-  return (
-    <motion.div className="flex flex-col w-full min-h-screen font-montserrat py-10 px-4">
-      <h2 className="text-3xl text-[#ddd6cb] uppercase tracking-wide mt-20 mb-10 font-bold text-center">Contact Me</h2>
-      <span className='text-base font-semi-bold text-[#ddd6cb] mb-4 text-center'>𝓡𝓮𝓪𝓬𝓱 𝓞𝓾𝓽</span>
+  const contactInfo = [
+    {
+      icon: <FaLocationDot className='text-2xl text-[#000fff]' />,
+      title: "Location",
+      details: ["Nairobi, Kenya", "Ready to relocate"]
+    },
+    {
+      icon: <FaEnvelope className='text-2xl text-[#000fff]' />,
+      title: "Email",
+      details: [
+        <a key="email1" href="mailto:josephwachira589@gmail.com" className="hover:underline">josephwachira589@gmail.com</a>,
+        <a key="email2" href="mailto:wachirawahome81@gmail.com" className="hover:underline">wachirawahome81@gmail.com</a>
+      ]
+    },
+    {
+      icon: <FaPhone className='text-2xl text-[#000fff]' />,
+      title: "Phone",
+      details: ["+254-0795969757", "+254-0795969757"]
+    }
+  ];
 
-      <div className="flex flex-col md:flex-row">
-        {/* contact cards */}
-        <div className="flex flex-col gap-2 mx-2 sm:w-full p-6 md:py-2">
-          <Animate>
-            <div className="flex flex-col items-center space-y-2 border border-gpoppy shadow-sm shadow-gpoppy rounded-md p-4 m-4 sm:mx-4 text-txtcolor">
-              <FaLocationDot className='text-2xl text-gpoppy' />
-              <span>Location</span>
-              <span className="text-center animate-glow">Nairobi, Kenya</span>
-              <span className="text-center">Ready to relocate</span>
+  const socialLinks = [
+    { icon: <FaGithub />, url: "https://github.com/WahomeJoseph" },
+    { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/in/joseph-wachira-202a7023" },
+    { icon: <FaEnvelope />, url: "mailto:josephwachira589@gmail.com" },
+    { icon: <FaTwitter />, url: "https://x.com/WachiraJoseph17" },
+    { icon: <SiAlx />, url: "https://ehub.alxafrica.com/profile/9478f7ba-427f-430b-9e77-5d952f10f284" }
+  ];
+
+  return (
+    <div className="relative min-h-screen w-full overflow-hidden">
+
+      <div className="absolute inset-0 z-0">
+        {/* <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-20"></div> */}
+        <div className="absolute inset-0 bg-gradient-to-b from-pink-700/20 via-[#0C090A]/90 to-[#0C090A]"></div>
+      </div>
+
+      <div className="relative z-10 w-full min-h-screen py-16 px-4 sm:px-8 max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-[2rem] md:text-4xl font-bold text-[#ddd6cb] mb-2 uppercase tracking-wider">
+            Contact Me
+          </h2>
+          <p className="text-lg text-[#ddd6cb]/80">
+            𝓡𝓮𝓪𝓬𝓱 𝓞𝓾𝓽
+          </p>
+        </motion.div>
+
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="w-full lg:w-2/5 space-y-6">
+            {contactInfo.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-[#000fff]/30 rounded-xl p-6 hover:border-[#000fff]/60 transition-all duration-300"
+              >
+                <div className="flex flex-col items-center text-center space-y-3">
+                  {item.icon}
+                  <h3 className="text-xl font-semibold text-[#ddd6cb]">{item.title}</h3>
+                  <div className="space-y-1">
+                    {item.details.map((detail, i) => (
+                      <p key={i} className="text-[#ddd6cb]/90 text-sm sm:text-base">
+                        {detail}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.form
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="w-full lg:w-3/5 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-[#000fff]/30 rounded-xl p-8 hover:border-[#000fff]/60 transition-all duration-300"
+          >
+            <div className="space-y-6">
+              <input
+                type="text"
+                placeholder="Full Name"
+                className="w-full px-4 py-3 rounded-lg bg-gray-900/60 border border-[#000fff]/20 focus:border-[#000fff]/50 focus:outline-none text-[#ddd6cb] placeholder-[#ddd6cb]/30 transition-all ease-in-out duration-300"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="w-full px-4 py-3 rounded-lg bg-gray-900/60 border border-[#000fff]/20 focus:border-[#000fff]/50 focus:outline-none text-[#ddd6cb] placeholder-[#ddd6cb]/30 transition-all ease-in-out duration-300"
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="w-full px-4 py-3 rounded-lg bg-gray-900/60 border border-[#000fff]/20 focus:border-[#000fff]/50 focus:outline-none text-[#ddd6cb] placeholder-[#ddd6cb]/30 transition-all ease-in-out duration-300"
+              />
+              <textarea
+                rows={6}
+                placeholder="Project Message..."
+                className="w-full px-4 py-3 rounded-lg bg-gray-900/60 border border-[#000fff]/20 focus:border-[#000fff]/50 focus:outline-none text-[#ddd6cb] placeholder-[#ddd6cb]/30 transition-all ease-in-out duration-300"
+              ></textarea>
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                type="submit"
+                className="w-full py-3 bg-[#000fff] hover:bg-[#0000cc] text-white font-semibold rounded-lg transition-colors duration-300"
+              >
+                Send Message
+              </motion.button>
             </div>
-          </Animate>
-          <Animate>
-            <div className="flex flex-col items-center space-y-2 border border-gpoppy shadow-sm shadow-gpoppy rounded-md p-4 m-4 text-txtcolor">
-              <FaEnvelope className='text-2xl text-gpoppy' />
-              <span>Email</span>
-              <a href="mailto:josephwachira589@gmail.com"><span className="text-center text-sm sm:text-base break-words">josephwachira589@gmail.com</span></a>
-              <a href="mailto:wachirawahome81@gmail.com"><span className="text-center text-sm sm:text-base break-words">wachirawahome81@gmail.com</span></a>
-            </div>
-          </Animate>
-          <Animate>
-            <div className="flex flex-col items-center space-y-2 border border-gpoppy shadow-sm shadow-gpoppy rounded-md p-4 m-4 text-txtcolor">
-              <FaPhone className='text-2xl text-gpoppy' />
-              <span>Phone</span>
-              <span className="text-center">+254-0795969757</span>
-              <span className="text-center">+254-0795969757</span>
-            </div>
-          </Animate>
+          </motion.form>
         </div>
 
-        {/* contact form */}
-        <motion.form className="flex flex-col justify-center py-4 px-6 space-y-6 shadow-[0px_0px_10px_0px_rgba(20,_30,_203,_0.88)] rounded-md text-txtspan md:w-full sm:w-full mx-6 mt-6 md:mt-0">
-          <input
-            type="text"
-            autoComplete="off"
-            autoSave="off"
-            placeholder="Full Name"
-            className="px-4 p-2 rounded-md shadow-md border border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy" />
-          <input
-            type="text"
-            autoComplete="off"
-            autoSave="off"
-            placeholder="Email Address"
-            className="px-4 p-2 rounded-md shadow-md border border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy" />
-          <input
-            type="text"
-            autoComplete="off"
-            autoSave="off"
-            placeholder="Phone Number"
-            className="px-4 p-2 rounded-md shadow-md border border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy" />
-          <input
-            type="text"
-            autoComplete="off"
-            autoSave="off"
-            placeholder="Subject"
-            className="px-4 p-2 rounded-md shadow-md border border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy" />
-          <textarea
-            name="message"
-            id="message"
-            rows={8}
-            className="px-4 p-2 rounded-md shadow-md border border-gpoppy bg-transparent focus:outline-none focus:ring-0 focus:border-gpoppy"
-            placeholder="Message...">
-          </textarea>
-          <button className="w-44 h-12 text-lg md:text-xl font-semibold border border-[#000fff] text-white rounded-md shadow-md transition-all duration-300 hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">Submit</button>
-        </motion.form>
-      </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mt-16 pt-8 border-t border-[#000fff]/30 flex flex-col space-y-5 justify-between items-center">
+          <div className="flex space-x-6">
+            {socialLinks.map((social, index) => (
+              <motion.a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -5, scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                className="text-2xl text-[#ddd6cb] hover:text-[#000fff] transition-colors"
+              >
+                {social.icon}
+              </motion.a>
+            ))}
+          </div>
 
-      <div className="sticky flex flex-row justify-between border-t border-[#000fff] p-10 mt-10 mx-6">
-        <span className="text-center text-txtspan hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">WahomeJoseph &copy; 2025</span>
-        <ul className="flex flex-row flex-wrap items-center justify-center gap-6 space-x-6 md:space-x-4">
-          <motion.a
-            animate={{ rotate: 360 }}
-            transition={{ type: "tween", duration: 0.4 }}
-            whileHover={{ scale: 1.5 }}
-            href="https://github.com/WahomeJoseph"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-            <FaGithub />
-          </motion.a>
-          <motion.a
-            transition={{ type: "tween", duration: 0.8 }}
-            whileHover={{ scale: 1.5 }}
-            href="https://www.linkedin.com/in/joseph-wachira-202a7023"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-            <FaLinkedinIn />
-          </motion.a>
-          <motion.a
-            transition={{ type: "tween", duration: 0.8 }}
-            whileHover={{ scale: 1.5 }}
-            href="https://mail.google.com/mail/"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-            <FaEnvelope />
-          </motion.a>
-          <motion.a
-            transition={{ type: "tween", duration: 0.8 }}
-            whileHover={{ scale: 1.5 }}
-            href="https://x.com/WachiraJoseph17?t=KGERM4FElIAFfhTfLpCMyw&s=09"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-            <FaTwitter />
-          </motion.a>
-          <motion.a
-            transition={{ type: "tween", duration: 0.8 }}
-            whileHover={{ scale: 1.5 }}
-            href="https://ehub.alxafrica.com/profile/9478f7ba-427f-430b-9e77-5d952f10f284"
-            className="text-xl md:text-2xl text-white hover:shadow-[0px_20px_207px_10px_rgba(20,_30,_203,_0.88)]">
-            <SiAlx />
-          </motion.a>
-        </ul>
+          <span className="text-[#ddd6cb]/80 mt-6">
+             &copy; {new Date().getFullYear()} All Rights Reserved
+          </span>
+          <p className="text-pink-700">Designed by <a href="" className="text-blue-700/60">WahomeJoseph</a></p>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 }
