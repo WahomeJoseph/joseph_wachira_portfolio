@@ -25,7 +25,7 @@ export default function About() {
                 hover:scale-[1.02] hover:shadow-lg 
                 transition-all duration-300 ease-in-out 
                 bg-gradient-to-br from-gray-900/50 to-gray-800/30 
-                group cursor-default">
+                group cursor-default slide-in-left">
               <div className="p-4 mb-4 rounded-full bg-pink-700/10 group-hover:bg-pink-700/20 transition-colors duration-300">
                 <FaCode className="text-3xl text-pink-400 group-hover:text-pink-300" />
               </div>
@@ -51,7 +51,7 @@ export default function About() {
                 hover:scale-[1.02] hover:shadow-lg 
                 transition-all duration-300 ease-in-out 
                 bg-gradient-to-br from-gray-900/50 to-gray-800/30 
-                group cursor-default">
+                group cursor-default slide-in-right">
               <div className="p-4 mb-4 rounded-full bg-pink-700/10 group-hover:bg-pink-700/20 transition-colors duration-300">
                 <FaCode className="text-3xl text-pink-400 group-hover:text-pink-300" />
               </div>
@@ -74,7 +74,7 @@ export default function About() {
                 hover:scale-[1.02] hover:shadow-lg 
                 transition-all duration-300 ease-in-out 
                 bg-gradient-to-br from-gray-900/50 to-gray-800/30 
-                group cursor-default">
+                group cursor-default slide-in-left">
               <div className="p-4 mb-4 rounded-full bg-pink-700/10 group-hover:bg-pink-700/20 transition-colors duration-300">
                 <FaCode className="text-3xl text-pink-400 group-hover:text-pink-300" />
               </div>
@@ -97,7 +97,7 @@ export default function About() {
                 hover:scale-[1.02] hover:shadow-lg 
                 transition-all duration-300 ease-in-out 
                 bg-gradient-to-br from-gray-900/50 to-gray-800/30 
-                group cursor-default">
+                group cursor-default slide-in-right">
               <div className="p-4 mb-4 rounded-full bg-pink-700/10 group-hover:bg-pink-700/20 transition-colors duration-300">
                 <FaCode className="text-3xl text-pink-400 group-hover:text-pink-300" />
               </div>

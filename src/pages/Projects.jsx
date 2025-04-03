@@ -63,16 +63,11 @@ export default function Projects() {
           𝓟𝓻𝓸𝓳𝓮𝓬𝓽𝓼 𝓘 𝓱𝓪𝓿𝓮 𝓭𝓸𝓷𝓮
         </p>
       </motion.div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <motion.div
+          <div
             key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: true }}
-            className="group relative overflow-hidden rounded-xl border border-gray-800 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm hover:border-[#000fff]/20 transition-all duration-300">
+            className="group relative overflow-hidden rounded-xl focus border border-gray-800 bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm hover:border-[#000fff]/20 transition-all duration-300">
             <div className="h-48 overflow-hidden">
               <img
                 src={project.image}
@@ -108,7 +103,7 @@ export default function Projects() {
                 <FaExternalLinkAlt className="text-xs" />
               </a>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>
