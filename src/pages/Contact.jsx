@@ -22,7 +22,7 @@ export default function Contact() {
     {
       icon: <FaPhone className='text-2xl text-[#000fff]' />,
       title: "Phone",
-      details: ["+254-0795969757", "+254-0795969757"]
+      details: ["+254-0795969757"]
     }
   ];
 
@@ -38,7 +38,6 @@ export default function Contact() {
     <div className="relative min-h-screen w-full overflow-hidden">
 
       <div className="absolute inset-0 z-0">
-        {/* <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-20"></div> */}
         <div className="absolute inset-0 bg-gradient-to-b from-pink-700/20 via-[#0C090A]/90 to-[#0C090A]"></div>
       </div>
 
@@ -146,7 +145,7 @@ export default function Contact() {
           </div>
 
           <span className="text-[#ddd6cb]/80 mt-6">
-             &copy; {new Date().getFullYear()} All Rights Reserved
+            &copy; {new Date().getFullYear()} All Rights Reserved
           </span>
           <p className="text-pink-700">Designed by <a href="" className="text-blue-700/60">WahomeJoseph</a></p>
         </motion.div>
