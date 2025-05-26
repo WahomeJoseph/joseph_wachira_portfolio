@@ -1,174 +1,133 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import { FaCode } from 'react-icons/fa';
+import { FaCode, FaServer, FaShieldAlt } from 'react-icons/fa';
+import { Wrench } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Animate } from '../components/Animate';
 
 export default function About() {
+  const skills = [
+    {
+      title: "Frontend Development",
+      icon: <FaCode className="text-3xl text-blue-500" />,
+      items: ['React', 'Next.js', 'Tailwind CSS', 'Material UI', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3'],
+      color: "text-blue-400"
+    },
+    {
+      title: "Backend Development",
+      icon: <FaServer className="text-3xl text-green-500" />,
+      items: ['Node.js', 'Express', 'PHP', 'MongoDB', 'MySQL', 'REST API', 'GraphQL', 'Firebase'],
+      color: "text-green-400"
+    },
+    {
+      title: "Quality Assurance",
+      icon: <FaShieldAlt className="text-3xl text-purple-500" />,
+      items: ['Cypress', 'Jest', 'Jira', 'Manual Testing', 'API Testing', 'E2E Testing', 'Unit Testing'],
+      color: "text-purple-400"
+    },
+    {
+      title: "Technical Support",
+      icon: <Wrench className="text-3xl text-orange-500" />,
+      description: "Provide user support ensuring proper hardware and software functionality",
+      color: "text-yellow-400"
+    }
+  ];
 
   return (
-    <motion.div className="flex flex-col w-full min-h-screen font-montserrat px-4">
-      <h2 className="text-[2rem] font-bold uppercase text-[#ddd6cb] mt-24 mb-4 text-center">About Me</h2>
-      <span className='text-base font-semi-bold text-[#ddd6cb] mb-4 text-center'>𝓦𝓱𝓪𝓽 𝓘 𝓭𝓸</span>
-
-      <div className="flex flex-col md:flex-row w-full px-4 md:px-8 gap-4 items-center justify-center">
-        {/* <motion.img
-          src="././DSC_6976.jpg"
-          alt="jw"
-          whileHover={{ scale: 1.12 }}
-          className="w-64 h-64 rounded-tr-xl rounded-bl-xl object-cover float-right md:w-1/3 md:h-auto" /> */}
-
-        <div className="flex flex-col px-4 sm:px-2 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 z-1 opacity-100 items-center">
-
-            <div className="flex flex-col items-center justify-center p-6 border border-pink-700/30 rounded-xl h-full 
-                hover:scale-[1.02] hover:shadow-lg 
-                transition-all duration-300 ease-in-out 
-                bg-gradient-to-br from-gray-900/50 to-gray-800/30 
-                group cursor-default slide-in-left">
-              <div className="p-4 mb-4 rounded-full bg-pink-700/10 group-hover:bg-pink-700/20 transition-colors duration-300">
-                <FaCode className="text-3xl text-pink-400 group-hover:text-pink-300" />
-              </div>
-
-              <h3 className="text-xl font-semibold text-center text-white mb-2">
-                Frontend Development & Design
-              </h3>
-
-              <div className="flex flex-wrap justify-center gap-2 mt-3">
-                {['HTML5', 'CSS3', 'React', 'Tailwind', 'SCSS', 'Next.js', 'MUI'].map((skill) => (
-                  <span key={skill}
-                    className="px-3 py-1 text-xs rounded-full bg-gray-700/60 text-gray-200 
-                       group-hover:bg-pink-900/30 group-hover:text-pink-100
-                       transition-colors duration-200">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* backend */}
-            <div className="flex flex-col items-center justify-center p-6 border border-pink-700/30 rounded-xl h-full 
-                hover:scale-[1.02] hover:shadow-lg 
-                transition-all duration-300 ease-in-out 
-                bg-gradient-to-br from-gray-900/50 to-gray-800/30 
-                group cursor-default slide-in-right">
-              <div className="p-4 mb-4 rounded-full bg-pink-700/10 group-hover:bg-pink-700/20 transition-colors duration-300">
-                <FaCode className="text-3xl text-pink-400 group-hover:text-pink-300" />
-              </div>
-              <h3 className="text-xl font-semibold text-center text-white mb-3">
-                Backend Development
-              </h3>
-              <div className="flex flex-wrap justify-center gap-2">
-                {['Node.js', 'Express', 'PHP', 'MySQL', 'MongoDB', 'REST API'].map((skill) => (
-                  <span key={skill}
-                    className="px-3 py-1 text-xs rounded-full bg-gray-700/60 text-gray-200 
-                       group-hover:bg-pink-900/30 group-hover:text-pink-100
-                       transition-colors duration-200">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            {/* QA/QE */}
-            <div className="flex flex-col items-center justify-center p-6 border border-pink-700/30 rounded-xl h-full 
-                hover:scale-[1.02] hover:shadow-lg 
-                transition-all duration-300 ease-in-out 
-                bg-gradient-to-br from-gray-900/50 to-gray-800/30 
-                group cursor-default slide-in-left">
-              <div className="p-4 mb-4 rounded-full bg-pink-700/10 group-hover:bg-pink-700/20 transition-colors duration-300">
-                <FaCode className="text-3xl text-pink-400 group-hover:text-pink-300" />
-              </div>
-              <h3 className="text-xl font-semibold text-center text-white mb-3">
-                Quality Assurance
-              </h3>
-              <div className="flex flex-wrap justify-center gap-2">
-                {['Cypress', 'Jest', 'Jira', 'Manual Testing', 'API Testing', 'Code Review'].map((skill) => (
-                  <span key={skill}
-                    className="px-3 py-1 text-xs rounded-full bg-gray-700/60 text-gray-200 
-                       group-hover:bg-pink-900/30 group-hover:text-pink-100
-                       transition-colors duration-200">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            {/* tech */}
-            <div className="flex flex-col items-center justify-center p-6 border border-pink-700/30 rounded-xl h-full 
-                hover:scale-[1.02] hover:shadow-lg 
-                transition-all duration-300 ease-in-out 
-                bg-gradient-to-br from-gray-900/50 to-gray-800/30 
-                group cursor-default slide-in-right">
-              <div className="p-4 mb-4 rounded-full bg-pink-700/10 group-hover:bg-pink-700/20 transition-colors duration-300">
-                <FaCode className="text-3xl text-pink-400 group-hover:text-pink-300" />
-              </div>
-              <h3 className="text-xl font-semibold text-center text-white mb-3">
-                Technical User Support
-              </h3>
-              <p className="text-center text-sm text-gray-300 px-4 group-hover:text-blue-100 transition-colors">
-                Provide user support ensuring proper hardware and software functionality
-              </p>
-            </div>
-          </div>
-
-          <div className="relative max-w-3xl mx-auto p-6 md:p-10">
-            <ul role="list" className="space-y-6">
-              <Animate>
-                <li className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-800/30 transition-colors duration-200">
-                  <div className="flex-shrink-0 mt-1">
-                    <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-pink-700/20 text-pink-700 font-bold">
-                      ✓
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#ddd6cb] mb-1">Full Stack Web Development</h3>
-                    <p className="text-txtcolor leading-relaxed">
-                      JavaScript specialist with expertise in React, Node.js, and Express.
-                      Strong computer science foundation with excellent problem-solving skills.
-                      Collaborative team player passionate about building scalable web applications.
-                    </p>
-                  </div>
-                </li>
-              </Animate>
-
-              <Animate>
-                <li className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-800/30 transition-colors duration-200">
-                  <div className="flex-shrink-0 mt-1">
-                    <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-pink-700/20 text-pink-700 font-bold">
-                      ✓
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#ddd6cb] mb-1">Quality Assurance</h3>
-                    <p className="text-txtcolor leading-relaxed">
-                      Experienced in both manual and automated testing with Cypress and Jest.
-                      Detail-oriented bug hunter with expertise in test case design and defect tracking.
-                      Committed to delivering flawless user experiences through rigorous testing.
-                    </p>
-                  </div>
-                </li>
-              </Animate>
-
-              <Animate>
-                <li className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-800/30 transition-colors duration-200">
-                  <div className="flex-shrink-0 mt-1">
-                    <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-pink-700/20 text-pink-700 font-bold">
-                      ✓
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#ddd6cb] mb-1">Technical User Support</h3>
-                    <p className="text-txtcolor leading-relaxed">
-                      Customer-focused troubleshooter with hardware/software expertise.
-                      Proven track record of resolving complex technical issues efficiently.
-                      Passionate about delivering exceptional support and improving user satisfaction.
-                    </p>
-                  </div>
-                </li>
-              </Animate>
-            </ul>
-          </div>
-        </div>
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="w-full min-h-screen py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+      {/* Hero Section */}
+      <div className="text-center mb-16">
+        <motion.h2
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="text-[2rem] uppercase font-bold text-[#ddd6cb] mb-4">
+          About Me
+        </motion.h2>
+        <motion.p
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-xl text-gray-400 max-w-2xl mx-auto">
+          Full Stack Developer | Quality Assurance Specialist | Technical Support Engineer
+        </motion.p>
       </div>
+
+      {/* Skills Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {skills.map((skill, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className={`bg-gradient-to-br from-gray-950 to-gray-900/40 backdrop-blur-sm border border-gray-900 rounded-xl p-6 hover:border-${skill.color.split('-')[1]}-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-${skill.color.split('-')[1]}-500/10`}>
+            <div className={`p-3 mb-4 rounded-full bg-${skill.color.split('-')[1]}-500/10 w-fit mx-auto`}>
+              {skill.icon}
+            </div>
+            <h3 className={`text-xl font-semibold text-center mb-4 ${skill.color}`}>
+              {skill.title}
+            </h3>
+            {skill.items ? (
+              <div className="flex flex-wrap justify-center gap-2">
+                {skill.items.map((item, i) => (
+                  <span 
+                    key={i}
+                    className="px-3 py-1 text-xs rounded-full bg-gray-700 text-gray-200">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            ) : (
+              <p className="text-center text-sm text-gray-300">
+                {skill.description}
+              </p>
+            )}
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Bio Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="max-w-4xl mx-auto bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-900 mb-16">
+        <h3 className="text-2xl font-semibold text-white mb-6">Professional Summary</h3>
+        <div className="space-y-4 text-gray-300">
+          <p>
+            I&apos;m a passionate Full Stack Developer with 3+ years of experience building web applications using modern JavaScript frameworks. 
+            My expertise spans both frontend and backend development, with a strong focus on creating responsive, 
+            user-friendly interfaces and robust server-side solutions.
+          </p>
+          <p>
+            As a Quality Assurance Specialist, I bring meticulous attention to detail and a commitment to delivering 
+            flawless user experiences through comprehensive testing strategies.
+          </p>
+          <p>
+            My technical support background gives me unique insight into user pain points, which I leverage to build 
+            more intuitive and reliable software solutions.
+          </p>
+        </div>
+      </motion.div>
+
+      {/* CTA */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="mt-16 text-center">
+        <h3 className="text-2xl font-semibold text-white mb-4">Want to know more?</h3>
+        <a
+          href="/contact"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg transition-all hover:shadow-lg">
+          Get In Touch
+        </a>
+      </motion.div>
     </motion.div>
   );
 }

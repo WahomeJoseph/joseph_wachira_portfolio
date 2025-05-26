@@ -1,5 +1,6 @@
 
-import { Calendar, MapPin, Award, GraduationCap, Briefcase, Code, TestTube, Wrench } from "lucide-react";
+import { Calendar, MapPin, Award, GraduationCap, Code, ShieldCheck, Wrench } from "lucide-react";
+import { Server } from "lucide-react";
 
 const Experience = () => {
   const workExperience = [
@@ -9,7 +10,7 @@ const Experience = () => {
       organization: 'Power Learn Project Africa',
       duration: '4 months',
       description: 'Developed a telemedicine application using MySQL, Node.js, HTML, and CSS that improved healthcare accessibility. Enhanced skills in full-stack development, teamwork, and innovative problem-solving.',
-      icon: <Briefcase className="w-6 h-6 text-blue-500" />
+      icon: <Server className="w-6 h-6 text-blue-500" />
     },
     {
       id: 2,
@@ -25,7 +26,7 @@ const Experience = () => {
       organization: 'Qace Academy',
       duration: '2 months',
       description: 'Performed comprehensive testing of web applications, documented bugs, and collaborated with developers. Gained expertise in manual/automated testing with Selenium and JIRA.',
-      icon: <TestTube className="w-6 h-6 text-green-500" />
+      icon: <ShieldCheck className="w-6 h-6 text-green-500" />
     },
     {
       id: 4,
