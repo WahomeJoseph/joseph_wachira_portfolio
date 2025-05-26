@@ -1,6 +1,6 @@
-import { motion, useAnimation } from "framer-motion"
-import { useEffect, useState } from "react"
-import PropTypes from 'prop-types';
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
 
 export const Animate = ({ children }) => {
 
@@ -8,22 +8,22 @@ export const Animate = ({ children }) => {
     const [ref, setRef] = useState(null)
 
     useEffect(() => {
-        if (!ref) return;
+        if (!ref) return
 
         const observer = new IntersectionObserver(([entry]) => {
             if (entry.isIntersecting) {
-                controls.start('visible');
+                controls.start('visible')
             }
-        }, { threshold: 0.1 });
+        }, { threshold: 0.1 })
 
-        observer.observe(ref);
+        observer.observe(ref)
 
-        return () => observer.disconnect();
-    }, [controls, ref]);
+        return () => observer.disconnect()
+    }, [controls, ref])
     return (
         <motion.div
             ref={setRef}
-            initial="hidden"
+            initial='hidden'
             animate={controls}
             variants={{
                 visible: { opacity: 1, y: 0 },
@@ -38,4 +38,4 @@ export const Animate = ({ children }) => {
 
 Animate.propTypes = {
     children: PropTypes.node.isRequired,
-};
+}

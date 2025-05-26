@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { AnimatePresence } from 'framer-motion';
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 import Hero from './Hero.jsx';
 import About from '../pages/About.jsx';
@@ -15,30 +15,30 @@ export default function AnimateRoutes(){
     <AnimatePresence>
         <Routes location={location} key={location.pathname}>
             
-            <Route path="/" element={
+            <Route path='/' element={
               <>
-            <section id="hero">
+            <section id='hero'>
               <Hero />
             </section>
-            <section id="about">
+            <section id='about'>
               <About />
             </section>
-            <section id="projects">
+            <section id='projects'>
               <Projects />
             </section>
-            <section id="skills">
+            <section id='skills'>
               {/* <Skill/> */}
               <Skills />
             </section>
-            <section id="contact">
+            <section id='contact'>
               <Contact />
             </section>
           </>
         }/>
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/skills' element={<Skills />} />
+            <Route path='/contact' element={<Contact />} />
         </Routes>
     </AnimatePresence>
   )
