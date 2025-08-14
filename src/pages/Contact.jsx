@@ -183,7 +183,7 @@ export default function Contact() {
           className='mt-16 pt-8 border-t border-gray-700/50 text-center'
         >
           <p className='text-gray-400'>
-            &copy {new Date().getFullYear()} Joseph Wachira. All rights reserved.
+            &copy; {new Date().getFullYear()} Joseph Wachira. All rights reserved.
           </p>
           <p className='text-gray-500 text-sm mt-2'>
             Designed with ❤️ by <a href='https://github.com/WahomeJoseph' className='text-blue-400 hover:underline'>WahomeJoseph</a>

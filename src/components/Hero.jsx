@@ -1,15 +1,16 @@
 import { useState, useEffect, useMemo } from 'react'
 import { Download, ArrowRight, Code, Sparkles, Star } from 'lucide-react'
 import { BsEnvelope, BsGithub, BsLinkedin, BsTwitterX } from 'react-icons/bs'
+import { ComputersCanvas } from './canvas/Computers'
 
 function HeroSection() {
   const skills = useMemo(() => [
-    'React JS Development',
-    'Next JS Development',
-    'Tailwind CSS & CSS3',
-    'Shadcn & Material UI',
-    'Node JS Development',
-    'Quality Analyst',
+    'Full Stack Development',
+    'CI/CD & GitHub Actions',
+    'Backend Development',
+    'Frontend Development',
+    'Quality, API & Unit Testing',
+    'Technical Support',
   ], [])
 
   const [currentSkill, setCurrentSkill] = useState(0)
@@ -82,7 +83,7 @@ function HeroSection() {
     {
       name: 'Email',
       icon: BsEnvelope,
-      url: 'mailto:josephwachira.dev@gmail.com',
+      url: 'mailto:josephwachira589@gmail.com',
       color: 'hover:text-red-400',
       bgColor: 'hover:bg-red-900/20',
     },
@@ -157,7 +158,7 @@ function HeroSection() {
 
                 <div className='space-y-2'>
                   <p className='text-xl md:text-2xl text-slate-300 animate-fade-in' style={{ animationDelay: '0.4s' }}>
-                    Full Stack Developer
+                    Software Developer
                   </p>
                   <p className='text-lg text-slate-400 animate-fade-in' style={{ animationDelay: '0.6s' }}>
                     with 3+ years of experience in
@@ -218,16 +219,9 @@ function HeroSection() {
 
             <div className='space-y-8 animate-fade-in' style={{ animationDelay: '0.2s' }}>
               {/* Profile Image */}
-              <div className='relative mx-auto lg:mx-0 w-80 h-80'>
-                {/* <div className='absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-600 rounded-full blur-2xl opacity-20 animate-pulse' /> */}
-                <div className='relative w-full h-full rounded-full overflow-hidden border-4 border-slate-700 shadow-2xl group'>
-                  <img
-                    src='DSC_6976.jpg'
-                    alt='Joseph Wachira - Full Stack Developer'
-                    className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
-                  />
-                  <div className='absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
-                </div>
+              <div className='relative mx-auto lg:mx-0 w-80 h-80 scale-120'>
+
+                <ComputersCanvas className='scale-200'/>
 
                 {/* Floating badges */}
                 <div className='absolute -top-4 -right-4' style={{ animationDelay: '0.5s' }}>
@@ -268,6 +262,7 @@ function HeroSection() {
                 })}
               </div>
             </div>
+
           </div>
 
           {/* Scroll Indicator */}

@@ -99,7 +99,7 @@ export default function About() {
         <h3 className='text-2xl font-semibold text-white mb-6'>Professional Summary</h3>
         <div className='space-y-4 text-gray-300'>
           <p>
-            I&aposm a passionate Full Stack Developer with 3+ years of experience building web applications using modern JavaScript frameworks. 
+            I&apos;m a passionate Software Developer with 3+ years of experience building web applications using modern JavaScript, Typescript frameworks. 
             My expertise spans both frontend and backend development, with a strong focus on creating responsive, 
             user-friendly interfaces and robust server-side solutions.
           </p>

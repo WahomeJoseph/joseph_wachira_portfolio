@@ -140,10 +140,10 @@ export default function Projects() {
     <div className='relative min-h-screen w-full overflow-hidden bg-transparent'>
       {/* Background Effects */}
       <div className='absolute inset-0'>
-        <div className='absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-blue-500/5'></div>
+        {/* <div className='absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-blue-500/5'></div>
         <div className='absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse'></div>
         <div className='absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000'></div>
-        <div className='absolute top-3/4 left-1/2 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl animate-pulse delay-2000'></div>
+        <div className='absolute top-3/4 left-1/2 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl animate-pulse delay-2000'></div> */}
 
         {/* Floating particles */}
         {[...Array(12)].map((_, i) => (
@@ -251,7 +251,7 @@ export default function Projects() {
                 {/* Featured Badge */}
                 {project.featured && (
                   <div className='absolute top-4 left-4 z-20'>
-                    <div className='flex items-center space-x-1 bg-gradient-to-r from-blue-500 to-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold'>
+                    <div className='flex items-center space-x-1 bg-gradient-to-r from-green-500 to-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold'>
                       <Star className='w-3 h-3' />
                       <span>Featured</span>
                     </div>
@@ -299,7 +299,7 @@ export default function Projects() {
                       rel='noopener noreferrer'
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
-                      className='p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-gray-800/80 transition-all duration-300'
+                      className='p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-gray-900/80 transition-all duration-300'
                       aria-label='View Code'>
                       <Github className='w-5 h-5' />
                     </motion.a>
@@ -335,7 +335,7 @@ export default function Projects() {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className='flex space-x-3'>
+                  <div className='flex items-center justify-center space-x-3'>
                     <motion.a
                       href={project.link}
                       target='_blank'
@@ -343,7 +343,7 @@ export default function Projects() {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       className='flex-1 inline-flex items-center justify-center gap-2 px-4 py-4 text-sm font-medium text-white bg-gradient-to-br from-gray-950 to-gray-900/40 shadow-sm shadow-[#000fff] hover:from-blue-600 hover:to-blue-600 rounded-lg transition-all duration-300 group/btn'>
-                      <span>View Project</span>
+                      <span>Project Demo</span>
                       <ArrowRight className='w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300' />
                     </motion.a>
 
@@ -389,7 +389,7 @@ export default function Projects() {
           className='mt-20 text-center bg-gradient-to-br from-gray-950 to-gray-900/40 backdrop-blur-lg border border-gray-700/50 rounded-2xl p-8'>
           <h3 className='text-2xl font-bold text-gray-100 mb-4'>Interested in working together?</h3>
           <p className='text-gray-300 mb-6 max-w-2xl mx-auto'>
-            I&aposm always open to discussing new opportunities and exciting projects. Let&aposs create something amazing
+            I&apos;m open to discussing new opportunities and exciting projects. Let&apos;s create something amazing
             together!
           </p>
           <motion.a

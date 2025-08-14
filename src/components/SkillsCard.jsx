@@ -50,6 +50,7 @@ const Experience = () => {
     <section id='experience' className='py-10 bg-transparent'>
       <div className='container mx-auto px-6'>
         <div className='max-w-4xl mx-auto'>
+
           <div className='mb-16'>
             <div className='relative'>
               {workExperience.map((work) => (
@@ -58,7 +59,7 @@ const Experience = () => {
                   <div className='absolute left-6 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 border-4 border-white shadow-lg z-10 hidden md:block'></div>
                   <div className='md:ml-16 bg-gradient-to-br from-gray-950 to-gray-900/40 rounded-2xl p-8 border border-gray-900 hover:shadow-xl transition-all duration-300 group'>
                     
-                    <div className='flex items-start gap-4'>
+                    <div className='flex items-start gap-4 slide-in-right transition-all duration-300'>
                       <div className='w-12 h-12 bg-[#ddd6cb]/20 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform flex-shrink-0'>
                         {work.icon}
                       </div>
@@ -92,7 +93,8 @@ const Experience = () => {
 
           {/* Education & Certifications Section */}
           <div className='grid md:grid-cols-2 gap-8 mb-16'>
-            <div className='bg-[#f4f4f4] rounded-2xl p-8 border border-gray-900'>
+
+            <div className='bg-slate-200 rounded-2xl p-8 border border-gray-900 slide-in-left'>
               <div className='flex items-center gap-3 mb-6'>
                 <div className='w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center'>
                   <GraduationCap className='w-6 h-6 text-white' />
@@ -114,7 +116,7 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className='bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200'>
+            <div className='bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8 border border-green-200 slide-in-right'>
               <div className='flex items-center gap-3 mb-6'>
                 <div className='w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center'>
                   <Award className='w-6 h-6 text-white' />
@@ -128,29 +130,6 @@ const Experience = () => {
                     <span className='text-gray-700 font-medium'>{cert}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Stats Section */}
-          <div className='bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl p-8 text-white text-center'>
-            <h3 className='text-2xl font-bold mb-8'>Professional Highlights</h3>
-            <div className='grid md:grid-cols-4 gap-6'>
-              <div className='bg-white/10 rounded-xl p-6 backdrop-blur-sm'>
-                <div className='text-3xl font-bold mb-2'>12+</div>
-                <div className='text-sm opacity-90'>Months Total Experience</div>
-              </div>
-              <div className='bg-white/10 rounded-xl p-6 backdrop-blur-sm'>
-                <div className='text-3xl font-bold mb-2'>10+</div>
-                <div className='text-sm opacity-90'>Projects Completed</div>
-              </div>
-              <div className='bg-white/10 rounded-xl p-6 backdrop-blur-sm'>
-                <div className='text-3xl font-bold mb-2'>200+</div>
-                <div className='text-sm opacity-90'>Bugs Identified & Fixed</div>
-              </div>
-              <div className='bg-white/10 rounded-xl p-6 backdrop-blur-sm'>
-                <div className='text-3xl font-bold mb-2'>95%</div>
-                <div className='text-sm opacity-90'>Test Coverage Achieved</div>
               </div>
             </div>
           </div>
