@@ -10,7 +10,10 @@ export default [
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
@@ -33,6 +36,28 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+    },
+  },
+  {
+    files: ['cypress/**/*.{js,jsx}'],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.mocha,
+        ...globals.node,
+        cy: 'readonly',
+        Cypress: 'readonly',
+        describe: 'readonly',
+        context: 'readonly',
+        it: 'readonly',
+        specify: 'readonly',
+        before: 'readonly',
+        beforeEach: 'readonly',
+        after: 'readonly',
+        afterEach: 'readonly',
+        expect: 'readonly',
+        assert: 'readonly',
+      },
     },
   },
 ]
