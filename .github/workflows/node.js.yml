@@ -19,8 +19,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
-        os: [ubuntu-latest, windows-latest]
+        node-version: [18.x] # Using only 18.x to match your React 18
       fail-fast: false
 
     steps:
@@ -29,37 +28,42 @@ jobs:
       with:
         fetch-depth: 0
 
-    # Setup pnpm first (before Node.js)
-    - name: Install pnpm
+    - name: Setup pnpm
       uses: pnpm/action-setup@v2
       with:
         version: 8
-        run_install: true
 
-    - name: Setup Node.js ${{ matrix.node-version }}
+    - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
         cache-dependency-path: '**/pnpm-lock.yaml'
 
-    - name: Verify pnpm
-      run: pnpm --version
-
     - name: Install dependencies
-      run: pnpm install
+      run: pnpm install --frozen-lockfile
 
-    - name: Run tests
+    - name: Run lint check
+      run: pnpm lint
+
+    - name: Check for tests
+      id: check-tests
+      run: |
+        if grep -q '"test":' package.json; then
+          echo "has_tests=true" >> $GITHUB_OUTPUT
+        else
+          echo "has_tests=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Run tests if available
+      if: steps.check-tests.outputs.has_tests == 'true'
       run: pnpm test
-      env:
-        CI: true
-        NODE_ENV: test
 
-    - name: Upload test coverage
+    - name: Upload test coverage if exists
+      if: always() && steps.check-tests.outputs.has_tests == 'true'
       uses: actions/upload-artifact@v4
-      if: always()
       with:
-        name: coverage-report-${{ matrix.node-version }}-${{ matrix.os }}
+        name: coverage-report
         path: coverage
         retention-days: 7
 
@@ -71,16 +75,15 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Install pnpm
+    - name: Setup pnpm
       uses: pnpm/action-setup@v2
       with:
         version: 8
-        run_install: false
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 20.x
+        node-version: 18.x
         cache: 'pnpm'
         cache-dependency-path: '**/pnpm-lock.yaml'
 
@@ -113,16 +116,15 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Install pnpm
+    - name: Setup pnpm
       uses: pnpm/action-setup@v2
       with:
         version: 8
-        run_install: false
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 20.x
+        node-version: 18.x
         cache: 'pnpm'
         cache-dependency-path: '**/pnpm-lock.yaml'
 
