@@ -42,6 +42,11 @@ jobs:
 
     - name: Install dependencies
       run: pnpm install
+      
+    - name: Install dependencies
+      run: |
+        pnpm install
+        pnpm add -D vitest @testing-library/react jsdom
 
     - name: Run lint check
       run: pnpm lint
